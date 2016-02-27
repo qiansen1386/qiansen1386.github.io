@@ -1,0 +1,8 @@
+baseurl = "https://qiansen1386.github.io/"
+languageCode = "zh-cn"
+title = "东方孤思子"
+theme = "hyde"
+
+[params]
+  disqusShortname = "qiansen1386"
+  themeColor: "theme-base-08"
