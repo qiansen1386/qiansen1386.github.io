@@ -1,1 +1,5 @@
-/public/*
+public/*
+themes/*
+!themes/.gitsubmodule
+!themes/LICENSE
+!themes/README.md
