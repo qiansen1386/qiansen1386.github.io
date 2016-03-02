@@ -13,3 +13,5 @@ deploy:
          gh_pages: true
          gh_pages_domain: qiansen1386.yii2.cn
          basedir: public
+         branch: master
+         clean_removed_files: true
