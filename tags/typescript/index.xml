@@ -15,7 +15,22 @@
       <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/post/recursion-demo-in-typescript/</guid>
-      <description>&lt;iframe width=&#34;100%&#34; height=&#34;650&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+      <description>&lt;p&gt;I wrote this to practice of Typescript. Implement it using recursion for demonstration purpose.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Before I wrote this, I already know it is the dummiest solution. (BTW, this is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time.) Basically, it waste both Ram and execution time. There is no human-intelligence involved so far, just pure brute-force method which straight away simulate the whole process and return its predicting result. Just it is not really a prediction, but just a simulation&amp;hellip; After I observe the result, I laughed. What a dumb question, and I can&amp;rsquo;t believe how silly I am, LOL.&lt;/p&gt;
+
+&lt;p&gt;Let put the result away first, and take a little bit time to look at the big O. Accoding to my code, The big O is about &lt;code&gt;log2(n-1)&amp;lt;O&amp;lt;=log2(N)&lt;/code&gt;. Classic! Now, if you notice, the result is always the greatest &lt;code&gt;2^n&lt;/code&gt; which does not exceed the &lt;strong&gt;n&lt;/strong&gt;. we can change the algorithm to a simplier formula:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/zvLu7re5/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;What is the O? still the same, the performance improved though.
+What is the ultmate solution:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/cvasL16t/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;That&amp;rsquo;s it! How silly I am&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
