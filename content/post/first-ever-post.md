@@ -1,12 +1,12 @@
 +++
 Categories = ["开发", "Hugo"]
-Description = ""
 Tags = ["开发", "Hugo", "CI"]
 date = "2016-02-01T06:53:50Z"
 menu = "main"
 title = "终于成功了"
+Description = "构建Hugo博客成功了！"
 linktitle="first ever post"
-weight= 10
+weight= 1
 +++
 
 成功啦，哈哈哈。
