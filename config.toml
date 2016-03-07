@@ -7,7 +7,8 @@ languageCode = "zh-cn"
 hasCJKLanguage=true # if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
 # 其它选项
 builddrafts = false
-canonifyurls = true
+canonifyurls = false # False => Relative URL
+uglyurls = false # No XXX.html ending but less complex, come on you are a computer..
 pygmentsUseClasses=true
 pygmentsStyle="monokai"
 # 主题限定
@@ -29,8 +30,8 @@ disqusShortname = "qiansen1386"
 	# To provide some metadata for search engines and the about section in the footer
 	# feel free to add a few information about you and your website.
 	name = "东方孤思子"
-	bio = "这是个互联网工程师，正义感爆棚的傻X"
-	description = "随便写写，主要是技术分享，人生感悟，政治策论等等。"
+	bio = "这是个正义感爆棚讨人厌的傻X，兼做互联网工程师"
+	description = "随便写写，主要是技术分享，人生感悟，政治策论等等。（倒序排列233）"
 	location = "Singapore" # optional
 	twitter = "qiansen1386" # optional
 	github = "qiansen1386" # optional
@@ -42,7 +43,7 @@ disqusShortname = "qiansen1386"
 	comments = "disqus"
 	
 	# Customize or translate the strings
-	keepReadingStr = "more.."
+	keepReadingStr = "More.."
 	backtotopStr = "Top"
 	shareStr = "Share"
 	pageNotFoundTitle = "404 - 你要找啥？本页不存在诶？"
