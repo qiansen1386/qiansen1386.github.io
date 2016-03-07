@@ -8,4 +8,4 @@ menu = "main"
 linktitle="recursion demo in typescript"
 +++
 
-<script async src="//jsfiddle.net/qiansen1386/yLdr5082/embed/js,html,result/"></script>
+<iframe width="100%" height="400" src="//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
