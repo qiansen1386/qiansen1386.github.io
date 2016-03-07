@@ -6,8 +6,18 @@
     <description>Recent content in 开发 on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 01 Feb 2016 06:53:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2016 10:41:06 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Recursion-Demo in TypeScript</title>
+      <link>https://qiansen1386.github.io/post/Recursion_Demo_in_TypeScript/</link>
+      <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/Recursion_Demo_in_TypeScript/</guid>
+      <description>&lt;script async src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embed/js,html,result/&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>终于成功了</title>
