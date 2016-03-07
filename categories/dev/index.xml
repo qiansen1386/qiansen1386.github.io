@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithm on 东方孤思子的博客（Paris · Qian Sen）</title>
-    <link>https://qiansen1386.github.io/tags/algorithm/</link>
-    <description>Recent content in Algorithm on 东方孤思子的博客（Paris · Qian Sen）</description>
+    <title>Dev on 东方孤思子的博客（Paris · Qian Sen）</title>
+    <link>https://qiansen1386.github.io/categories/dev/</link>
+    <description>Recent content in Dev on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 07 Mar 2016 10:41:06 +0000</lastBuildDate>
-    <atom:link href="https://qiansen1386.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://qiansen1386.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Recursion-Demo in TypeScript &amp; How it get better</title>
