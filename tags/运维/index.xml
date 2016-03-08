@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>开发 on 东方孤思子的博客（Paris · Qian Sen）</title>
-    <link>https://qiansen1386.github.io/tags/%E5%BC%80%E5%8F%91/</link>
-    <description>Recent content in 开发 on 东方孤思子的博客（Paris · Qian Sen）</description>
+    <title>运维 on 东方孤思子的博客（Paris · Qian Sen）</title>
+    <link>https://qiansen1386.github.io/tags/%E8%BF%90%E7%BB%B4/</link>
+    <description>Recent content in 运维 on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 08 Mar 2016 20:28:36 +0000</lastBuildDate>
-    <atom:link href="https://qiansen1386.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://qiansen1386.github.io/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>使用命令行真的比使用可视化界面好吗？</title>
@@ -54,52 +54,6 @@
 
 &lt;p&gt;你们看这些是不是已经很多了，但是其实还有一个很重要的内容没有讲到呢！那就是&lt;strong&gt;DevOps&lt;/strong&gt;！用脚本批量化自动化地同时处理海量服务器节点，部署运维，错误回滚，failback，弹性扩容等等领域，如果没有脚本和命令行是不可能做到的。计算机的发展趋势就是把“人”的因素从机器集群中剥离出去，从而极大得解放生产力，获得更稳定的业务结构。
 &lt;strong&gt;但是命令行对新手不太友好，能否熟练应用命令行算是一个高手和新手能显著拉开效率差距的点。&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Recursion-Demo in TypeScript &amp; How it get better</title>
-      <link>https://qiansen1386.github.io/post/recursion-demo-in-typescript/</link>
-      <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/recursion-demo-in-typescript/</guid>
-      <description>&lt;p&gt;I wrote this to practice of TypeScript and also to demonstrate recursion to my friend. This is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time. Basically is about to keep removing all the elements whichever index is odd from the array, till there is only one left, and return the index of the survivor. Input the &lt;strong&gt;N&lt;/strong&gt; of elements and output the index &lt;strong&gt;X&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Before I wrote this, I already know it is the dummiest(also most reliable) solution. Basically, it waste both Ram and execution time. There is no human-intelligence involved so far, just pure brute-force method which straight away simulate the whole process and return its predicting result. Just it is not really a prediction, but just a simulation&amp;hellip; After I observe the result, I laughed. What a dumb question, and I can&amp;rsquo;t believe how silly I am, LOL.&lt;/p&gt;
-
-&lt;p&gt;Let put the result away first, and take a little bit time to look at the big O. Accoding to my code, The O is in the range &lt;code&gt;log2(n-1)&amp;lt;O&amp;lt;=log2(n)&lt;/code&gt;. Classic! Now, if you notice, the result is always the greatest &lt;code&gt;2^n&lt;/code&gt; which does not exceed the &lt;strong&gt;n&lt;/strong&gt;. we can change the algorithm to a simplier formula:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/zvLu7re5/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.
-What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/cvasL16t/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; 
-
-&lt;p&gt;That&amp;rsquo;s it! How silly I am&amp;hellip; But I am so happy about it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>终于成功了</title>
-      <link>https://qiansen1386.github.io/post/first-ever-post/</link>
-      <pubDate>Mon, 01 Feb 2016 06:53:50 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/first-ever-post/</guid>
-      <description>&lt;p&gt;成功啦，哈哈哈。
-现在只要&lt;code&gt;push&lt;/code&gt;到&lt;code&gt;source&lt;/code&gt;分支就能实时构建并推送到&lt;code&gt;master&lt;/code&gt;。大家可以看我的 &lt;a href=&#34;https://github.com/qiansen1386/qiansen1386.github.io&#34;&gt;github repo&lt;/a&gt;
-具体设置请参考下面的参考链接，Wercker 并不会很难，还是挺好理解的。
-Wercker 也真的很好用，运用 docker 技术的自动化产品不要太方便，真的可以不用 jenkins 了。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;主要参考了：
-- &lt;a href=&#34;http://fatestigma.github.io/2016/01/29/%E4%BD%BF%E7%94%A8-wercker-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&#34;&gt;使用 Wercker 自动化部署静态博客&lt;/a&gt;
-- &lt;a href=&#34;https://gohugo.io/tutorials/automated-deployments/&#34;&gt;【官方】Automated deployments with Wercker&lt;/a&gt;
-- &lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;【coderzh CoderZh Blog】使用hugo搭建个人博客站点&lt;/a&gt;
-- &lt;a href=&#34;http://kaichu.io/2015/07/my-first-post/&#34;&gt;【kaichu.io】在 Github Pages 建立 Hugo 靜態網站&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

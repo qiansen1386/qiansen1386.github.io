@@ -6,8 +6,56 @@
     <description>Recent content in 中文 on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 01 Feb 2016 06:53:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2016 20:28:36 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>使用命令行真的比使用可视化界面好吗？</title>
+      <link>https://qiansen1386.github.io/post/why-command-line-is-oftenly-better-than-gui-in-cs/</link>
+      <pubDate>Tue, 08 Mar 2016 20:28:36 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/why-command-line-is-oftenly-better-than-gui-in-cs/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自己的知乎答案。没办法写得太好了，让人自我陶醉。装逼一旦开始，要怎么才能停止……
+&lt;a href=&#34;https://www.zhihu.com/question/40868797/answer/88604865?group_id=690384002342752256&#34; target=&#34;_blank&#34;&gt;使用命令行真的比使用可视化界面好吗？&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;看情况，但是具体到IT领域，很多种情况下敲代码比可视化强得多。以下详谈&lt;/p&gt;
+
+&lt;p&gt;首先，命令行不是万能的，对于普罗大众而言，没有可视化反而是万万不能的。
+比如游戏，文档编辑，数据分析，对于*“不需要培训的人”*来说GUI是刚需……因为你不能培训所有消费者，所以GUI是计算机普及的一大革命浪潮。这个想法是没有错的。&lt;/p&gt;
+
+&lt;h3 id=&#34;那么什么情况下应该用命令行呢-命令行的优点有哪些呢:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;那么什么情况下应该用命令行呢？命令行的优点有哪些呢？&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-效率-效率-效率-还是tmd效率:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;1. 效率，效率，效率，还是tmd效率&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1‘ 把某个目录下的所有*.raw文件复制到另一个文件夹，如果当前目录下鱼龙混杂，你怎么处理呢？
+用命令行调用 robocopy / rsync，加特定参数就可以很方便得进行处理，这边复制完了，那边文件还没挑完呢。&lt;/li&gt;
+&lt;li&gt;2’ 通用的代码，我可以把指令写成脚本，下次直接执行就好了。但是GUI你要一遍一遍地重复，没有任何可以继承沉淀下来的东西&lt;/li&gt;
+&lt;li&gt;3‘ 在Linux下命令行可以操作系统的几乎任何组件，Windows略差，但最近进步也很明显。反之图形界面的话，你需要任务管理器管理进程，用“服务”工具管理服务，用计划任务管理定时任务。要顺利完成部署任务，你要同时开多少软件呢？翻来覆去得点来点去你不烦么？另外，下次部署你又要重做一遍，请参考上一小条。&lt;/li&gt;
+&lt;li&gt;4‘ 一个不带界面的Linux发行版，连服务器数据库应用程序等等，全部加载到内存可能只有一两百兆。一个入门级的VPS就搞定了。但，如果加上GUI，随便一个GUI都要100M到500M之间，服务器主业是用来服务用户的，不是服务运维的。你可以用命令行做到同样的事，多浪费几倍的资源，用户却得不到任何显著地好处，这种事企业是不会做的。&lt;/li&gt;
+&lt;li&gt;5’ etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;2-稳定-可移植性强:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;2. 稳定-&amp;gt;可移植性强&lt;/h4&gt;
+
+&lt;p&gt;命令行一个命令可以复制粘贴，分享给天底下所有的运维开发，对于继续进行操作的程序猿而言，查一条指令，可比扒翻几篇教程容易多了。GUI软件则不然，以万恶的微软举例，每一代Office界面都不同吧？菜单都有区别吧？上一代的教程未必适用于下一个版本吧？&lt;/p&gt;
+
+&lt;h4 id=&#34;3-鼠标不适合快速操作-与其来回切换鼠标键盘-不如始终使用键盘:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;3. 鼠标不适合快速操作，与其来回切换鼠标键盘，不如始终使用键盘。&lt;/h4&gt;
+
+&lt;p&gt;要提高操作效率，很多情况下都会强调要背快捷键。键盘的可输入信息比鼠标高太多了。而且键盘操作更简单，按下去就是按下去，容错性很强；而鼠标则需要点击到特定位置，对按钮的大小，视线与鼠标轨迹等等都有要求，UX设计不好的软件用鼠标很难用。况且仅仅用鼠标你是什么都做不到的，但是仅用键盘，你可以做到大多数事情。&lt;/p&gt;
+
+&lt;h4 id=&#34;4-开发省心省钱:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;4. 开发省心省钱&lt;/h4&gt;
+
+&lt;p&gt;设计UI是需要成本的，调整UI更是件费心费力的工作。而程序猿写程序顺带开发一套命令行界面很轻松，UX的设计简单很多，也不需要太多美学素养。这一点在互联网行业更是及其重要的。给我一个shell开发测试运维压测部署全部都能做，而在Web界面里模仿Windows界面比模仿控制台界面要难一万倍。&lt;/p&gt;
+
+&lt;p&gt;你们看这些是不是已经很多了，但是其实还有一个很重要的内容没有讲到呢！那就是&lt;strong&gt;DevOps&lt;/strong&gt;！用脚本批量化自动化地同时处理海量服务器节点，部署运维，错误回滚，failback，弹性扩容等等领域，如果没有脚本和命令行是不可能做到的。计算机的发展趋势就是把“人”的因素从机器集群中剥离出去，从而极大得解放生产力，获得更稳定的业务结构。
+&lt;strong&gt;但是命令行对新手不太友好，能否熟练应用命令行算是一个高手和新手能显著拉开效率差距的点。&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>终于成功了</title>
