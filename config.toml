@@ -1,49 +1,88 @@
 # 项目组织
 baseurl = "https://qiansen1386.github.io/"
 # 个人定制
-title = "东方孤思子的博客（Paris · Qian Sen）"
+title = "东方孤思子のBlog\nParis·Qian Sen"
 # 语言
 languageCode = "zh-cn"
 hasCJKLanguage=true # if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
 # 其它选项
-builddrafts = false
-canonifyurls = false # False => Relative URL
-uglyurls = false # No XXX.html ending but less complex, come on you are a computer..
+MetaDataFormat = "toml"
+buildDrafts = false
 pygmentsUseClasses=true
 pygmentsStyle="monokai"
-# 主题限定
+	# URLs
+canonifyurls = false # False => Relative URL
+uglyurls = false # No XXX.html ending but less complex, come on you are a computer..
+
 paginate = 10
-theme = "steam"
+# 主题限定
+theme = "hyde-x"
 disqusShortname = "qiansen1386"
+
+[author]
+    name = "东方孤思子\nParis Qian Sen"
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = "/blog/:year/:month/:day/:title/"
+
+[taxonomies]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
 [params]
-	#通用
-	#主题限定
-	title = "东方孤思子のBlog"
-	subtitle = "Profesional Coding · Simple Living · Creative Thinking"
-	copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议 CC 4.0 International" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>若无特殊说明，本站内容受<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><b>CC</b>署名-非商业性使用-相同方式共享 4.0 许可协议</a>保护，商业转载许可请另行联系。'
-	
-	# 四选一 green, orange, red and blue.
-	themeColor = "green"
-	# Enable Google Analytics be inserting your tracking code
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if omitted) is true.
+    truncate = true
+
+    # Used when a given page doesn't set its own.
+    defaultDescription = "本文木有简述"
+    defaultKeywords = "开发, 中文"
+
+    # Hide estimated reading time for posts.
+    # Default (if omitted) is false.
+    hideReadingTime = true
+
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    theme = "theme-base-08"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "sunburst"
+
+    # Optional additional custom CSS file URL, will override other styles.
+    customCSS = ""
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "> - Profesional Coding \n - Simple Living\n - Creative Thinking"
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Blog".
+    home = "Blog"
+
+    # Metadata used to drive integrations.
 	googleAnalytics = "UA-47725881-1"
-	
-	# To provide some metadata for search engines and the about section in the footer
-	# feel free to add a few information about you and your website.
-	name = "东方孤思子"
-	bio = "这是个正义感爆棚讨人厌的傻X，兼做互联网工程师"
-	description = "随便写写，主要是技术分享，人生感悟，政治策论等等。（倒序排列233）"
-	location = "Singapore" # optional
-	twitter = "qiansen1386" # optional
-	github = "qiansen1386" # optional
-	
-	# Enable a comment system
-	# You can choose between Disqus or Google Plus by setting comments
-	# to disqus or googleplus. For using Disqus you need to enter your
-	# shortname in disqusShortname at the top of the configs. 
-	comments = "disqus"
-	
-	# Customize or translate the strings
-	keepReadingStr = "More.."
-	backtotopStr = "Top"
-	shareStr = "Share"
-	pageNotFoundTitle = "404 - 你要找啥？本页不存在诶？"
+    gravatarHash = "c6f58a99408d7e443ce3c791eb0647ad"
+
+    # Sidebar social links, these must be full URLs.
+    github = "https://github.com/qiansen1386"
+    #bitbucket = ""
+    stackOverflow = "http://stackexchange.com/users/1586938/paris-qian"
+    linkedin = "sg.linkedin.com/in/parisqiansen"
+    googleplus = "https://plus.google.com/+Parisqiansen/posts"
+    #facebook = ""
+    twitter = "https://twitter.com/qiansen1386"
+    youtube = "https://www.youtube.com/channel/UC1rGIQJUQABgRyA-edmRlKg"
+
+    # Other social-like sidebar links
+    rss = false  # switch to true to enable RSS icon link
+    flattr = "z7zlod"  # populate with your flattr uid
+    description = "技术分享，人生感悟，政治策论等等。"

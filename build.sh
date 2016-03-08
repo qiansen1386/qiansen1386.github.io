@@ -1,1 +1,1 @@
-hugo --cleanDestinationDir -D -v --disableSitemap --canonifyURLs=false -t=hyde-x  --baseURL=https://preview.c9users.io/qiansen1386/golang/gh-pages/public/
+hugo --cleanDestinationDir -D -v --disableSitemap --canonifyURLs=true -t=hyde-x  --baseURL=https://preview.c9users.io/qiansen1386/hugo/gh-pages/public/
