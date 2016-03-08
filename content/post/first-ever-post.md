@@ -1,5 +1,5 @@
 +++
-Categories = ["开发", "Hugo"]
+Categories = ["开发", "中文"]
 Tags = ["开发", "Hugo", "CI"]
 date = "2016-02-01T06:53:50Z"
 menu = "main"
