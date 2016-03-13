@@ -1,1 +1,1 @@
-hugo --cleanDestinationDir -D -v --disableSitemap --canonifyURLs=true -t=casper  --baseURL=https://preview.c9users.io/qiansen1386/hugo/gh-pages/public/
+hugo --cleanDestinationDir -D -v --disableSitemap --canonifyURLs=true -t=elf  --baseURL=https://preview.c9users.io/qiansen1386/hugo/gh-pages/public/
