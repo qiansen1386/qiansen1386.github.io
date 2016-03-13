@@ -53,5 +53,7 @@ title = "写于 2016 年初的一段话"
 
 这是我在 2015 年的年末最大的感受。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xCvV_4qu78U" frameborder="0" allowfullscreen></iframe>
-<small>写于公元二零一六年一月下旬</small>
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/xCvV_4qu78U" frameborder="0" allowfullscreen></iframe>
+
+
+<small style="float:right">写于公元二零一六年一月下旬</small>
