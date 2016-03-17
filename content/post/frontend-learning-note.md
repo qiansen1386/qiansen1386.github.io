@@ -30,7 +30,8 @@ CSS:
 - [Excited about postcss -- DAVID CLARK](http://davidtheclark.com/excited-about-postcss/) (PostCSS)
 - [Breaking up with Sass: it’s not you, it’s me -- Ben Frain](https://benfrain.com/breaking-up-with-sass-postcss/)
 - [CSS Preprocessing Drama](http://twin.github.io/css-preprocessing-drama/)
-- [Speech of "About-postcss" -- AI](https://github.com/ai/about-postcss/blob/master/speech.md)- 
+- [Speech of "About-postcss" -- AI](https://github.com/ai/about-postcss/blob/master/speech.md)
+- [PostCSS – Sass Killer or Preprocessing Pretender?](http://ashleynolan.co.uk/blog/postcss-a-review)
 - [CSS 编码规范](https://itmyhome.gitbooks.io/css/content/)
 - [PostCSS的相关知识](https://arguseye.gitbooks.io/postcss/content/plugins.html)
 
