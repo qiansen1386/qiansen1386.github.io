@@ -1,6 +1,6 @@
 +++
 categories=["开发", "dev", "English","中文"]
-tags=["前端","frontend","TypeScript,"PostCSS"]
+tags=["前端","frontend","TypeScript","PostCSS"]
 date = "2016-03-16T07:03:51Z"
 title = "frontend learning note"
 
