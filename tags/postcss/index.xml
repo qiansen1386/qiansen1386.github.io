@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Typescript on 东方孤思子的博客（Paris · Qian Sen）</title>
-    <link>https://qiansen1386.github.io/tags/typescript/</link>
-    <description>Recent content in Typescript on 东方孤思子的博客（Paris · Qian Sen）</description>
+    <title>Postcss on 东方孤思子的博客（Paris · Qian Sen）</title>
+    <link>https://qiansen1386.github.io/tags/postcss/</link>
+    <description>Recent content in Postcss on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 Mar 2016 07:03:51 +0000</lastBuildDate>
-    <atom:link href="https://qiansen1386.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://qiansen1386.github.io/tags/postcss/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>frontend learning note</title>
@@ -62,31 +62,6 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;/ul&gt;
 
 &lt;p&gt;[0]:&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34;&gt;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Recursion-Demo in TypeScript &amp; How it get better</title>
-      <link>https://qiansen1386.github.io/post/recursion-demo-in-typescript/</link>
-      <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/recursion-demo-in-typescript/</guid>
-      <description>&lt;p&gt;I wrote this to practice of TypeScript and also to demonstrate recursion to my friend. This is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time. Basically is about to keep removing all the elements whichever index is odd from the array, till there is only one left, and return the index of the survivor. Input the &lt;strong&gt;N&lt;/strong&gt; of elements and output the index &lt;strong&gt;X&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Before I wrote this, I already know it is the dummiest(also most reliable) solution. Basically, it waste both Ram and execution time. There is no human-intelligence involved so far, just pure brute-force method which straight away simulate the whole process and return its predicting result. Just it is not really a prediction, but just a simulation&amp;hellip; After I observe the result, I laughed. What a dumb question, and I can&amp;rsquo;t believe how silly I am, LOL.&lt;/p&gt;
-
-&lt;p&gt;Let put the result away first, and take a little bit time to look at the big O. Accoding to my code, The O is in the range &lt;code&gt;log2(n-1)&amp;lt;O&amp;lt;=log2(n)&lt;/code&gt;. Classic! Now, if you notice, the result is always the greatest &lt;code&gt;2^n&lt;/code&gt; which does not exceed the &lt;strong&gt;n&lt;/strong&gt;. we can change the algorithm to a simplier formula:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/zvLu7re5/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.
-What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/cvasL16t/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; 
-
-&lt;p&gt;That&amp;rsquo;s it! How silly I am&amp;hellip; But I am so happy about it.&lt;/p&gt;
 </description>
     </item>
     

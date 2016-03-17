@@ -6,8 +6,64 @@
     <description>Recent content in Dev on 东方孤思子的博客（Paris · Qian Sen）</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Mar 2016 10:41:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Mar 2016 07:03:51 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>frontend learning note</title>
+      <link>https://qiansen1386.github.io/post/frontend-learning-note/</link>
+      <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/frontend-learning-note/</guid>
+      <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
+Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
+for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
+oppertunaty to bring my frontend skill sets to another level.&lt;/p&gt;
+
+&lt;p&gt;So I created the stupid &lt;a href=&#34;github.com/qiansen1386/hugo-elf-theme&#34;&gt;hugo-elf-theme&lt;/a&gt;. I have got to say, the name is pretty arbitrary.
+Even worse, I don&amp;rsquo;t have a clue even after I started. I start to realised that I need to have more input before I make an output.
+Hence, I started my long-term(supposed to be) voyage. Here are the resources that absolutely worth more attention.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Some of the resources are written in Chinese. Sorry for the inconvenience, coz those materials are slightly easier for me to understand.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;HTML5:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md&#34;&gt;H5 boilerplate Docs&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
+&lt;li&gt;[H5 boilerplate my custom build (a minimized version)]&lt;a href=&#34;Html5 boilerplate&#34;&gt;0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CSS:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidtheclark.com/excited-about-postcss/&#34;&gt;Excited about postcss &amp;ndash; DAVID CLARK&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://benfrain.com/breaking-up-with-sass-postcss/&#34;&gt;Breaking up with Sass: it’s not you, it’s me &amp;ndash; Ben Frain&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://twin.github.io/css-preprocessing-drama/&#34;&gt;CSS Preprocessing Drama&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ai/about-postcss/blob/master/speech.md&#34;&gt;Speech of &amp;ldquo;About-postcss&amp;rdquo; &amp;ndash; AI&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ashleynolan.co.uk/blog/postcss-a-review&#34;&gt;PostCSS – Sass Killer or Preprocessing Pretender?&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnlayout.com/&#34;&gt;Learn CSS Layout(I18N-provided)&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itmyhome.gitbooks.io/css/content/&#34;&gt;CSS 编码规范&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JS:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/TypeScript&#34;&gt;TypeScript &amp;ndash;维基百科&lt;/a&gt; (TypeScript)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html&#34;&gt;Typescript 初体验&lt;/a&gt; (TypeScript)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhongsp.gitbooks.io/typescript-handbook/content/&#34;&gt;TypeScript Handbook（中文版）&lt;/a&gt; (TypeScript)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.75team.com/archives/882&#34;&gt;[译]神马是AMD, CommonJS, UMD?&lt;/a&gt; (Translation of &amp;ldquo;What Is AMD, CommonJS, and UMD?&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;[0]:&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34;&gt;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Recursion-Demo in TypeScript &amp; How it get better</title>
