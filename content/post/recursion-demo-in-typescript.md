@@ -3,7 +3,6 @@ date = "2016-03-07T10:41:06Z"
 title = "Recursion-Demo in TypeScript & How it get better"
 Categories = ["开发", "dev", "English"]
 Tags = ["开发", "Algorithm", "TypeScript"]
-menu = "main"
 linktitle="recursion demo in typescript n how it get better"
 +++
 
