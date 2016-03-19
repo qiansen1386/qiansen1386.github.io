@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>运维 on 东方孤思子的博客（Paris · Qian Sen）</title>
+    <title>运维 on 东方孤思子のBlog
+Paris·Qian Sen</title>
     <link>https://qiansen1386.github.io/categories/%E8%BF%90%E7%BB%B4/</link>
-    <description>Recent content in 运维 on 东方孤思子的博客（Paris · Qian Sen）</description>
+    <description>Recent content in 运维 on 东方孤思子のBlog
+Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 08 Mar 2016 20:28:36 +0000</lastBuildDate>
@@ -11,10 +13,10 @@
     
     <item>
       <title>使用命令行真的比使用可视化界面好吗？</title>
-      <link>https://qiansen1386.github.io/post/why-command-line-is-oftenly-better-than-gui-in-cs/</link>
+      <link>https://qiansen1386.github.io/blog/2016/03/08/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9C%9F%E7%9A%84%E6%AF%94%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E5%A5%BD%E5%90%97/</link>
       <pubDate>Tue, 08 Mar 2016 20:28:36 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/post/why-command-line-is-oftenly-better-than-gui-in-cs/</guid>
+      <guid>https://qiansen1386.github.io/blog/2016/03/08/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9C%9F%E7%9A%84%E6%AF%94%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E5%A5%BD%E5%90%97/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -29,9 +31,9 @@
 &lt;p&gt;首先，命令行肯定不是绝对的好啊。对于普罗大众而言，显然可视化才是必须的。
 比如游戏，文档编辑，数据分析，尤其是对于*不需要培训*的普通用户来说GUI必须是刚需……GUI是计算机普及的一大革命浪潮。乔总怎么会错呢。只是世事无绝对，命令行有命令行的好。&lt;/p&gt;
 
-&lt;h3 id=&#34;那么什么情况下应该用命令行呢-命令行的优点有哪些呢:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;那么什么情况下应该用命令行呢？命令行的优点有哪些呢？&lt;/h3&gt;
+&lt;h3 id=&#34;那么什么情况下应该用命令行呢-命令行的优点有哪些呢&#34;&gt;那么什么情况下应该用命令行呢？命令行的优点有哪些呢？&lt;/h3&gt;
 
-&lt;h4 id=&#34;1-效率-效率-效率-还是tmd效率:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;1. 效率，效率，效率，还是tmd效率&lt;/h4&gt;
+&lt;h4 id=&#34;1-效率-效率-效率-还是tmd效率&#34;&gt;1. 效率，效率，效率，还是tmd效率&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;1‘ 把某个目录下的所有*.raw文件复制到另一个文件夹，如果当前目录下鱼龙混杂，你怎么处理呢？
@@ -42,15 +44,15 @@
 &lt;li&gt;5’ etc.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;2-稳定-可移植性强:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;2. 稳定-&amp;gt;可移植性强&lt;/h4&gt;
+&lt;h4 id=&#34;2-稳定-可移植性强&#34;&gt;2. 稳定-&amp;gt;可移植性强&lt;/h4&gt;
 
 &lt;p&gt;命令行一个命令可以复制粘贴，分享给天底下所有的运维开发，对于继续进行操作的程序猿而言，查一条指令，可比扒翻几篇教程容易多了。GUI软件则不然，以万恶的微软举例，每一代Office界面都不同吧？菜单都有区别吧？上一代的教程未必适用于下一个版本吧？&lt;/p&gt;
 
-&lt;h4 id=&#34;3-鼠标不适合快速操作-与其来回切换鼠标键盘-不如始终使用键盘:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;3. 鼠标不适合快速操作，与其来回切换鼠标键盘，不如始终使用键盘。&lt;/h4&gt;
+&lt;h4 id=&#34;3-鼠标不适合快速操作-与其来回切换鼠标键盘-不如始终使用键盘&#34;&gt;3. 鼠标不适合快速操作，与其来回切换鼠标键盘，不如始终使用键盘。&lt;/h4&gt;
 
 &lt;p&gt;要提高操作效率，很多情况下都会强调要背快捷键。键盘的可输入信息比鼠标高太多了。而且键盘操作更简单，按下去就是按下去，容错性很强；而鼠标则需要点击到特定位置，对按钮的大小，视线与鼠标轨迹等等都有要求，UX设计不好的软件用鼠标很难用。况且仅仅用鼠标你是什么都做不到的，但是仅用键盘，你可以做到大多数事情。&lt;/p&gt;
 
-&lt;h4 id=&#34;4-开发省心省钱:bb1e2bd03a33b79d55b0fd8438ca5a92&#34;&gt;4. 开发省心省钱&lt;/h4&gt;
+&lt;h4 id=&#34;4-开发省心省钱&#34;&gt;4. 开发省心省钱&lt;/h4&gt;
 
 &lt;p&gt;设计UI是需要成本的，调整UI更是件费心费力的工作。而程序猿写程序顺带开发一套命令行界面很轻松，UX的设计简单很多，也不需要太多美学素养。这一点在互联网行业更是及其重要的。用一个shell界面，开发测试运维压测部署全部都能做，而在Web界面里模仿Windows界面比模仿控制台界面要难一万倍。&lt;/p&gt;
 

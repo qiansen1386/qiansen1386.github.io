@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on 东方孤思子的博客（Paris · Qian Sen）</title>
+    <title>Abouts on 东方孤思子のBlog
+Paris·Qian Sen</title>
     <link>https://qiansen1386.github.io/about/</link>
-    <description>Recent content in Abouts on 东方孤思子的博客（Paris · Qian Sen）</description>
+    <description>Recent content in Abouts on 东方孤思子のBlog
+Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
@@ -19,7 +21,7 @@
 
 &lt;p&gt;Paris Qian Sen is a Chinese Backend Web Developer who currently live in Singapore.&lt;/p&gt;
 
-&lt;h2 id=&#34;identities:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Identities&lt;/h2&gt;
+&lt;h2 id=&#34;identities&#34;&gt;Identities&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;registry.jsonresume.org/qiansen1386&#34;&gt;A JSON Resume User&lt;/a&gt; (Because it is hard to add more experience story, so hard to reference my skills)&lt;/li&gt;
@@ -32,11 +34,11 @@
 &lt;li&gt;A Hugo-Site-Generator user(Obviously)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;achievements:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Achievements&lt;/h2&gt;
+&lt;h2 id=&#34;achievements&#34;&gt;Achievements&lt;/h2&gt;
 
 &lt;p&gt;Timestamp|What happened&lt;/p&gt;
 
-&lt;h2 id=&#34;about-this-site:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;About this Site&lt;/h2&gt;
+&lt;h2 id=&#34;about-this-site&#34;&gt;About this Site&lt;/h2&gt;
 
 &lt;p&gt;This website is proudly build on top of &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo Static Site Generatior&lt;/a&gt;&lt;/p&gt;
 
