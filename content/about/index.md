@@ -8,7 +8,7 @@ Paris Qian Sen is a Chinese Backend Web Developer who currently live in Singapor
  
 ## Identities##
 
-* [A JSON Resume User](registry.jsonresume.org/qiansen1386) (Because it is hard to add more experience story, so hard to reference my skills)
+* [A JSON Resume User](http://registry.jsonresume.org/qiansen1386) (Because it is hard to add more experience story, so hard to reference my skills)
 * [A Github User](https://github.com/qiansen1386)
 * A Leader of Misa Travel .Net Team  (Full time job)
 * A PHP Yii2-China QQ group manager(Take it as a Chinese version of IRC)
@@ -30,5 +30,5 @@ This website is proudly build on top of [Hugo Static Site Generatior](https://go
 Projects involved:
 
 * [Hugo](https://gohugo.io/)
-* [hugo-steam-theme](https://github.com/digitalcraftsman/hugo-steam-theme)
-* [Wercker](wercker.com)
+* [hugo-hype-x-theme](https://github.com/zyro/hyde-x)
+* [Wercker](https://wercker.com)
