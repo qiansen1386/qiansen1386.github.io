@@ -1,6 +1,6 @@
 +++
-Categories = ["开发", "中文"]
-Tags = ["开发", "Hugo", "CI"]
+categories = ["开发", "中文"]
+tags = ["开发", "Hugo", "CI"]
 date = "2016-02-01T06:53:50Z"
 title = "终于成功了"
 Description = "构建Hugo博客成功了！"
