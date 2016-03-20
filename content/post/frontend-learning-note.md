@@ -22,7 +22,7 @@ HTML5:
 
 - [H5 boilerplate](https://html5boilerplate.com/) (Html5 boilerplate)
 - [H5 boilerplate Docs](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md) (Html5 boilerplate)
-- [H5 boilerplate my custom build (a minimized version)][0] (Html5 boilerplate)
+- [H5 boilerplate my custom build (a minimized version)][boilerplate-build] (Html5 boilerplate)
 
 CSS:
 
@@ -43,6 +43,6 @@ JS:
 - [Typescript 初体验](http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html) (TypeScript)
 - [TypeScript Handbook（中文版）](https://zhongsp.gitbooks.io/typescript-handbook/content/) (TypeScript)
 - [\[译\]神马是AMD, CommonJS, UMD?](http://www.75team.com/archives/882) (Translation of "What Is AMD, CommonJS, and UMD?")
-- 
 
-[0]:http://www.initializr.com/builder?print&h5bp-content&modernizr&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-robots&h5bp-humans&h5bp-404&h5bp-adobecrossdomain&h5bp-css&h5bp-csshelpers&h5bp-mediaqueryprint&h5bp-mediaqueries&simplehtmltag&izr-emptyscript
+
+[boilerplate-build]: <http://www.initializr.com/builder?print&h5bp-content&modernizr&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-robots&h5bp-humans&h5bp-404&h5bp-adobecrossdomain&h5bp-css&h5bp-csshelpers&h5bp-mediaqueryprint&h5bp-mediaqueries&simplehtmltag&izr-emptyscript> "H5 boilerplate my custom build (a minimized version)"
