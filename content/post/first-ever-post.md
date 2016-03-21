@@ -4,7 +4,7 @@ tags = ["开发", "Hugo", "CI"]
 date = "2016-02-01T06:53:50Z"
 title = "终于成功了"
 Description = "构建Hugo博客成功了！"
-linktitle="first ever post"
+linktitle="First Ever Post"
 weight= 1
 +++
 

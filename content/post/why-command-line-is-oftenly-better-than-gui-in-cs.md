@@ -3,7 +3,6 @@ date = "2016-03-08T20:28:36Z"
 categories = ["运维", "中文"]
 tags = ["开发", "运维", "知乎", "感想总结"]
 title="使用命令行真的比使用可视化界面好吗？"
-linktitle = "why command line is oftenly better than gui in cs"
 description="转载自己的知乎答案。没办法写得太好了，让人自我陶醉。装逼一旦开始，要怎么才能停止……"
 +++
 

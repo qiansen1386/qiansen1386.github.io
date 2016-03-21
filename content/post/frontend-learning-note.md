@@ -2,7 +2,7 @@
 categories=["开发", "dev", "English","中文"]
 tags=["前端","frontend","TypeScript","PostCSS"]
 date = "2016-03-16T07:03:51Z"
-title = "frontend learning note"
+title = "Frontend Learning Notes"
 
 +++
 
@@ -11,7 +11,7 @@ Even those great themes seem to have flaws, or require customization. And then I
 for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a 
 oppertunaty to bring my frontend skill sets to another level.
 
-So I created the stupid [hugo-elf-theme](github.com/qiansen1386/hugo-elf-theme). I have got to say, the name is pretty arbitrary.
+So I created the stupid [hugo-polygon-theme](github.com/qiansen1386/hugo-polygon-theme). I have got to say, the name is pretty arbitrary.
 Even worse, I don't have a clue even after I started. I start to realised that I need to have more input before I make an output.
 Hence, I started my long-term(supposed to be) voyage. Here are the resources that absolutely worth more attention.
 
@@ -45,4 +45,4 @@ JS:
 - [\[译\]神马是AMD, CommonJS, UMD?](http://www.75team.com/archives/882) (Translation of "What Is AMD, CommonJS, and UMD?")
 
 
-[boilerplate-build]: <http://www.initializr.com/builder?print&h5bp-content&modernizr&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-robots&h5bp-humans&h5bp-404&h5bp-adobecrossdomain&h5bp-css&h5bp-csshelpers&h5bp-mediaqueryprint&h5bp-mediaqueries&simplehtmltag&izr-emptyscript> "H5 boilerplate my custom build (a minimized version)"
+[boilerplate-build]: http://www.initializr.com/builder?print&h5bp-content&modernizr&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-robots&h5bp-humans&h5bp-404&h5bp-adobecrossdomain&h5bp-css&h5bp-csshelpers&h5bp-mediaqueryprint&h5bp-mediaqueries&simplehtmltag&izr-emptyscript "H5 boilerplate my custom build (a minimized version)"

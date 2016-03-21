@@ -1,9 +1,8 @@
 +++
 date = "2016-03-07T10:41:06Z"
 title = "Recursion-Demo in TypeScript & How it get better"
-Categories = ["开发", "dev", "English"]
-Tags = ["开发", "Algorithm", "TypeScript"]
-linktitle="recursion demo in typescript n how it get better"
+categories = ["开发", "dev", "English"]
+tags = ["开发", "Algorithm", "TypeScript"]
 +++
 
 I wrote this to practice of TypeScript and also to demonstrate recursion to my friend. This is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time. Basically is about to keep removing all the elements whichever index is odd from the array, till there is only one left, and return the index of the survivor. Input the **N** of elements and output the index **X**.
