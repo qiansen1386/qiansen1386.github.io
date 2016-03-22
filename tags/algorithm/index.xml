@@ -27,7 +27,7 @@ Paris·Qian Sen</description>
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/zvLu7re5/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.&lt;br /&gt;
+&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.
 What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt;/p&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/cvasL16t/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; 
