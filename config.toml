@@ -40,7 +40,7 @@ disqusShortname = "qiansen1386"
     skipHtml=true
     skipStyle=true
     toc=true
-    extensions = ["fencedCode","strikethrough","hardLineBreak","noIntraEmphasis",]
+    extensions = ["fencedCode","strikethrough","noIntraEmphasis",]
 #
 # All parameters below here are optional and can be mixed and matched.
 #
