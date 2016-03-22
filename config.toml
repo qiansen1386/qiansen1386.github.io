@@ -90,5 +90,9 @@ disqusShortname = "qiansen1386"
 [blackfriday]
     angledQuotes = true
     fractions = false
+    hrefTargetBlank=true
     plainIDAnchors = true
-    #extensions = ["hardLineBreak"]
+    skipHtml=true
+    skipStyle=true
+    toc=true
+    extensions = ["fencedCode","STRIKETHROUGH","hardLineBreak","noIntraEmphasis",]
