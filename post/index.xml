@@ -17,11 +17,11 @@ Paris·Qian Sen</description>
       <pubDate>Thu, 17 Mar 2016 05:52:09 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/blog/2016/03/17/meg-jay-why-30-is-not-the-new-20/</guid>
-      <description>&lt;p&gt;YouTube 好视频分享。（原视频是李开复（Kaifu Lee）分享在Twitter的。）
+      <description>&lt;p&gt;YouTube 好视频分享。（原视频是李开复（Kaifu Lee）分享在Twitter的。）&lt;br /&gt;
 &lt;iframe width=&#34;1120&#34; height=&#34;630&#34; src=&#34;https://www.youtube.com/embed/-GG1rYgGJao&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;视频简介：
+&lt;p&gt;视频简介：&lt;br /&gt;
 臨床心理學家 Meg Jay 提供二十歲的新世代年輕人一則的訊息：不同於一般觀點，你的二十歲人生並非無足輕重的十年。Jay在這場引人入勝的演講中說，儘管婚姻、工作及孩子是之後的事，不代表你不能現在就開始規劃。她提出三項建議，告訴二十多歲的年輕人該如何掌握人生中決定性的十年。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
@@ -33,13 +33,13 @@ Paris·Qian Sen</description>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/blog/2016/03/16/frontend-learning-notes/</guid>
-      <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
-Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
-for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
+      <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.&lt;br /&gt;
+Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect&lt;br /&gt;
+for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a&lt;br /&gt;
 oppertunaty to bring my frontend skill sets to another level.&lt;/p&gt;
 
-&lt;p&gt;So I created the stupid &lt;a href=&#34;github.com/qiansen1386/hugo-polygon-theme&#34;&gt;hugo-polygon-theme&lt;/a&gt;. I have got to say, the name is pretty arbitrary.
-Even worse, I don&amp;rsquo;t have a clue even after I started. I start to realised that I need to have more input before I make an output.
+&lt;p&gt;So I created the stupid &lt;a href=&#34;github.com/qiansen1386/hugo-polygon-theme&#34; target=&#34;_blank&#34;&gt;hugo-polygon-theme&lt;/a&gt;. I have got to say, the name is pretty arbitrary.&lt;br /&gt;
+Even worse, I don&amp;rsquo;t have a clue even after I started. I start to realised that I need to have more input before I make an output.&lt;br /&gt;
 Hence, I started my long-term(supposed to be) voyage. Here are the resources that absolutely worth more attention.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -49,33 +49,33 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;p&gt;HTML5:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md&#34;&gt;H5 boilerplate Docs&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34; title=&#34;H5 boilerplate my custom build (a minimized version)&#34;&gt;H5 boilerplate my custom build (a minimized version)&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34; target=&#34;_blank&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md&#34; target=&#34;_blank&#34;&gt;H5 boilerplate Docs&lt;/a&gt; (Html5 boilerplate)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34; title=&#34;H5 boilerplate my custom build (a minimized version)&#34; target=&#34;_blank&#34;&gt;H5 boilerplate my custom build (a minimized version)&lt;/a&gt; (Html5 boilerplate)&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;CSS:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://davidtheclark.com/excited-about-postcss/&#34;&gt;Excited about postcss &amp;ndash; DAVID CLARK&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://benfrain.com/breaking-up-with-sass-postcss/&#34;&gt;Breaking up with Sass: it’s not you, it’s me &amp;ndash; Ben Frain&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://twin.github.io/css-preprocessing-drama/&#34;&gt;CSS Preprocessing Drama&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ai/about-postcss/blob/master/speech.md&#34;&gt;Speech of &amp;laquo;About-postcss&amp;raquo; &amp;ndash; AI&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ashleynolan.co.uk/blog/postcss-a-review&#34;&gt;PostCSS – Sass Killer or Preprocessing Pretender?&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://learnlayout.com/&#34;&gt;Learn CSS Layout(I18N-provided)&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://itmyhome.gitbooks.io/css/content/&#34;&gt;CSS 编码规范&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34; target=&#34;_blank&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidtheclark.com/excited-about-postcss/&#34; target=&#34;_blank&#34;&gt;Excited about postcss &amp;ndash; DAVID CLARK&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://benfrain.com/breaking-up-with-sass-postcss/&#34; target=&#34;_blank&#34;&gt;Breaking up with Sass: it’s not you, it’s me &amp;ndash; Ben Frain&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://twin.github.io/css-preprocessing-drama/&#34; target=&#34;_blank&#34;&gt;CSS Preprocessing Drama&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ai/about-postcss/blob/master/speech.md&#34; target=&#34;_blank&#34;&gt;Speech of &amp;ldquo;About-postcss&amp;rdquo; &amp;ndash; AI&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ashleynolan.co.uk/blog/postcss-a-review&#34; target=&#34;_blank&#34;&gt;PostCSS – Sass Killer or Preprocessing Pretender?&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnlayout.com/&#34; target=&#34;_blank&#34;&gt;Learn CSS Layout(I18N-provided)&lt;/a&gt; (CSS fundamentals)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itmyhome.gitbooks.io/css/content/&#34; target=&#34;_blank&#34;&gt;CSS 编码规范&lt;/a&gt; (CSS fundamentals)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34; target=&#34;_blank&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;JS:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/TypeScript&#34;&gt;TypeScript &amp;ndash;维基百科&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html&#34;&gt;Typescript 初体验&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhongsp.gitbooks.io/typescript-handbook/content/&#34;&gt;TypeScript Handbook（中文版）&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.75team.com/archives/882&#34;&gt;[译]神马是AMD, CommonJS, UMD?&lt;/a&gt; (Translation of &amp;laquo;What Is AMD, CommonJS, and UMD?&amp;raquo;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34; target=&#34;_blank&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/TypeScript&#34; target=&#34;_blank&#34;&gt;TypeScript &amp;ndash;维基百科&lt;/a&gt; (TypeScript)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html&#34; target=&#34;_blank&#34;&gt;Typescript 初体验&lt;/a&gt; (TypeScript)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhongsp.gitbooks.io/typescript-handbook/content/&#34; target=&#34;_blank&#34;&gt;TypeScript Handbook（中文版）&lt;/a&gt; (TypeScript)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.75team.com/archives/882&#34; target=&#34;_blank&#34;&gt;[译]神马是AMD, CommonJS, UMD?&lt;/a&gt; (Translation of &amp;ldquo;What Is AMD, CommonJS, and UMD?&amp;rdquo;)&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -86,13 +86,13 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
       <pubDate>Mon, 14 Mar 2016 04:33:40 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/blog/2016/03/14/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E4%B8%8D%E4%BD%9C%E6%81%B6%E5%AE%A3%E8%A8%80/</guid>
-      <description>&lt;p&gt;读很火的微信贴&lt;a href=&#34;http://finance.ce.cn/rolling/201603/14/t20160314_9475267.shtml&#34;&gt;为什么谷歌越来越牛逼，而百度却沦为江湖骗子？答案在这里&lt;/a&gt;有感&lt;/p&gt;
+      <description>&lt;p&gt;读很火的微信贴&lt;a href=&#34;http://finance.ce.cn/rolling/201603/14/t20160314_9475267.shtml&#34; target=&#34;_blank&#34;&gt;为什么谷歌越来越牛逼，而百度却沦为江湖骗子？答案在这里&lt;/a&gt;有感&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/1759658/13750388/38750806-ea40-11e5-9007-b4e619251292.jpeg&#34; alt=&#34;w020160314481863857100&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;我愿做一个有信仰的无神论者。
-我坚信自由主义，利己主义与实用主义可以和正直善良的价值观完美契合。
-恻隐之心难道不是人之常情？我愿用一生去证明唯利是图根本就是短视，绝不是利己主义的本意。无需神佛，人性本身便是光辉。
+&lt;p&gt;我愿做一个有信仰的无神论者。&lt;br /&gt;
+我坚信自由主义，利己主义与实用主义可以和正直善良的价值观完美契合。&lt;br /&gt;
+恻隐之心难道不是人之常情？我愿用一生去证明唯利是图根本就是短视，绝不是利己主义的本意。无需神佛，人性本身便是光辉。&lt;br /&gt;
 人会从本心出发自然而然的造福社会，因此自由必须是善良的基础。而强制的善良是伪善，强制的功利主义是以善为名的肆无忌惮。&lt;/p&gt;
 </description>
     </item>
@@ -108,13 +108,13 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;blockquote&gt;
 &lt;p&gt;说明：转载自己的知乎答案。没办法写得太好了，让人自我陶醉。装逼一旦开始，要怎么才能停止……&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;问：&lt;strong&gt;「&lt;a href=&#34;https://www.zhihu.com/question/40868797/answer/88604865?group_id=690384002342752256&#34; target=&#34;_blank&#34;&gt;知乎：使用命令行真的比使用可视化界面好吗？&lt;/a&gt;」&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;问：&lt;strong&gt;「&lt;a href=&#34;https://www.zhihu.com/question/40868797/answer/88604865?group_id=690384002342752256&#34; target=&#34;_blank&#34;&gt;知乎：使用命令行真的比使用可视化界面好吗？&lt;/a&gt;」&lt;/strong&gt;&lt;br&gt;&lt;br /&gt;
 为什么好多人都喜欢使用命令行呢？ 可视化界面不是计算机史上的进步吗？&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;看情况，但是具体到IT领域，很多种情况下敲代码比可视化强得多。以下详谈&lt;/p&gt;
 
-&lt;p&gt;首先，命令行肯定不是绝对的好啊。对于普罗大众而言，显然可视化才是必须的。
+&lt;p&gt;首先，命令行肯定不是绝对的好啊。对于普罗大众而言，显然可视化才是必须的。&lt;br /&gt;
 比如游戏，文档编辑，数据分析，尤其是对于*不需要培训*的普通用户来说GUI必须是刚需……GUI是计算机普及的一大革命浪潮。乔总怎么会错呢。只是世事无绝对，命令行有命令行的好。&lt;/p&gt;
 
 &lt;h3 id=&#34;那么什么情况下应该用命令行呢-命令行的优点有哪些呢&#34;&gt;那么什么情况下应该用命令行呢？命令行的优点有哪些呢？&lt;/h3&gt;
@@ -122,12 +122,12 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;h4 id=&#34;1-效率-效率-效率-还是tmd效率&#34;&gt;1. 效率，效率，效率，还是tmd效率&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;1‘ 把某个目录下的所有*.raw文件复制到另一个文件夹，如果当前目录下鱼龙混杂，你怎么处理呢？
-用命令行调用 robocopy / rsync，加特定参数就可以很方便得进行处理，这边复制完了，那边文件还没挑完呢。&lt;/li&gt;
-&lt;li&gt;2’ 通用的代码，我可以把指令写成脚本，下次直接执行就好了。但是GUI你要一遍一遍地重复，没有任何可以继承沉淀下来的东西&lt;/li&gt;
-&lt;li&gt;3‘ 在Linux下命令行可以操作系统的几乎任何组件，Windows略差，但最近进步也很明显。反之图形界面的话，你需要任务管理器管理进程，用“服务”工具管理服务，用计划任务管理定时任务。要顺利完成部署任务，你要同时开多少软件呢？翻来覆去得点来点去你不烦么？另外，下次部署你又要重做一遍，请参考上一小条。&lt;/li&gt;
-&lt;li&gt;4‘ 一个不带界面的Linux发行版，连服务器数据库应用程序等等，全部加载到内存可能只有一两百兆。一个入门级的VPS就搞定了。但，如果加上GUI，随便一个GUI都要100M到500M之间，服务器主业是用来服务用户的，不是服务运维的。你可以用命令行做到同样的事，多浪费几倍的资源，用户却得不到任何显著地好处，这种事企业是不会做的。&lt;/li&gt;
-&lt;li&gt;5’ etc.&lt;/li&gt;
+&lt;li&gt;1‘ 把某个目录下的所有*.raw文件复制到另一个文件夹，如果当前目录下鱼龙混杂，你怎么处理呢？&lt;br /&gt;
+用命令行调用 robocopy / rsync，加特定参数就可以很方便得进行处理，这边复制完了，那边文件还没挑完呢。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;2’ 通用的代码，我可以把指令写成脚本，下次直接执行就好了。但是GUI你要一遍一遍地重复，没有任何可以继承沉淀下来的东西&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;3‘ 在Linux下命令行可以操作系统的几乎任何组件，Windows略差，但最近进步也很明显。反之图形界面的话，你需要任务管理器管理进程，用“服务”工具管理服务，用计划任务管理定时任务。要顺利完成部署任务，你要同时开多少软件呢？翻来覆去得点来点去你不烦么？另外，下次部署你又要重做一遍，请参考上一小条。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;4‘ 一个不带界面的Linux发行版，连服务器数据库应用程序等等，全部加载到内存可能只有一两百兆。一个入门级的VPS就搞定了。但，如果加上GUI，随便一个GUI都要100M到500M之间，服务器主业是用来服务用户的，不是服务运维的。你可以用命令行做到同样的事，多浪费几倍的资源，用户却得不到任何显著地好处，这种事企业是不会做的。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;5’ etc.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;2-稳定-可移植性强&#34;&gt;2. 稳定-&amp;gt;可移植性强&lt;/h4&gt;
@@ -142,7 +142,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 
 &lt;p&gt;设计UI是需要成本的，调整UI更是件费心费力的工作。而程序猿写程序顺带开发一套命令行界面很轻松，UX的设计简单很多，也不需要太多美学素养。这一点在互联网行业更是及其重要的。用一个shell界面，开发测试运维压测部署全部都能做，而在Web界面里模仿Windows界面比模仿控制台界面要难一万倍。&lt;/p&gt;
 
-&lt;p&gt;你们看这些是不是已经很多了，但是其实还有一个很重要的内容没有讲到呢！那就是&lt;strong&gt;DevOps&lt;/strong&gt;！用脚本批量化自动化地同时处理海量服务器节点，部署运维，错误回滚，平稳降级，弹性扩容等等领域，如果没有脚本和命令行是不可能做到的。计算机的发展趋势就是把“人”的因素从机器集群中剥离出去，从而极大得解放生产力，获得更稳定的业务结构。
+&lt;p&gt;你们看这些是不是已经很多了，但是其实还有一个很重要的内容没有讲到呢！那就是&lt;strong&gt;DevOps&lt;/strong&gt;！用脚本批量化自动化地同时处理海量服务器节点，部署运维，错误回滚，平稳降级，弹性扩容等等领域，如果没有脚本和命令行是不可能做到的。计算机的发展趋势就是把“人”的因素从机器集群中剥离出去，从而极大得解放生产力，获得更稳定的业务结构。&lt;br /&gt;
 &lt;strong&gt;但是命令行对新手不太友好，能否熟练应用命令行算是一个高手和新手能显著拉开效率差距的点。&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
@@ -163,7 +163,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/zvLu7re5/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.
+&lt;p&gt;What is the O? Actually it&amp;rsquo;s still almost the same, the performance and amount of code have improved though.&lt;br /&gt;
 What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt;/p&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/cvasL16t/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; 
@@ -184,12 +184,12 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
 
 &lt;h2 id=&#34;年轻人最不缺的就是时间-么&#34;&gt;年轻人最不缺的就是时间……么？&lt;/h2&gt;
 
-&lt;p&gt;2015 年跨年之际，知名文化科普读书卖书财经评论创业指导粉丝经营活动策划品牌构建公司——罗辑思维，举办了一场盛大的跨年演讲《时间的朋友》。
+&lt;p&gt;2015 年跨年之际，知名文化科普读书卖书财经评论创业指导粉丝经营活动策划品牌构建公司——罗辑思维，举办了一场盛大的跨年演讲《时间的朋友》。&lt;br /&gt;
 其中罗振宇分享自己年过 40 的人生信念的时候说了以下两句台词&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;大学生为什么就不能去创业？他们本来就是无产者，成本如此之低，为什么不试试？年轻人最能浪费的就是时间。&lt;/li&gt;
-&lt;li&gt;我写的东西一定有意思么？未见得吧。我拼的就是早上六点我不睡觉，比我聪明有天赋的媒体人还在睡觉。我的优势就是我岁数越大，我的觉就越少。（有删改）&lt;/li&gt;
+&lt;li&gt;大学生为什么就不能去创业？他们本来就是无产者，成本如此之低，为什么不试试？年轻人最能浪费的就是时间。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;我写的东西一定有意思么？未见得吧。我拼的就是早上六点我不睡觉，比我聪明有天赋的媒体人还在睡觉。我的优势就是我岁数越大，我的觉就越少。（有删改）&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;这尼玛对年轻人好不公平23333&lt;/p&gt;
@@ -207,8 +207,8 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
 &lt;p&gt;几天前，雷军在公司内部年会中谈了以下内容，如晨钟暮鼓振聋发聩：&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;年初我们定了一个8000万台的销售预期，面对这样的市场形势，不知不觉我们把预期当成了任务。我们所有的工作，都不自觉地围绕这个任务来展开，每天都在想怎么完成。在这样的压力下，我们的动作变形了，每个人脸上都一点一点失去了笑容。
-。。。省略部分内容
+&lt;p&gt;年初我们定了一个8000万台的销售预期，面对这样的市场形势，不知不觉我们把预期当成了任务。我们所有的工作，都不自觉地围绕这个任务来展开，每天都在想怎么完成。在这样的压力下，我们的动作变形了，每个人脸上都一点一点失去了笑容。&lt;br /&gt;
+。。。省略部分内容&lt;br /&gt;
 所以我们定下了2016年最重要的战略：开心就好。&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -242,19 +242,19 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
       <pubDate>Mon, 01 Feb 2016 06:53:50 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/blog/2016/02/01/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E4%BA%86/</guid>
-      <description>&lt;p&gt;成功啦，哈哈哈。
-现在只要&lt;code&gt;push&lt;/code&gt;到&lt;code&gt;source&lt;/code&gt;分支就能实时构建并推送到&lt;code&gt;master&lt;/code&gt;。大家可以看我的 &lt;a href=&#34;https://github.com/qiansen1386/qiansen1386.github.io&#34;&gt;github repo&lt;/a&gt;
-具体设置请参考下面的参考链接，Wercker 并不会很难，还是挺好理解的。
+      <description>&lt;p&gt;成功啦，哈哈哈。&lt;br /&gt;
+现在只要&lt;code&gt;push&lt;/code&gt;到&lt;code&gt;source&lt;/code&gt;分支就能实时构建并推送到&lt;code&gt;master&lt;/code&gt;。大家可以看我的 &lt;a href=&#34;https://github.com/qiansen1386/qiansen1386.github.io&#34; target=&#34;_blank&#34;&gt;github repo&lt;/a&gt;&lt;br /&gt;
+具体设置请参考下面的参考链接，Wercker 并不会很难，还是挺好理解的。&lt;br /&gt;
 Wercker 也真的很好用，运用 docker 技术的自动化产品不要太方便，真的可以不用 jenkins 了。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;主要参考了：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://fatestigma.github.io/2016/01/29/%E4%BD%BF%E7%94%A8-wercker-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&#34;&gt;使用 Wercker 自动化部署静态博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/automated-deployments/&#34;&gt;【官方】Automated deployments with Wercker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;【coderzh CoderZh Blog】使用hugo搭建个人博客站点&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kaichu.io/2015/07/my-first-post/&#34;&gt;【kaichu.io】在 Github Pages 建立 Hugo 靜態網站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fatestigma.github.io/2016/01/29/%E4%BD%BF%E7%94%A8-wercker-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&#34; target=&#34;_blank&#34;&gt;使用 Wercker 自动化部署静态博客&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/automated-deployments/&#34; target=&#34;_blank&#34;&gt;【官方】Automated deployments with Wercker&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34; target=&#34;_blank&#34;&gt;【coderzh CoderZh Blog】使用hugo搭建个人博客站点&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kaichu.io/2015/07/my-first-post/&#34; target=&#34;_blank&#34;&gt;【kaichu.io】在 Github Pages 建立 Hugo 靜態網站&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
