@@ -29,8 +29,18 @@ disqusShortname = "qiansen1386"
 
 [taxonomies]
     # Optional. Use if you want tags and lists.
+    tag = "tags"
     category = "categories"
-
+       
+[blackfriday]
+    angledQuotes = false
+    fractions = false
+    hrefTargetBlank=true
+    plainIDAnchors = true
+    skipHtml=true
+    skipStyle=true
+    toc=true
+    extensions = ["fencedCode","strikethrough","hardLineBreak","noIntraEmphasis",]
 #
 # All parameters below here are optional and can be mixed and matched.
 #
@@ -86,13 +96,3 @@ disqusShortname = "qiansen1386"
     rss = true  # switch to true to enable RSS icon link
     flattr = "qiansen1386"  # populate with your flattr uid
     description = "技术分享，人生感悟，政治策论等等。"
-    
-[blackfriday]
-    angledQuotes = true
-    fractions = false
-    hrefTargetBlank=true
-    plainIDAnchors = true
-    skipHtml=true
-    skipStyle=true
-    toc=true
-    extensions = ["fencedCode","STRIKETHROUGH","hardLineBreak","noIntraEmphasis",]
