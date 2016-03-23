@@ -31,3 +31,7 @@ h5,
 h6 {
   font-weight: normal;
 }
+
+.sidebar {
+  font-size: 0.9rem;
+}
