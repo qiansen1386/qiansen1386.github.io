@@ -5,7 +5,7 @@
         <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarHash }}?s=150"
              alt="gravatar" title="{{ .Site.Author.name }}">
       {{ end }}
-      <h2>{{ .Site.Author.name }}</h2>
+      {{ with .Site.Author.name }}<h2>{{ . | markdownify }}</h2>{{ end }}
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
     </div>
 

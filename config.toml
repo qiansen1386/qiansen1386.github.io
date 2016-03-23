@@ -20,7 +20,7 @@ theme = "hyde-x"
 disqusShortname = "qiansen1386"
 
 [author]
-    name = "东方孤思子\n\nParis Qian Sen"
+    name = "东方孤思子<br>Paris Qian Sen"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
