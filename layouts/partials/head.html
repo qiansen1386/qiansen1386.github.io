@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
+  <title>{{ .Title }}</title>
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/css/poole.css" | absURL }}">
   <link rel="stylesheet" href="{{ "/css/hyde.css" | absURL }}">
@@ -21,9 +21,7 @@
 
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}
-  {{ $authorName := .Site.Author.name }}
-  {{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />{{ end }}
-
+  {{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }}" />{{ end }}
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">
   <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
   {{ with .Site.Params.googleAnalytics }}
