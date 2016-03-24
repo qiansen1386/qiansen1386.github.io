@@ -18,10 +18,19 @@ Paris Qian Sen is a Chinese Backend Web Developer who currently live in Singapor
 * A Hugo-Site-Generator user(Obviously)
  
 
-## Achievements ##
+## MyCareer
 
-Timestamp|What happened
-
+Timestamp   | 
+------------| ------------
+2014        | FYP => eCommerce Ice-Cream website(Highlights:Yii + PayPal)
+2014-April  | Graduate From Singapore Polytechnic
+2014        | Craft a light-weight Yii-powered ERP(less features than a professional ERP)
+2014        | Learn Android development and created some side proejcts
+2014        | Found [Yii2-Chinesization](https://github.com/yii2-chinesization) program
+2015        | First Full-time Job as .Net developer
+2015        | Promote Git and best OOP practices within the team
+Mid 2015    | Lead the .Net Team
+2015~2016 | Refactor some imporatant features to improve QPS
 
 ## About this Site
 
