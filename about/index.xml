@@ -34,9 +34,63 @@ Paris·Qian Sen</description>
 &lt;li&gt;A Hugo-Site-Generator user(Obviously)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;achievements&#34;&gt;Achievements&lt;/h2&gt;
+&lt;h2 id=&#34;mycareer&#34;&gt;MyCareer&lt;/h2&gt;
 
-&lt;p&gt;Timestamp|What happened&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Timestamp&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;FYP =&amp;gt; eCommerce Ice-Cream website(Highlights:Yii + PayPal)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014-April&lt;/td&gt;
+&lt;td&gt;Graduate From Singapore Polytechnic&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;Craft a light-weight Yii-powered ERP(less features than a professional ERP)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;Learn Android development and created some side proejcts&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;Found &lt;a href=&#34;https://github.com/yii2-chinesization&#34; target=&#34;_blank&#34;&gt;Yii2-Chinesization&lt;/a&gt; program&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2015&lt;/td&gt;
+&lt;td&gt;First Full-time Job as .Net developer&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2015&lt;/td&gt;
+&lt;td&gt;Promote Git and best OOP practices within the team&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Mid 2015&lt;/td&gt;
+&lt;td&gt;Lead the .Net Team&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2015~2016&lt;/td&gt;
+&lt;td&gt;Refactor some imporatant features to improve QPS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&#34;about-this-site&#34;&gt;About this Site&lt;/h2&gt;
 
