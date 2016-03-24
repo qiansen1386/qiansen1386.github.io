@@ -18,7 +18,7 @@ Paris Qian Sen is a Chinese Backend Web Developer who currently live in Singapor
 * A Hugo-Site-Generator user(Obviously)
  
 
-## MyCareer
+## My Career
 
 Timestamp   | 
 ------------| ------------
@@ -36,7 +36,7 @@ Mid 2015    | Lead the .Net Team
 
 This website is proudly build on top of [Hugo Static Site Generatior](https://gohugo.io/)
 
-Projects involved:
+### Projects involved:
 
 * [Hugo](https://gohugo.io/)
 * [hugo-hype-x-theme](https://github.com/zyro/hyde-x)

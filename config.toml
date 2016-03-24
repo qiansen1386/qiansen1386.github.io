@@ -72,7 +72,7 @@ disqusShortname = "qiansen1386"
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-    tagline = "- Profesional Coding\n- Simple Living\n- Creative Thinking"
+    tagline = "Profesional Coding<br>Simple Living<br>Creative Thinking"
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Blog".
