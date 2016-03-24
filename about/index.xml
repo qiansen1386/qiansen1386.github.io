@@ -34,7 +34,7 @@ Paris·Qian Sen</description>
 &lt;li&gt;A Hugo-Site-Generator user(Obviously)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mycareer&#34;&gt;MyCareer&lt;/h2&gt;
+&lt;h2 id=&#34;my-career&#34;&gt;My Career&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -96,7 +96,7 @@ Paris·Qian Sen</description>
 
 &lt;p&gt;This website is proudly build on top of &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo Static Site Generatior&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Projects involved:&lt;/p&gt;
+&lt;h3 id=&#34;projects-involved&#34;&gt;Projects involved:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
