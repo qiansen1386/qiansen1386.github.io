@@ -35,3 +35,8 @@ h6 {
 .sidebar {
   font-size: 0.9rem;
 }
+
+/*To fix thd error caused by pre tag*/
+.hljs {
+  margin:-1rem;
+}
