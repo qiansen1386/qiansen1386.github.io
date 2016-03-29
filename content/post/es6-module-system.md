@@ -1,8 +1,7 @@
 +++
-categories = [""]
+categories = ["开发","中文"]
 date = "2016-03-28T10:14:24Z"
-description = ""
-keywords = []
+keywords = ["NodeJs","ES6","前端","frontend","模块"]
 title = "[转] ES6 的模块系统（附CommonJS & AMD 相关）"
 
 +++
