@@ -9,7 +9,7 @@ hasCJKLanguage=true # if true, auto-detect Chinese/Japanese/Korean Languages in 
 MetaDataFormat = "toml"
 buildDrafts = false
 pygmentsUseClasses=true
-pygmentsStyle="monokai"
+pygmentsStyle="railscasts"
 	# URLs
 canonifyurls = false # False => Relative URL
 uglyurls = false # No XXX.html ending but less complex, come on you are a computer..
@@ -65,7 +65,7 @@ disqusShortname = "qiansen1386"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
-    highlight = "sunburst"
+    highlight = "railscasts"
 
     # Optional additional custom CSS file URL, will override other styles.
     #customCSS = ""
