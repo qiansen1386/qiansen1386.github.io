@@ -13,10 +13,10 @@ Paris·Qian Sen</description>
     
     <item>
       <title>Meg Jay: Why 30 is not the new 20</title>
-      <link>https://qiansen1386.github.io/p/2016-03-17/why-30-is-not-the-new-20.html</link>
+      <link>https://qiansen1386.github.io/p/2016-03-17/why-30-is-not-the-new-20</link>
       <pubDate>Thu, 17 Mar 2016 05:52:09 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/p/2016-03-17/why-30-is-not-the-new-20.html</guid>
+      <guid>https://qiansen1386.github.io/p/2016-03-17/why-30-is-not-the-new-20</guid>
       <description>&lt;p&gt;YouTube 好视频分享。（原视频是李开复（Kaifu Lee）分享在Twitter的。）
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/-GG1rYgGJao&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 
@@ -29,10 +29,10 @@ Paris·Qian Sen</description>
     
     <item>
       <title>Frontend Learning Notes</title>
-      <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note.html</link>
+      <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</link>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note.html</guid>
+      <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</guid>
       <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
 Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
 for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
@@ -82,10 +82,10 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
     
     <item>
       <title>Recursion-Demo in TypeScript &amp; How it get better</title>
-      <link>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript.html</link>
+      <link>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript</link>
       <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript.html</guid>
+      <guid>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript</guid>
       <description>&lt;p&gt;I wrote this to practice of TypeScript and also to demonstrate recursion to my friend. This is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time. Basically is about to keep removing all the elements whichever index is odd from the array, till there is only one left, and return the index of the survivor. Input the &lt;strong&gt;N&lt;/strong&gt; of elements and output the index &lt;strong&gt;X&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
