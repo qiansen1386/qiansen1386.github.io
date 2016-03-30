@@ -16,8 +16,14 @@
   {{ with .Site.Params.customCSS }}<link rel="stylesheet" href="{{ . }}">{{ end }}
 
   <!-- Icons -->
+  {{ with .Site.Params.gravatarHash }}
+  <!-- Inspired by https://gist.github.com/daankortenbach/1322800 -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gravatar.com/avatar/{{ . }}?s=144">
+  <link rel="shortcut icon" href="http://www.gravatar.com/avatar/{{ . }}?s=16" />
+  {{else}}
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
   <link href="{{ "/favicon.png" | absURL }}" rel="icon">
+  {{ end}}
 
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}
