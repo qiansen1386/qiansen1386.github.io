@@ -6,7 +6,19 @@ Paris Qian Sen
 This is my personal technical blog build on top of GitHub page
 
 Projects involved:
+------------------
 
 * [Hugo](https://gohugo.io/)
 * [hugo-steam-theme](https://github.com/digitalcraftsman/hugo-steam-theme)
 * [Wercker](wercker.com)
+
+Customization
+-------------
+
+Need to run
+
+```shell
+sudo pip install pygments-style-railscasts
+```
+
+if you use my theme and disabled `highlights.js` in `config.toml`.

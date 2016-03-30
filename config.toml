@@ -64,7 +64,7 @@ disqusShortname = "qiansen1386"
     theme = "theme-base-08"
 
     # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
+    # Check the static/css/highlight directory for options.(Nah~ I use CDN)
     highlight = "railscasts"
 
     # Optional additional custom CSS file URL, will override other styles.
