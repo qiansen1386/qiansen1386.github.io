@@ -25,7 +25,7 @@ disqusShortname = "qiansen1386"
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
     # The format shown here is the same one Jekyll/Octopress uses by default.
-    post = "/p/:year-:month-:day/:filename"
+    post = "/p/:year-:month-:day/:filename.html"
 
 [taxonomies]
     # Optional. Use if you want tags and lists.
