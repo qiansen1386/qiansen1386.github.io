@@ -74,6 +74,7 @@
 			max: 20000
 		};
 	the_canvas.id = canvas_id;
+	the_canvas.className+="accelerated";
 	the_canvas.style.cssText = "position:fixed;top:0;left:0;z-index:" + config.z + ";opacity:" + config.o;
 	get_by_tagname("body")[0].appendChild(the_canvas);
 	//初始化画布大小
