@@ -8,8 +8,101 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Mar 2016 10:14:24 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Apr 2016 16:40:00 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>frontend learning note 2</title>
+      <link>https://qiansen1386.github.io/p/2016-04-03/frontend-learning-note-2</link>
+      <pubDate>Sun, 03 Apr 2016 16:40:00 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/p/2016-04-03/frontend-learning-note-2</guid>
+      <description>
+
+&lt;h2 id=&#34;my-confession&#34;&gt;My Confession&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The ignorant person fears nothing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I gotta say that I was way too over ambitious about the frontend stack. When companys like Google and Mozilla start to push the standardization of new innovations of the Web. The frontend standards keeps changing everyday, so does the Toolchain. Chasing the tool could be harmful, so I realised a realistic learning plan could be more benificial for me.
+After a few days of extensive research, my mind changed. The more I learn, I become less bold, so that I become more and more eager for a shorter learning curve. Compareing with &amp;ldquo;Flawless on paper&amp;rdquo;, I prefer a more practical stack.
+Here is what I learnt:&lt;/p&gt;
+
+&lt;h3 id=&#34;postcss-scss&#34;&gt;&lt;code&gt;PostCSS&lt;/code&gt; =&amp;gt; &lt;code&gt;SCSS&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;I know the PostCSS is the future, and CssNext/preCss plugins appears like a great replacement of Scss. Also according to Boostrap &amp;amp; many others SCSS is way better than LESS. But then I find that if I want to custom and build Boostrap, I have to import SCSS anyway. So SCSS+Autoprefixer beat my original ideal buy ignorant plan.&lt;/p&gt;
+
+&lt;h3 id=&#34;build-tool-module-bundler&#34;&gt;Build Tool &amp;amp; Module Bundler&lt;/h3&gt;
+
+&lt;p&gt;There is a little bit backgound I have learnt.
+- &lt;a href=&#34;http://gulpjs.com/&#34; target=&#34;_blank&#34;&gt;gulp&lt;/a&gt; beats &lt;a href=&#34;http://gruntjs.com/&#34; target=&#34;_blank&#34;&gt;grunt&lt;/a&gt;.
+- &lt;a href=&#34;https://webpack.github.io&#34; target=&#34;_blank&#34;&gt;Webpack&lt;/a&gt; beats &lt;a href=&#34;http://gbrowserify.org&#34; target=&#34;_blank&#34;&gt;browserify&lt;/a&gt; beats &lt;a href=&#34;http://grequirejs.org&#34; target=&#34;_blank&#34;&gt;RequireJS&lt;/a&gt;.
+- With the viral of &lt;code&gt;NodeJS&lt;/code&gt;, &lt;code&gt;CommonJs&lt;/code&gt; becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover &lt;code&gt;ES6 module&lt;/code&gt; is compatiable with it, so it is also future-proof.
+- Webpack is capable to do some jobs of gulp.&lt;/p&gt;
+
+&lt;p&gt;I was thinking of using gulp + webpack. But since nowadays, webpack have plenty of plugins and loaders, and most importantly, I found at least 2 boostrap-loaders which claims that they can process Boostrap v4. I can simply say good bye to Gulp. &lt;em&gt;I might meet you again, don&amp;rsquo;t know why, don&amp;rsquo;t know when, but I might meet you again some other day~&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Webpack can minify Js, provide source map for dev stage, build SCSS, build typescript, build Vue/JSX, build Boostrap, include jQuery support without expose global access to it, process PostCSS(Autoprefixer), custom the dist path, watch the dev folder, live-reload. What else do you need? What else do you need? What else do you need?&lt;/p&gt;
+
+&lt;h3 id=&#34;keep-practicing&#34;&gt;Keep Practicing&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is the only way to reveal the imperfection of your tool and to pursue perfection of understanding at the same time!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Before practise, you won&amp;rsquo;t know if the tool is gonna suit your needs.
+That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt;em&gt;Convention over Configuation&lt;/em&gt;&amp;rdquo;, so it has to sacrifice &amp;ldquo;&lt;em&gt;Explicit is better than implicit&lt;/em&gt;&amp;ldquo;&lt;small&gt;*Refering to &lt;a href=&#34;https://www.python.org/dev/peps/pep-0020/&#34; target=&#34;_blank&#34;&gt;The Zen of Python&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Before practise, you won&amp;rsquo;t know NodeJS have many dependency issue with Windows platform, so the &lt;code&gt;Vagrant&lt;/code&gt; become mandatory! no longer &lt;em&gt;Good to have&lt;/em&gt;. That is a good thing also, If I could compose my &lt;code&gt;Vagrantfile&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;again-references&#34;&gt;Again, references&lt;/h2&gt;
+
+&lt;p&gt;NodeJS:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/pU9Q6oiQNd0&#34; target=&#34;_blank&#34;&gt;What is Node.js Exactly? - a beginners introduction to Nodejs(YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/HkFlM73G-hk?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f&#34; target=&#34;_blank&#34;&gt;Modular Javascript - Javascript Tutorial on the Object Literal Pattern(YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WebPack:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/TaWKUpahFZM&#34; target=&#34;_blank&#34;&gt;Getting Started with webpack(YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/9kJVYpOqcVU&#34; target=&#34;_blank&#34;&gt;Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool(YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/vajoy/p/4650467.html&#34; target=&#34;_blank&#34;&gt;一小时包教会 —— webpack 入门指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zhuanlan.zhihu.com/p/20367175&#34; target=&#34;_blank&#34;&gt;Webpack傻瓜式指南（一）- 张轩(知乎)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zhuanlan.zhihu.com/p/20367175&#34; target=&#34;_blank&#34;&gt;Webpack傻瓜指南（二）开发和部署技巧- 张轩(知乎)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vue:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://vuejs.org/guide/&#34; target=&#34;_blank&#34;&gt;Getting Started - vue.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vuejs.org.cn/guide/&#34; target=&#34;_blank&#34;&gt;VueJs 官方指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vuex.vuejs.org/zh-cn/quickstart.html&#34; target=&#34;_blank&#34;&gt;Vuex 官方指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://router.vuejs.org/zh-cn/basic.html&#34; target=&#34;_blank&#34;&gt;Vue-router 官方指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sally-xiao.gitbooks.io/book/content/index.html&#34; target=&#34;_blank&#34;&gt;如何用Vue.js来搭建一个简易的APP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vagrant:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vagrantup.com/docs/&#34; target=&#34;_blank&#34;&gt;VAGRANT DOCUMENTATION&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Page Load Effect:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://javascript.nwbox.com/ContentLoaded/&#34; target=&#34;_blank&#34;&gt;ContentLoaded(2010)&lt;/a&gt; A page load library,used by webpack.github.io&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://codyhouse.co/gem/animated-page-transition/&#34; target=&#34;_blank&#34;&gt;Animated page trasition&lt;/a&gt; Worth investigation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/browserstate/history.js&#34; target=&#34;_blank&#34;&gt;History.js&lt;/a&gt; Need no introduction&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fasw.ws/faswwp/non-jquery-page-transitions-lightweight/&#34; target=&#34;_blank&#34;&gt;Non-Jquery Page Transitions lightweight&lt;/a&gt; A great proof of concept&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://turbo-react.herokuapp.com/&#34; target=&#34;_blank&#34;&gt;TurboReact&lt;/a&gt; A react based implementation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/turbolinks/turbolinks&#34; target=&#34;_blank&#34;&gt;Turbolinks&lt;/a&gt; extraction of above solution, the best library to use by far&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>[转] ES6 的模块系统（附CommonJS &amp; AMD 相关）</title>
