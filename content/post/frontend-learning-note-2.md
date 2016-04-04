@@ -2,14 +2,14 @@
 categories=["开发", "dev", "English", "中文"]
 tags=["前端","frontend","webpack","PostCSS"]
 date = "2016-04-03T16:40:00Z"
-title = "frontend learning note 2"
+title = "Frontend Learning Notes 2"
 
 +++
 
 My Confession
 ---------
 
-> The ignorant person fears nothing.
+> Only the ignorant person fears nothing.
 
 I gotta say that I was way too over ambitious about the frontend stack. When companys like Google and Mozilla start to push the standardization of new innovations of the Web. The frontend standards keeps changing everyday, so does the Toolchain. Chasing the tool could be harmful, so I realised a realistic learning plan could be more benificial for me.
 After a few days of extensive research, my mind changed. The more I learn, I become less bold, so that I become more and more eager for a shorter learning curve. Compareing with "Flawless on paper", I prefer a more practical stack.
