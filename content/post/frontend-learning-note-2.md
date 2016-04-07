@@ -39,7 +39,9 @@ Webpack can minify Js, provide source map for dev stage, build SCSS, build types
 Before practise, you won't know if the tool is gonna suit your needs. 
 That is exactly why I dropped the semantic UI, because it follows "*Convention over Configuation*", so it has to sacrifice "*Explicit is better than implicit*"<small>\*Refering to [The Zen of Python](https://www.python.org/dev/peps/pep-0020/)</small>
 
-Before practise, you won't know NodeJS have many dependency issue with Windows platform, so the `Vagrant` become mandatory! no longer *Good to have*. That is a good thing also, If I could compose my `Vagrantfile`
+Before practise, you won't know NodeJS have many dependency issue with Windows platform, so the `Vagrant` become mandatory! no longer *Good to have*. That is a good thing also, If I could compose my `Vagrantfile`.
+
+> Nevertheless, this is absolutely worth our attention. However, it is neither stable nor mature. https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/
 
 
 Again, references
@@ -68,7 +70,10 @@ Vue:
  
 Vagrant:
 
+- [Ruby Programming in One Video(Youtube)](https://youtu.be/Dji9ALCgfpM): In one video series is great for syntax-learning.
 - [VAGRANT DOCUMENTATION](https://www.vagrantup.com/docs/)
+- [vagrant-node-env(Github)](https://github.com/drmyersii/vagrant-node-env)
+- [laravel/homestead(Github)](https://github.com/laravel/homestead)
 
 Page Load Effect:
 
