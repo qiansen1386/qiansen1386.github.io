@@ -54,7 +54,11 @@ Here is what I learnt:&lt;/p&gt;
 &lt;p&gt;Before practise, you won&amp;rsquo;t know if the tool is gonna suit your needs.
 That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt;em&gt;Convention over Configuation&lt;/em&gt;&amp;rdquo;, so it has to sacrifice &amp;ldquo;&lt;em&gt;Explicit is better than implicit&lt;/em&gt;&amp;ldquo;&lt;small&gt;*Refering to &lt;a href=&#34;https://www.python.org/dev/peps/pep-0020/&#34; target=&#34;_blank&#34;&gt;The Zen of Python&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;Before practise, you won&amp;rsquo;t know NodeJS have many dependency issue with Windows platform, so the &lt;code&gt;Vagrant&lt;/code&gt; become mandatory! no longer &lt;em&gt;Good to have&lt;/em&gt;. That is a good thing also, If I could compose my &lt;code&gt;Vagrantfile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Before practise, you won&amp;rsquo;t know NodeJS have many dependency issue with Windows platform, so the &lt;code&gt;Vagrant&lt;/code&gt; become mandatory! no longer &lt;em&gt;Good to have&lt;/em&gt;. That is a good thing also, If I could compose my &lt;code&gt;Vagrantfile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Nevertheless, this is absolutely worth our attention. However, it is neither stable nor mature. &lt;a href=&#34;https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/&#34; target=&#34;_blank&#34;&gt;https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&#34;again-references&#34;&gt;Again, references&lt;/h2&gt;
 
@@ -88,7 +92,10 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;p&gt;Vagrant:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/Dji9ALCgfpM&#34; target=&#34;_blank&#34;&gt;Ruby Programming in One Video(Youtube)&lt;/a&gt;: In one video series is great for syntax-learning.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.vagrantup.com/docs/&#34; target=&#34;_blank&#34;&gt;VAGRANT DOCUMENTATION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/drmyersii/vagrant-node-env&#34; target=&#34;_blank&#34;&gt;vagrant-node-env(Github)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/laravel/homestead&#34; target=&#34;_blank&#34;&gt;laravel/homestead(Github)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Page Load Effect:&lt;/p&gt;
