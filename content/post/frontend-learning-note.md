@@ -2,7 +2,7 @@
 categories=["开发", "dev", "English","中文"]
 tags=["前端","frontend","TypeScript","PostCSS"]
 date = "2016-03-16T07:03:51Z"
-title = "Frontend Learning Notes"
+title = "Frontend Learning Notes - Starting Point"
 
 +++
 
@@ -18,13 +18,14 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 > Some of the resources are written in Chinese. Sorry for the inconvenience, coz those materials are slightly easier for me to understand.
 
 
-HTML5:
+### HTML5:
 
 - [H5 boilerplate](https://html5boilerplate.com/) (Html5 boilerplate)
 - [H5 boilerplate Docs](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md) (Html5 boilerplate)
 - [H5 boilerplate my custom build (a minimized version)][boilerplate-build] (Html5 boilerplate)
 
-CSS:
+
+### CSS:
 
 - [Semantic UI](http://semantic-ui.com/) (LESS)
 - [Excited about postcss -- DAVID CLARK](http://davidtheclark.com/excited-about-postcss/) (PostCSS)
@@ -36,7 +37,8 @@ CSS:
 - [CSS 编码规范](https://itmyhome.gitbooks.io/css/content/) (CSS fundamentals)
 - [PostCSS的相关知识](https://arguseye.gitbooks.io/postcss/content/plugins.html) (PostCSS)
 
-JS:
+
+### JS:
 
 - [What Is AMD, CommonJS, and UMD?](http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/) (Loading)
 - [TypeScript --维基百科](https://zh.wikipedia.org/wiki/TypeScript) (TypeScript)

@@ -2,7 +2,7 @@
 categories=["开发", "dev", "English", "中文"]
 tags=["前端","frontend","webpack","PostCSS"]
 date = "2016-04-03T16:40:00Z"
-title = "Frontend Learning Notes 2"
+title = "Frontend Learning Notes 2 - Direction Shifted"
 
 +++
 
@@ -47,12 +47,14 @@ Before practise, you won't know NodeJS have many dependency issue with Windows p
 Again, references
 ----------
 
-NodeJS:
+
+### NodeJS:
 
 - [What is Node.js Exactly? - a beginners introduction to Nodejs(YouTube)](https://youtu.be/pU9Q6oiQNd0)
 - [Modular Javascript - Javascript Tutorial on the Object Literal Pattern(YouTube)](https://youtu.be/HkFlM73G-hk?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f)
 
-WebPack:
+
+### WebPack:
 
 - [Getting Started with webpack(YouTube)](https://youtu.be/TaWKUpahFZM)
 - [Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool(YouTube)](https://youtu.be/9kJVYpOqcVU)
@@ -60,22 +62,25 @@ WebPack:
 - [Webpack傻瓜式指南（一）- 张轩(知乎)](http://zhuanlan.zhihu.com/p/20367175)
 - [Webpack傻瓜指南（二）开发和部署技巧- 张轩(知乎)](http://zhuanlan.zhihu.com/p/20367175)
 
-Vue:
+
+### Vue:
 
 - [Getting Started - vue.js](http://vuejs.org/guide/)
 - [VueJs 官方指南](http://vuejs.org.cn/guide/)
 - [Vuex 官方指南](http://vuex.vuejs.org/zh-cn/quickstart.html)
 - [Vue-router 官方指南](http://router.vuejs.org/zh-cn/basic.html)
 - [如何用Vue.js来搭建一个简易的APP](https://sally-xiao.gitbooks.io/book/content/index.html)
- 
-Vagrant:
+
+
+### Vagrant:
 
 - [Ruby Programming in One Video(Youtube)](https://youtu.be/Dji9ALCgfpM): In one video series is great for syntax-learning.
 - [VAGRANT DOCUMENTATION](https://www.vagrantup.com/docs/)
 - [vagrant-node-env(Github)](https://github.com/drmyersii/vagrant-node-env)
 - [laravel/homestead(Github)](https://github.com/laravel/homestead)
 
-Page Load Effect:
+
+### Page Load Effect:
 
 - [ContentLoaded(2010)](http://javascript.nwbox.com/ContentLoaded/) A page load library,used by webpack.github.io
 - [Animated page trasition](https://codyhouse.co/gem/animated-page-transition/) Worth investigation
