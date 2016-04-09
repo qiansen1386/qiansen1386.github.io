@@ -12,12 +12,14 @@ Paris·Qian Sen</description>
     <atom:link href="https://qiansen1386.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Frontend Learning Notes</title>
+      <title>Frontend Learning Notes - Starting Point</title>
       <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</link>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</guid>
-      <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
+      <description>
+
+&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
 Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
 for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
 oppertunaty to bring my frontend skill sets to another level.&lt;/p&gt;
@@ -30,7 +32,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;p&gt;Some of the resources are written in Chinese. Sorry for the inconvenience, coz those materials are slightly easier for me to understand.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;HTML5:&lt;/p&gt;
+&lt;h3 id=&#34;html5&#34;&gt;HTML5:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34; target=&#34;_blank&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
@@ -38,7 +40,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;li&gt;&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34; title=&#34;H5 boilerplate my custom build (a minimized version)&#34; target=&#34;_blank&#34;&gt;H5 boilerplate my custom build (a minimized version)&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;CSS:&lt;/p&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34; target=&#34;_blank&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;/li&gt;
@@ -52,7 +54,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34; target=&#34;_blank&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;JS:&lt;/p&gt;
+&lt;h3 id=&#34;js&#34;&gt;JS:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34; target=&#34;_blank&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;/li&gt;

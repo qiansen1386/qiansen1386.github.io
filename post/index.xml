@@ -12,7 +12,7 @@ Paris·Qian Sen</description>
     <atom:link href="https://qiansen1386.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Frontend Learning Notes 2</title>
+      <title>Frontend Learning Notes 2 - Direction Shifted</title>
       <link>https://qiansen1386.github.io/p/2016-04-03/frontend-learning-note-2</link>
       <pubDate>Sun, 03 Apr 2016 16:40:00 +0000</pubDate>
       
@@ -62,14 +62,14 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 
 &lt;h2 id=&#34;again-references&#34;&gt;Again, references&lt;/h2&gt;
 
-&lt;p&gt;NodeJS:&lt;/p&gt;
+&lt;h3 id=&#34;nodejs&#34;&gt;NodeJS:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/pU9Q6oiQNd0&#34; target=&#34;_blank&#34;&gt;What is Node.js Exactly? - a beginners introduction to Nodejs(YouTube)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/HkFlM73G-hk?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f&#34; target=&#34;_blank&#34;&gt;Modular Javascript - Javascript Tutorial on the Object Literal Pattern(YouTube)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;WebPack:&lt;/p&gt;
+&lt;h3 id=&#34;webpack&#34;&gt;WebPack:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/TaWKUpahFZM&#34; target=&#34;_blank&#34;&gt;Getting Started with webpack(YouTube)&lt;/a&gt;&lt;/li&gt;
@@ -79,7 +79,7 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;http://zhuanlan.zhihu.com/p/20367175&#34; target=&#34;_blank&#34;&gt;Webpack傻瓜指南（二）开发和部署技巧- 张轩(知乎)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Vue:&lt;/p&gt;
+&lt;h3 id=&#34;vue&#34;&gt;Vue:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://vuejs.org/guide/&#34; target=&#34;_blank&#34;&gt;Getting Started - vue.js&lt;/a&gt;&lt;/li&gt;
@@ -89,7 +89,7 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;https://sally-xiao.gitbooks.io/book/content/index.html&#34; target=&#34;_blank&#34;&gt;如何用Vue.js来搭建一个简易的APP&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Vagrant:&lt;/p&gt;
+&lt;h3 id=&#34;vagrant&#34;&gt;Vagrant:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/Dji9ALCgfpM&#34; target=&#34;_blank&#34;&gt;Ruby Programming in One Video(Youtube)&lt;/a&gt;: In one video series is great for syntax-learning.&lt;/li&gt;
@@ -98,7 +98,7 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;https://github.com/laravel/homestead&#34; target=&#34;_blank&#34;&gt;laravel/homestead(Github)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Page Load Effect:&lt;/p&gt;
+&lt;h3 id=&#34;page-load-effect&#34;&gt;Page Load Effect:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://javascript.nwbox.com/ContentLoaded/&#34; target=&#34;_blank&#34;&gt;ContentLoaded(2010)&lt;/a&gt; A page load library,used by webpack.github.io&lt;/li&gt;
@@ -492,12 +492,14 @@ export * from &amp;quot;singapore&amp;quot;;
     </item>
     
     <item>
-      <title>Frontend Learning Notes</title>
+      <title>Frontend Learning Notes - Starting Point</title>
       <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</link>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
       <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</guid>
-      <description>&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
+      <description>
+
+&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
 Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
 for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
 oppertunaty to bring my frontend skill sets to another level.&lt;/p&gt;
@@ -510,7 +512,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;p&gt;Some of the resources are written in Chinese. Sorry for the inconvenience, coz those materials are slightly easier for me to understand.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;HTML5:&lt;/p&gt;
+&lt;h3 id=&#34;html5&#34;&gt;HTML5:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34; target=&#34;_blank&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
@@ -518,7 +520,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;li&gt;&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34; title=&#34;H5 boilerplate my custom build (a minimized version)&#34; target=&#34;_blank&#34;&gt;H5 boilerplate my custom build (a minimized version)&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;CSS:&lt;/p&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34; target=&#34;_blank&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;/li&gt;
@@ -532,7 +534,7 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34; target=&#34;_blank&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;JS:&lt;/p&gt;
+&lt;h3 id=&#34;js&#34;&gt;JS:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34; target=&#34;_blank&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;/li&gt;
