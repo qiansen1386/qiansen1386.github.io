@@ -8,8 +8,66 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Apr 2016 16:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Apr 2016 05:05:53 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>frontend learning note 3 - Vagrant, VM &amp; Shell</title>
+      <link>https://qiansen1386.github.io/p/2016-04-09/frontend-learning-note-3</link>
+      <pubDate>Sat, 09 Apr 2016 05:05:53 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/p/2016-04-09/frontend-learning-note-3</guid>
+      <description>
+
+&lt;h2 id=&#34;the-lesson-i-learnt&#34;&gt;The Lesson I Learnt&lt;/h2&gt;
+
+&lt;h3 id=&#34;line-ending-issue&#34;&gt;Line-ending issue&lt;/h3&gt;
+
+&lt;p&gt;Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
+Unwated &lt;code&gt;\r&lt;/code&gt; will appears everywhere&amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;scripts-heading&#34;&gt;scripts heading&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;#!/bin/bash&lt;/code&gt; is not omissible. Of course, you can use &lt;code&gt;#!/bin/sh&lt;/code&gt; or &lt;code&gt;#!/bin/zsh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;symlinks-are-huge-problem&#34;&gt;Symlinks are huge problem!&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/npm/npm/issues/7308&#34; target=&#34;_blank&#34;&gt;npm-issues#7308&lt;/a&gt; =&amp;gt; Symlinks within shared folder could not be sync between Win and Posix OS. However many NPM packages would like to create bin-links(symlinks of executable file within bin folder). So whenever you tried to install some packages, it is very likely to fail. So there are 3 potential solutions: 1. try to make it work by proper config virtualbox. 2. Move the node_modules out of synced-folder. 3. use &lt;code&gt;--no-bin-links&lt;/code&gt; flag for &lt;code&gt;npm install&lt;/code&gt;.
+Let me just reveal the final answer. Only No.3 works, with side-effect though.&lt;/p&gt;
+
+&lt;p&gt;Firstly, there is script provided by &lt;a href=&#34;https://github.com/drmyersii&#34; target=&#34;_blank&#34;&gt;drmyersii&lt;/a&gt;(The author of &lt;a href=&#34;https://github.com/drmyersii/vagrant-node-env&#34; target=&#34;_blank&#34;&gt;vagrant-node-env&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Ruby&#34;&gt;config.vm.provider &amp;quot;virtualbox&amp;quot; do |v|
+    v.customize [&amp;quot;setextradata&amp;quot;, :id, &amp;quot;VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant&amp;quot;, &amp;quot;1&amp;quot;]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It doesn&amp;rsquo;t work at least for Windows 7 Host. I didn&amp;rsquo;t investigated further, due to tied schedule. You can try it if you want, I&amp;rsquo;d like to know if it works on you :P&lt;/p&gt;
+
+&lt;p&gt;Then, I tried to created a &lt;code&gt;node_modules/&lt;/code&gt; folder under &lt;code&gt;/tmp/&lt;/code&gt;, but another unexpected issue supprised me. &lt;a href=&#34;https://github.com/npm/npm/issues/10013&#34; target=&#34;_blank&#34;&gt;npm-issue#10013&lt;/a&gt; It turns out the NPM 3 introduced some special checks, causing the breaks of &lt;code&gt;npm install&lt;/code&gt;. If npm fixed this in further versions, or if you can roll back to a ealier version, It could be the best choice. With no side effects, and can be easily setup using provision scripts. I would continue following on.&lt;/p&gt;
+
+&lt;p&gt;The end, I am afraid that I have to go for the &lt;code&gt;--no-bin-links&lt;/code&gt; approach. Em, that means there will be no more bin links. peroid. That would make cli operations much more undesirable. If you need those short-cuts, try to install them globally as well. So that when you call them, the global version can still response to u. Dirty, but works.&lt;/p&gt;
+
+&lt;h3 id=&#34;ruby&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;p&gt;Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby&amp;rsquo;s. Because I am not only new to it, but also too anxious. Whereas, Ruby&amp;rsquo;s syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn&amp;rsquo;t get chance to practice &lt;code&gt;Metaprogramming&lt;/code&gt; much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages.&lt;/p&gt;
+
+&lt;h2 id=&#34;time-for-referances&#34;&gt;Time for Referances&lt;/h2&gt;
+
+&lt;h3 id=&#34;vagrant&#34;&gt;Vagrant&lt;/h3&gt;
+
+&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nvie.com/posts/how-i-boosted-my-vim/&#34; target=&#34;_blank&#34;&gt;How I boosted my Vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openvim.com/&#34; target=&#34;_blank&#34;&gt;Learn VIM interactively with openvim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/&#34; target=&#34;_blank&#34;&gt;Vim Is Awesome: Make It Better With These 5 Customizations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Frontend Learning Notes 2 - Direction Shifted</title>

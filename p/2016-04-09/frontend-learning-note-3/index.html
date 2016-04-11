@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>frontend learning note 3 - Vagrant, VM &amp; Shell</title>
+  
+  <link rel="stylesheet" href="https://qiansen1386.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://qiansen1386.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://qiansen1386.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://qiansen1386.github.io/css/hyde-x.css">
+  <link rel="stylesheet" href="https://qiansen1386.github.io/css/site.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/railscasts.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=144">
+  <link rel="shortcut icon" href="http://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=16" />
+  
+
+  
+  
+  
+  <meta name="description" content="本文木有简述">
+  <meta name="keywords" content="开发, 中文">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47725881-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body class="theme-base-08">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+        <img src="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=150"
+             alt="gravatar" title="东方孤思子&lt;br&gt;Paris Qian Sen">
+      
+      <h2>东方孤思子<br>Paris Qian Sen</h2>
+      <p class="lead">Profesional Coding<br>Simple Living<br>Creative Thinking</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://qiansen1386.github.io/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://qiansen1386.github.io/about/">Who am I</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/qiansen1386"><i class="fa fa-github-square fa-2x"></i></a>
+      
+      <a href="http://stackexchange.com/users/1586938/paris-qian"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      <a href="https://sg.linkedin.com/in/parisqiansen"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://plus.google.com/&#43;Parisqiansen/posts"><i class="fa fa-google-plus-square fa-2x"></i></a>
+      
+      <a href="https://twitter.com/qiansen1386"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC1rGIQJUQABgRyA-edmRlKg"><i class="fa fa-youtube-square fa-2x"></i></a>
+      <a href="https://qiansen1386.github.io/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-2x"></i></a>
+      </li>
+    </ul>
+
+    
+    <p><script id='flattr'>
+      (function(id){
+        var s = document.getElementById(id);
+        var f = document.createElement('iframe');
+        f.src = '//api.flattr.com/button/view/?uid=qiansen1386&button=compact&url=https:\/\/qiansen1386.github.io\/&title=东方孤思子のBlog\nParis·Qian Sen';
+        f.title = 'Flattr';
+        f.height = 20;
+        f.width = 110;
+        f.style.borderWidth = 0;
+        s.parentNode.insertBefore(f, s);
+      })('flattr');
+    </script></p>
+    
+
+    <p><a href="https://qiansen1386.github.io/license/" class="copyright">Some Rights Reserved &copy; 2016</a><br>
+      Proudly powered by <a href="http://gohugo.io">Hugo</a> <br>
+      Theme: Customized <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">frontend learning note 3 - Vagrant, VM &amp; Shell</h1>
+    <span class="post-date">Apr 9, 2016 &middot; <a href="https://qiansen1386.github.io/p/2016-04-09/frontend-learning-note-3#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
+    </span>
+    
+
+<h2 id="the-lesson-i-learnt">The Lesson I Learnt</h2>
+
+<h3 id="line-ending-issue">Line-ending issue</h3>
+
+<p>Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
+Unwated <code>\r</code> will appears everywhere&hellip;</p>
+
+<h3 id="scripts-heading">scripts heading</h3>
+
+<p><code>#!/bin/bash</code> is not omissible. Of course, you can use <code>#!/bin/sh</code> or <code>#!/bin/zsh</code>.</p>
+
+<h3 id="symlinks-are-huge-problem">Symlinks are huge problem!</h3>
+
+<p><a href="https://github.com/npm/npm/issues/7308" target="_blank">npm-issues#7308</a> =&gt; Symlinks within shared folder could not be sync between Win and Posix OS. However many NPM packages would like to create bin-links(symlinks of executable file within bin folder). So whenever you tried to install some packages, it is very likely to fail. So there are 3 potential solutions: 1. try to make it work by proper config virtualbox. 2. Move the node_modules out of synced-folder. 3. use <code>--no-bin-links</code> flag for <code>npm install</code>.
+Let me just reveal the final answer. Only No.3 works, with side-effect though.</p>
+
+<p>Firstly, there is script provided by <a href="https://github.com/drmyersii" target="_blank">drmyersii</a>(The author of <a href="https://github.com/drmyersii/vagrant-node-env" target="_blank">vagrant-node-env</a>)</p>
+
+<pre><code class="language-Ruby">config.vm.provider &quot;virtualbox&quot; do |v|
+    v.customize [&quot;setextradata&quot;, :id, &quot;VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant&quot;, &quot;1&quot;]
+end
+</code></pre>
+
+<p>It doesn&rsquo;t work at least for Windows 7 Host. I didn&rsquo;t investigated further, due to tied schedule. You can try it if you want, I&rsquo;d like to know if it works on you :P</p>
+
+<p>Then, I tried to created a <code>node_modules/</code> folder under <code>/tmp/</code>, but another unexpected issue supprised me. <a href="https://github.com/npm/npm/issues/10013" target="_blank">npm-issue#10013</a> It turns out the NPM 3 introduced some special checks, causing the breaks of <code>npm install</code>. If npm fixed this in further versions, or if you can roll back to a ealier version, It could be the best choice. With no side effects, and can be easily setup using provision scripts. I would continue following on.</p>
+
+<p>The end, I am afraid that I have to go for the <code>--no-bin-links</code> approach. Em, that means there will be no more bin links. peroid. That would make cli operations much more undesirable. If you need those short-cuts, try to install them globally as well. So that when you call them, the global version can still response to u. Dirty, but works.</p>
+
+<h3 id="ruby">Ruby</h3>
+
+<p>Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby&rsquo;s. Because I am not only new to it, but also too anxious. Whereas, Ruby&rsquo;s syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn&rsquo;t get chance to practice <code>Metaprogramming</code> much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages.</p>
+
+<h2 id="time-for-referances">Time for Referances</h2>
+
+<h3 id="vagrant">Vagrant</h3>
+
+<h3 id="vim">VIM</h3>
+
+<blockquote>
+</blockquote>
+
+<ul>
+<li><a href="http://nvie.com/posts/how-i-boosted-my-vim/" target="_blank">How I boosted my Vim</a></li>
+<li><a href="http://www.openvim.com/" target="_blank">Learn VIM interactively with openvim</a></li>
+<li><a href="http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/" target="_blank">Vim Is Awesome: Make It Better With These 5 Customizations</a></li>
+</ul>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "qiansen1386";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "qiansen1386";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<script src="https://qiansen1386.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
+
