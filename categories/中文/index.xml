@@ -96,7 +96,7 @@ Here is what I learnt:&lt;/p&gt;
 &lt;p&gt;There is a little bit backgound I have learnt.
 - &lt;a href=&#34;http://gulpjs.com/&#34; target=&#34;_blank&#34;&gt;gulp&lt;/a&gt; beats &lt;a href=&#34;http://gruntjs.com/&#34; target=&#34;_blank&#34;&gt;grunt&lt;/a&gt;.
 - &lt;a href=&#34;https://webpack.github.io&#34; target=&#34;_blank&#34;&gt;Webpack&lt;/a&gt; beats &lt;a href=&#34;http://gbrowserify.org&#34; target=&#34;_blank&#34;&gt;browserify&lt;/a&gt; beats &lt;a href=&#34;http://grequirejs.org&#34; target=&#34;_blank&#34;&gt;RequireJS&lt;/a&gt;.
-- With the viral of &lt;code&gt;NodeJS&lt;/code&gt;, &lt;code&gt;CommonJs&lt;/code&gt; becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover &lt;code&gt;ES6 module&lt;/code&gt; is compatiable with it, so it is also future-proof.
+- &lt;del&gt;With the viral of &lt;code&gt;NodeJS&lt;/code&gt;, &lt;code&gt;CommonJs&lt;/code&gt; becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover &lt;code&gt;ES6 module&lt;/code&gt; is compatiable with it, so it is also future-proof.&lt;/del&gt;(Completely Wrong&amp;hellip;explained below)
 - Webpack is capable to do some jobs of gulp.&lt;/p&gt;
 
 &lt;p&gt;I was thinking of using gulp + webpack. But since nowadays, webpack have plenty of plugins and loaders, and most importantly, I found at least 2 boostrap-loaders which claims that they can process Boostrap v4. I can simply say good bye to Gulp. &lt;em&gt;I might meet you again, don&amp;rsquo;t know why, don&amp;rsquo;t know when, but I might meet you again some other day~&lt;/em&gt;&lt;/p&gt;
@@ -165,6 +165,30 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;http://www.fasw.ws/faswwp/non-jquery-page-transitions-lightweight/&#34; target=&#34;_blank&#34;&gt;Non-Jquery Page Transitions lightweight&lt;/a&gt; A great proof of concept&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://turbo-react.herokuapp.com/&#34; target=&#34;_blank&#34;&gt;TurboReact&lt;/a&gt; A react based implementation&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/turbolinks/turbolinks&#34; target=&#34;_blank&#34;&gt;Turbolinks&lt;/a&gt; extraction of above solution, the best library to use by far&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;corrigendum&#34;&gt;Corrigendum&lt;/h2&gt;
+
+&lt;h3 id=&#34;es6-modules-is-not-an-official-recognition-of-commonjs&#34;&gt;ES6 Modules is not an official recognition of CommonJS&lt;/h3&gt;
+
+&lt;p&gt;ECMAScript 6 modules is a completely different thing, comparing with &lt;code&gt;CommonJs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First of all, ES6 Modules are statically loaded!!!!&lt;/li&gt;
+&lt;li&gt;Then It requires all the dependencies to be fully imported at the beginning.&lt;/li&gt;
+&lt;li&gt;So that the tricks like &lt;code&gt;tree-shaking&lt;/code&gt; becomes possible. (AST parsing becomes much more effient and easy)&lt;/li&gt;
+&lt;li&gt;There is performance improvement as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Can&amp;rsquo;t believe how assertive I was.&lt;/p&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.2ality.com/2014/09/es6-modules-final.html&#34; target=&#34;_blank&#34;&gt;ECMAScript 6 modules: the final syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.2ality.com/2015/12/webpack-tree-shaking.html&#34; target=&#34;_blank&#34;&gt;Tree-shaking with webpack 2 and Babel 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup.js - The next-generation JavaScript module bundler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/41922432/answer/93346223&#34; target=&#34;_blank&#34;&gt;如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

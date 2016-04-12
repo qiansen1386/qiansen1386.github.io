@@ -123,7 +123,7 @@ Here is what I learnt:</p>
 <p>There is a little bit backgound I have learnt.
 - <a href="http://gulpjs.com/" target="_blank">gulp</a> beats <a href="http://gruntjs.com/" target="_blank">grunt</a>.
 - <a href="https://webpack.github.io" target="_blank">Webpack</a> beats <a href="http://gbrowserify.org" target="_blank">browserify</a> beats <a href="http://grequirejs.org" target="_blank">RequireJS</a>.
-- With the viral of <code>NodeJS</code>, <code>CommonJs</code> becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover <code>ES6 module</code> is compatiable with it, so it is also future-proof.
+- <del>With the viral of <code>NodeJS</code>, <code>CommonJs</code> becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover <code>ES6 module</code> is compatiable with it, so it is also future-proof.</del>(Completely Wrong&hellip;explained below)
 - Webpack is capable to do some jobs of gulp.</p>
 
 <p>I was thinking of using gulp + webpack. But since nowadays, webpack have plenty of plugins and loaders, and most importantly, I found at least 2 boostrap-loaders which claims that they can process Boostrap v4. I can simply say good bye to Gulp. <em>I might meet you again, don&rsquo;t know why, don&rsquo;t know when, but I might meet you again some other day~</em></p>
@@ -192,6 +192,30 @@ That is exactly why I dropped the semantic UI, because it follows &ldquo;<em>Con
 <li><a href="http://www.fasw.ws/faswwp/non-jquery-page-transitions-lightweight/" target="_blank">Non-Jquery Page Transitions lightweight</a> A great proof of concept</li>
 <li><a href="https://turbo-react.herokuapp.com/" target="_blank">TurboReact</a> A react based implementation</li>
 <li><a href="https://github.com/turbolinks/turbolinks" target="_blank">Turbolinks</a> extraction of above solution, the best library to use by far</li>
+</ul>
+
+<h2 id="corrigendum">Corrigendum</h2>
+
+<h3 id="es6-modules-is-not-an-official-recognition-of-commonjs">ES6 Modules is not an official recognition of CommonJS</h3>
+
+<p>ECMAScript 6 modules is a completely different thing, comparing with <code>CommonJs</code>.</p>
+
+<ul>
+<li>First of all, ES6 Modules are statically loaded!!!!</li>
+<li>Then It requires all the dependencies to be fully imported at the beginning.</li>
+<li>So that the tricks like <code>tree-shaking</code> becomes possible. (AST parsing becomes much more effient and easy)</li>
+<li>There is performance improvement as well.</li>
+</ul>
+
+<p>Can&rsquo;t believe how assertive I was.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+<li><a href="http://www.2ality.com/2014/09/es6-modules-final.html" target="_blank">ECMAScript 6 modules: the final syntax</a></li>
+<li><a href="http://www.2ality.com/2015/12/webpack-tree-shaking.html" target="_blank">Tree-shaking with webpack 2 and Babel 6</a></li>
+<li><a href="http://rollupjs.org/" target="_blank">Rollup.js - The next-generation JavaScript module bundler</a></li>
+<li><a href="https://www.zhihu.com/question/41922432/answer/93346223" target="_blank">如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？</a></li>
 </ul>
 
   </div>
