@@ -24,7 +24,7 @@ I know the PostCSS is the future, and CssNext/preCss plugins appears like a grea
 There is a little bit backgound I have learnt.
 - [gulp](http://gulpjs.com/) beats [grunt](http://gruntjs.com/).
 - [Webpack](https://webpack.github.io) beats [browserify](http://gbrowserify.org) beats [RequireJS](http://grequirejs.org).
-- With the viral of `NodeJS`, `CommonJs` becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover `ES6 module` is compatiable with it, so it is also future-proof.
+- ~~With the viral of `NodeJS`, `CommonJs` becomes the de facto standard importing syntax(I believe). It Beats AMD, CMD and otheres, moreover `ES6 module` is compatiable with it, so it is also future-proof.~~(Completely Wrong...explained below)
 - Webpack is capable to do some jobs of gulp.
  
 I was thinking of using gulp + webpack. But since nowadays, webpack have plenty of plugins and loaders, and most importantly, I found at least 2 boostrap-loaders which claims that they can process Boostrap v4. I can simply say good bye to Gulp. *I might meet you again, don't know why, don't know when, but I might meet you again some other day~*
@@ -88,3 +88,26 @@ Again, references
 - [Non-Jquery Page Transitions lightweight](http://www.fasw.ws/faswwp/non-jquery-page-transitions-lightweight/) A great proof of concept
 - [TurboReact](https://turbo-react.herokuapp.com/) A react based implementation
 - [Turbolinks](https://github.com/turbolinks/turbolinks) extraction of above solution, the best library to use by far
+ 
+
+Corrigendum
+-----------
+
+
+### ES6 Modules is not an official recognition of CommonJS
+
+ECMAScript 6 modules is a completely different thing, comparing with `CommonJs`.
+
+- First of all, ES6 Modules are statically loaded!!!!
+- Then It requires all the dependencies to be fully imported at the beginning.
+- So that the tricks like `tree-shaking` becomes possible. (AST parsing becomes much more effient and easy)
+- There is performance improvement as well.
+
+Can't believe how assertive I was.
+
+### References
+
+- [ECMAScript 6 modules: the final syntax](http://www.2ality.com/2014/09/es6-modules-final.html)
+- [Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
+- [Rollup.js - The next-generation JavaScript module bundler](http://rollupjs.org/)
+- [如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432/answer/93346223)
