@@ -189,6 +189,7 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;http://www.2ality.com/2015/12/webpack-tree-shaking.html&#34; target=&#34;_blank&#34;&gt;Tree-shaking with webpack 2 and Babel 6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup.js - The next-generation JavaScript module bundler&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/41922432/answer/93346223&#34; target=&#34;_blank&#34;&gt;如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benjamn.github.io/empirenode-2015&#34; target=&#34;_blank&#34;&gt;The Importance of import and export by Ben Newman on EmpireNode 2015 &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -464,10 +465,10 @@ export * from &amp;quot;singapore&amp;quot;;
     
     <item>
       <title>Frontend Learning Notes - Starting Point</title>
-      <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</link>
+      <link>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note-1</link>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note</guid>
+      <guid>https://qiansen1386.github.io/p/2016-03-16/frontend-learning-note-1</guid>
       <description>
 
 &lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
