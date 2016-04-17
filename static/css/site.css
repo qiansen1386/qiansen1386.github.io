@@ -36,8 +36,34 @@ h6 {
   font-size: 0.9rem;
 }
 
+
 /*To fix thd error caused by pre tag*/
+
 .hljs {
-  margin:-1rem;
+  margin: -1rem;
 }
-canvas.accelerated { -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -moz-transition: all 1s; -webkit-transition: all 1s; -o-transition: all 1s; transition: all 1s ; } - See more at: https://www.urbaninsight.com/2013/01/04/improving-html5-app-performance-gpu-accelerated-css-transitions#sthash.BLCZmSMd.dpuf
+
+
+/* See more at: https://www.urbaninsight.com/2013/01/04/improving-html5-app-performance-gpu-accelerated-css-transitions#sthash.BLCZmSMd.dpuf */
+
+canvas.accelerated {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.post {
+  line-height: 2.5;
+}
+
+@media screen and (min-height: 830px) {
+  html {
+    line-height: 2;
+  }
+}
