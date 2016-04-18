@@ -57,9 +57,11 @@ canvas.accelerated {
   -o-transition: all 1s;
   transition: all 1s;
 }
-
+/* 中英文混排的排版简直操心到蛋碎 */
 .post {
   line-height: 2.5;
+  font-size:16px;
+  letter-spacing: 0.04em;
 }
 
 @media screen and (min-height: 830px) {
