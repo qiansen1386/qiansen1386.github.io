@@ -11,15 +11,15 @@
   <link rel="stylesheet" href="{{ "/css/hyde-overrides.css" | absURL }}">
   <link rel="stylesheet" href="{{ "/css/hyde-x.css" | absURL }}">
   <link rel="stylesheet" href="{{ "/css/site.css" | absURL }}">
-  {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/" | absURL }}{{ .Site.Params.highlight }}.min.css">{{ end }}
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/" | absURL }}{{ .Site.Params.highlight }}.min.css">{{ end }}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   {{ with .Site.Params.customCSS }}<link rel="stylesheet" href="{{ . }}">{{ end }}
 
   <!-- Icons -->
   {{ with .Site.Params.gravatarHash }}
   <!-- Inspired by https://gist.github.com/daankortenbach/1322800 -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gravatar.com/avatar/{{ . }}?s=144">
-  <link rel="shortcut icon" href="http://www.gravatar.com/avatar/{{ . }}?s=16" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.gravatar.com/avatar/{{ . }}?s=144">
+  <link rel="shortcut icon" href="https://www.gravatar.com/avatar/{{ . }}?s=16" />
   {{else}}
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
   <link href="{{ "/favicon.png" | absURL }}" rel="icon">
