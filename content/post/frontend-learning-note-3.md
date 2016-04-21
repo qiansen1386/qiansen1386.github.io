@@ -2,7 +2,7 @@
 categories = [ "开发", "dev", "English", "中文"]
 date = "2016-04-09T05:05:53Z"
 tags = ["Vagrant", "Shell", "DevOps", "Ruby"]
-title = "frontend learning note 3 - Vagrant, VM & Shell"
+title = "Frontend Learning Note 3 - Vagrant, VM & Shell"
 
 +++
 
@@ -48,8 +48,6 @@ Time for Referances
 
 
 ### VIM
-
->
 
 - [How I boosted my Vim](http://nvie.com/posts/how-i-boosted-my-vim/)
 - [Learn VIM interactively with openvim](http://www.openvim.com/)
