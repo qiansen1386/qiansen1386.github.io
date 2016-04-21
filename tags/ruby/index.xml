@@ -12,7 +12,7 @@ Paris·Qian Sen</description>
     <atom:link href="https://qiansen1386.github.io/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>frontend learning note 3 - Vagrant, VM &amp; Shell</title>
+      <title>Frontend Learning Note 3 - Vagrant, VM &amp; Shell</title>
       <link>https://qiansen1386.github.io/p/2016-04-09/frontend-learning-note-3</link>
       <pubDate>Sat, 09 Apr 2016 05:05:53 +0000</pubDate>
       
@@ -57,9 +57,6 @@ end
 &lt;h3 id=&#34;vagrant&#34;&gt;Vagrant&lt;/h3&gt;
 
 &lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://nvie.com/posts/how-i-boosted-my-vim/&#34; target=&#34;_blank&#34;&gt;How I boosted my Vim&lt;/a&gt;&lt;/li&gt;
