@@ -13,10 +13,10 @@ Paris·Qian Sen</description>
     
     <item>
       <title>Recursion-Demo in TypeScript &amp; How it get better</title>
-      <link>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript</link>
+      <link>https://qiansen1386.github.io/post/2016/03/recursion-demo-in-typescript</link>
       <pubDate>Mon, 07 Mar 2016 10:41:06 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/p/2016-03-07/recursion-demo-in-typescript</guid>
+      <guid>https://qiansen1386.github.io/post/2016/03/recursion-demo-in-typescript</guid>
       <description>&lt;p&gt;I wrote this to practice of TypeScript and also to demonstrate recursion to my friend. This is a little challenge sent to me by one of my friend who is self-learning python, and recursion at the same time. Basically is about to keep removing all the elements whichever index is odd from the array, till there is only one left, and return the index of the survivor. Input the &lt;strong&gt;N&lt;/strong&gt; of elements and output the index &lt;strong&gt;X&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;//jsfiddle.net/qiansen1386/yLdr5082/embedded/js,html,result/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
