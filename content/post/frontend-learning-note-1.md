@@ -45,6 +45,10 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 - [Typescript 初体验](http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html) (TypeScript)
 - [TypeScript Handbook（中文版）](https://zhongsp.gitbooks.io/typescript-handbook/content/) (TypeScript)
 - [\[译\]神马是AMD, CommonJS, UMD?](http://www.75team.com/archives/882) (Translation of "What Is AMD, CommonJS, and UMD?")
+ 
+### Best Practics
+
+-[HTML5、CSS3、ES6编程规范 by 小栋同学](http://xiaodongtongxue.github.io/2016/03/21/Web%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/)
 
 
 [boilerplate-build]: http://www.initializr.com/builder?print&h5bp-content&modernizr&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-robots&h5bp-humans&h5bp-404&h5bp-adobecrossdomain&h5bp-css&h5bp-csshelpers&h5bp-mediaqueryprint&h5bp-mediaqueries&simplehtmltag&izr-emptyscript "H5 boilerplate my custom build (a minimized version)"
