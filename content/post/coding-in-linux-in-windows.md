@@ -2,7 +2,7 @@
 categories = ["开发", "中文"]
 date = "2016-04-27T05:46:16Z"
 tags = ["Linux", "Ubuntu", "Atom"]
-title = "在瘟到死里石中使用 Linux 进行开发"
+title = "在瘟到死石中使用 Linux 进行开发"
 
 +++
 
