@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 东方孤思子のBlog
+Paris·Qian Sen</title>
+    <link>https://qiansen1386.github.io/tags/linux/</link>
+    <description>Recent content in Linux on 东方孤思子のBlog
+Paris·Qian Sen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 27 Apr 2016 05:46:16 +0000</lastBuildDate>
+    <atom:link href="https://qiansen1386.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>在瘟到死里石中使用 Linux 进行开发</title>
+      <link>https://qiansen1386.github.io/post/2016/04/coding-in-linux-in-windows</link>
+      <pubDate>Wed, 27 Apr 2016 05:46:16 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/04/coding-in-linux-in-windows</guid>
+      <description>
+
+&lt;h2 id=&#34;简述&#34;&gt;简述&lt;/h2&gt;
+
+&lt;p&gt;开发 Node, Ruby, PHP 等技术的时候，总是面临 Windows 问题，不是说他们不支持 Windows，其实要装是可以装的。但是他们的生态运行在 Windows 上时，某些组件的工作结果可能会存在差异，或出现运行不稳定的情况。通常程序猿，尤其是老美的程序猿更倾向用 Mac 或 Linux 搞开发。搞 Web 的更是如此，我们希望开发环境和生产环境尽可能接近，最好都用 posix 系统接口。于是乎虽然 Windows 的市场份额不小，可是反而开源社区对 Linux 版本和 Mac 版本的软件支持更为出色。我从很早就使用 Linux 了。不过如果你非要我在硬盘里分个区装 Linux 我已经提不起兴趣了。娱乐软件的支持和硬件驱动的支持一度搞得我焦头烂额。对我来说，既然这个东西已经不是一个 Geek 的玩具，反倒是吃饭和学习的家伙了，我就需要他尽可能易于配置，易于启动，易于恢复。&lt;/p&gt;
+
+&lt;h2 id=&#34;结论&#34;&gt;结论&lt;/h2&gt;
+
+&lt;p&gt;先说结论，目前我的选择是免费版 VMware Player(非商业用途使用) 加 Ubuntu。目前 Ubuntu 还是有些小毛病。但是正常开发上网没问题。&lt;/p&gt;
+
+&lt;h2 id=&#34;心路历程&#34;&gt;心路历程&lt;/h2&gt;
+
+&lt;p&gt;略~ 看下个板块&lt;/p&gt;
+
+&lt;h2 id=&#34;faqs&#34;&gt;FAQs&lt;/h2&gt;
+
+&lt;h3 id=&#34;为毛用虚拟机&#34;&gt;为毛用虚拟机&lt;/h3&gt;
+
+&lt;p&gt;大多数的娱乐和工作工具还是必须用 Windows 的，我又不想折腾 Wine，完~&lt;/p&gt;
+
+&lt;h3 id=&#34;为毛不用-deepin&#34;&gt;为毛不用 Deepin&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Deepin 在新加坡用慢啊…… 每次 &lt;code&gt;apt-get update&lt;/code&gt; 都等得我想死啊。用了 Ubuntu 之后，感觉简直如飞般顺滑。&lt;/li&gt;
+&lt;li&gt;Deepin 在 VirtualBox 里卡得一逼。Ubuntu 在 virtualBox 比 Deepin 强多了。它本身不建议使用虚拟机环境也是有道理的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;为毛不用-virtualbox&#34;&gt;为毛不用 VirtualBox&lt;/h3&gt;
+
+&lt;p&gt;我用过，可是你知道你最大只能给你的 VM 加 128M 的显存么？！！！！我一开始以为 Linux 不吃显存，可是 tm 动不动就卡啊， Deepin是直接死机，Ubuntu是死一回用一会，而且驱动貌似也有问题。
+当，你在 VMware 里分配给虚拟机 &lt;code&gt;768M&lt;/code&gt; 的显存之后，你就会看到屏幕所有的动画都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些隐藏 API 可以做到这些吧，可是为毛要折腾呢？&lt;/p&gt;
+
+&lt;h3 id=&#34;用什么做开发&#34;&gt;用什么做开发&lt;/h3&gt;
+
+&lt;p&gt;最近都在玩前端，前端比后端酷炫好玩而且环境配置更简单。
+我的学习历程基本都在《Frontend Learning Note》里介绍的差不多了。
+我用这些东西：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Zsh：加git, ssh-agent插件 (See more @ &lt;a href=&#34;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Atom: (See more @ &lt;a href=&#34;https://github.com/qiansen1386/frontend-dev-vue#suggested-atom-plugins&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/frontend-dev-vue#suggested-atom-plugins&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Google-Chrome-stable: 谷歌大法好！ (看这里 @ &lt;a href=&#34;https://kangax.github.io/compat-table/es6/&#34; target=&#34;_blank&#34;&gt;ECMAScript compatibility table&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;安装流程&#34;&gt;安装流程&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;喂丸·待续
+&lt;div class=&#34;thumbinner&#34; style=&#34;width:222px;&#34;&gt;
+&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; id=&#34;svg2&#34; viewBox=&#34;0 0 200 200&#34;&gt;
+  &lt;g id=&#34;glass&#34; fill=&#34;none&#34; stroke=&#34;#000&#34;&gt;
+    &lt;path stroke-width=&#34;10&#34; d=&#34;M31.625 53h46.5v33h-46.5z&#34;/&gt;
+    &lt;path stroke-width=&#34;10&#34; d=&#34;M121.625 53h46.5v33h-46.5z&#34;/&gt;
+    &lt;path stroke-width=&#34;9&#34; d=&#34;M80.375 70.014h37&#34;/&gt;
+  &lt;/g&gt;
+  &lt;g id=&#34;..&#34;&gt;
+    &lt;path d=&#34;M82.72 128.695q-3.96 0-6.48-2.52-2.52-2.7-2.52-6.48 0-3.78 2.52-6.3 2.52-2.7 6.48-2.7 3.78 0 6.3 2.7 2.52 2.52 2.52 6.3t-2.52 6.48q-2.52 2.52-6.3 2.52z&#34;/&gt;
+    &lt;path d=&#34;M117.28 128.695q-3.78 0-6.3-2.52-2.52-2.7-2.52-6.48 0-3.78 2.52-6.3 2.52-2.7 6.3-2.7 3.96 0 6.48 2.7 2.52 2.52 2.52 6.3t-2.52 6.48q-2.52 2.52-6.48 2.52z&#34;/&gt;
+  &lt;/g&gt;
+  &lt;g id=&#34;naive&#34; fill-opacity=&#34;.2&#34;&gt;
+    &lt;path d=&#34;M-96.22 146.875h12.24l1.26 12.6h.54q6.3-6.3 13.14-10.44 7.02-4.32 16.2-4.32 13.86 0 20.16 8.64 6.48 8.64 6.48 25.56v55.44h-14.76v-53.46q0-12.42-3.96-17.82-3.96-5.58-12.6-5.58-6.84 0-12.06 3.42-5.22 3.42-11.88 10.08v63.36h-14.76v-87.48z&#34;/&gt;
+    &lt;path d=&#34;M22.38 236.515q-10.98 0-18.36-6.48-7.2-6.48-7.2-18.36 0-14.4 12.78-21.96 12.78-7.74 40.86-10.8 0-4.14-.9-8.1-.72-3.96-2.7-7.02-1.98-3.06-5.58-4.86-3.42-1.98-8.82-1.98-7.56 0-14.22 2.88-6.66 2.88-11.88 6.48L.6 156.055q6.12-3.96 14.94-7.56 8.82-3.78 19.44-3.78 16.02 0 23.22 9.9 7.2 9.72 7.2 26.1v53.64H53.16l-1.26-10.44h-.54q-6.3 5.22-13.5 9-7.2 3.6-15.48 3.6zm4.32-11.88q6.3 0 11.88-2.88 5.58-3.06 11.88-8.82v-24.3q-10.98 1.44-18.54 3.42-7.38 1.98-12.06 4.68-4.5 2.7-6.66 6.3-1.98 3.42-1.98 7.56 0 7.56 4.5 10.8 4.5 3.24 10.98 3.24z&#34;/&gt;
+    &lt;path d=&#34;M92.922 146.875h14.76v87.48h-14.76v-87.48z&#34;/&gt;
+    &lt;path d=&#34;M124.62 146.875h15.3l16.56 49.68 3.96 12.96q2.16 6.48 4.14 12.78h.72q1.98-6.3 3.96-12.78l3.96-12.96 16.56-49.68h14.58l-30.96 87.48h-17.28l-31.5-87.48z&#34;/&gt;
+    &lt;path d=&#34;M256 236.515q-8.82 0-16.56-3.06-7.56-3.24-13.32-9-5.58-5.94-8.82-14.4t-3.24-19.26q0-10.8 3.24-19.26 3.42-8.64 8.82-14.58 5.58-5.94 12.6-9 7.02-3.24 14.58-3.24 8.28 0 14.76 2.88 6.66 2.88 10.98 8.28 4.5 5.4 6.84 12.96 2.34 7.56 2.34 16.92 0 2.34-.18 4.68 0 2.16-.36 3.78h-59.04q.9 14.04 8.64 22.32 7.92 8.1 20.52 8.1 6.3 0 11.52-1.8 5.4-1.98 10.26-5.04l5.22 9.72q-5.76 3.6-12.78 6.3-7.02 2.7-16.02 2.7zm19.26-52.92q0-13.32-5.76-20.16-5.58-7.02-15.84-7.02-4.68 0-9 1.8-4.14 1.8-7.56 5.4-3.42 3.42-5.76 8.46-2.16 5.04-2.88 11.52h46.8z&#34;/&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
