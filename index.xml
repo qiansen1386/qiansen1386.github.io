@@ -8,11 +8,26 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 27 Apr 2016 05:46:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 May 2016 08:25:31 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>在瘟到死里石中使用 Linux 进行开发</title>
+      <title>编程中的网瘾少年</title>
+      <link>https://qiansen1386.github.io/post/2016/05/internet-addict</link>
+      <pubDate>Sun, 01 May 2016 08:25:31 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/05/internet-addict</guid>
+      <description>&lt;pre&gt;
+日上三竿艳阳天
+禅坐洞中神无边
+键盘谷歌牵一线
+不知今宵是何年
+&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>在瘟到死石中使用 Linux 进行开发</title>
       <link>https://qiansen1386.github.io/post/2016/04/coding-in-linux-in-windows</link>
       <pubDate>Wed, 27 Apr 2016 05:46:16 +0000</pubDate>
       
@@ -1033,30 +1048,6 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
 &lt;p&gt;源代码项目将另行制定发布协议。但一般我会倾向于使用 MIT。我最讨厌的协议即为 AGPL，我这辈子应该都不会用到它，但是未来的事情谁说得好呢。&lt;/p&gt;
 
 &lt;p&gt;Source Code might be licensed under other license. Usually I prefer MIT. I hate AGPL the most, I believe I would never use it, but who knows.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>终于成功了</title>
-      <link>https://qiansen1386.github.io/post/2016/02/first-ever-post</link>
-      <pubDate>Mon, 01 Feb 2016 06:53:50 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/2016/02/first-ever-post</guid>
-      <description>&lt;p&gt;成功啦，哈哈哈。
-现在只要&lt;code&gt;push&lt;/code&gt;到&lt;code&gt;source&lt;/code&gt;分支就能实时构建并推送到&lt;code&gt;master&lt;/code&gt;。大家可以看我的 &lt;a href=&#34;https://github.com/qiansen1386/qiansen1386.github.io&#34; target=&#34;_blank&#34;&gt;github repo&lt;/a&gt;
-具体设置请参考下面的参考链接，Wercker 并不会很难，还是挺好理解的。
-Wercker 也真的很好用，运用 docker 技术的自动化产品不要太方便，真的可以不用 jenkins 了。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;主要参考了：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://fatestigma.github.io/2016/01/29/%E4%BD%BF%E7%94%A8-wercker-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&#34; target=&#34;_blank&#34;&gt;使用 Wercker 自动化部署静态博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/automated-deployments/&#34; target=&#34;_blank&#34;&gt;【官方】Automated deployments with Wercker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34; target=&#34;_blank&#34;&gt;【coderzh CoderZh Blog】使用hugo搭建个人博客站点&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kaichu.io/2015/07/my-first-post/&#34; target=&#34;_blank&#34;&gt;【kaichu.io】在 Github Pages 建立 Hugo 靜態網站&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

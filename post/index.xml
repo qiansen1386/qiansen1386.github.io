@@ -8,11 +8,26 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 27 Apr 2016 05:46:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 May 2016 08:25:31 +0000</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>在瘟到死里石中使用 Linux 进行开发</title>
+      <title>编程中的网瘾少年</title>
+      <link>https://qiansen1386.github.io/post/2016/05/internet-addict</link>
+      <pubDate>Sun, 01 May 2016 08:25:31 +0000</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/05/internet-addict</guid>
+      <description>&lt;pre&gt;
+日上三竿艳阳天
+禅坐洞中神无边
+键盘谷歌牵一线
+不知今宵是何年
+&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>在瘟到死石中使用 Linux 进行开发</title>
       <link>https://qiansen1386.github.io/post/2016/04/coding-in-linux-in-windows</link>
       <pubDate>Wed, 27 Apr 2016 05:46:16 +0000</pubDate>
       
