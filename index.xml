@@ -42,24 +42,24 @@ Paris·Qian Sen</description>
 
 &lt;p&gt;先说结论，目前我的选择是免费版 &lt;code&gt;VMware Workstation Player 12&lt;/code&gt;(非商业用途使用) 加 &lt;code&gt;Ubuntu 16.04 LTS&lt;/code&gt;。目前 Ubuntu 还是有些小毛病。但是正常开发上网看片都没问题。&lt;/p&gt;
 
-&lt;h2 id=&#34;faqs-和技术选型的详解&#34;&gt;FAQs 和技术选型的详解&lt;/h2&gt;
+&lt;h2 id=&#34;faqs&#34;&gt;FAQs&lt;/h2&gt;
 
 &lt;h3 id=&#34;为毛用虚拟机&#34;&gt;为毛用虚拟机&lt;/h3&gt;
 
-&lt;p&gt;大多数的娱乐和工作工具还是必须用 Windows 的（尤其是中文环境），我又不想折腾 Wine，完~&lt;/p&gt;
+&lt;p&gt;大多数的娱乐和工作工具还是必须用 Windows 的（尤其是中文环境）且不想折腾 Wine&lt;br&gt;完~&lt;/p&gt;
 
 &lt;h3 id=&#34;作为早期-deepin-用户为毛不支持-deepin&#34;&gt;作为早期 Deepin 用户为毛不支持 Deepin&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Deepin 在新加坡用慢啊…… 每次 &lt;code&gt;apt-get update&lt;/code&gt; 都等得我想死啊。用了 Ubuntu 之后，感觉简直如飞般顺滑。&lt;/li&gt;
-&lt;li&gt;Deepin 在 VirtualBox 里卡得一逼。Ubuntu 在 virtualBox 比 Deepin 强多了。它本身不建议使用虚拟机环境也是有道理的。&lt;/li&gt;
+&lt;li&gt;Deepin 在新加坡软件更新巨慢啊……不仅源的数量多，而且最近的镜像在印尼。每次 &lt;code&gt;apt-get update&lt;/code&gt; 都等得我想死啊。用了 Ubuntu 之后，5~6 个源，下载速度也有提高毕竟来自星国大的镜像站就在本地。&lt;/li&gt;
+&lt;li&gt;Deepin 在 VirtualBox 里卡得一逼。Ubuntu 在 virtualBox 比 Deepin 强多了。它本身不建议使用虚拟机环境也是有道理的。（我依然推荐VMware）&lt;/li&gt;
 &lt;li&gt;稳定压倒一切（此处仅指软件）&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;为毛不用-virtualbox&#34;&gt;为毛不用 VirtualBox&lt;/h3&gt;
 
 &lt;p&gt;我用过，可是你知道你最大只能给你的 VM 加 128M 的显存么？！！！！我一开始以为 Linux 不吃显存，可是 tm 动不动就卡啊， Deepin是直接死机，Ubuntu是死一会儿好一会儿，而且驱动貌似也有问题。
-当，你在 VMware 里分配给虚拟机 &lt;code&gt;768M&lt;/code&gt; 的显存之后，你就会看到屏幕所有的动画都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些隐藏 API 可以做到这些吧，可是为毛要折腾呢？
+当，VMware 里最多可以分配给虚拟机的显存数量为 &lt;code&gt;768M&lt;/code&gt;。你就会看到屏幕所有的动画几乎都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些隐藏 API 可以做到这些吧，可是为毛要折腾呢？
 稳定压倒一切&lt;/p&gt;
 
 &lt;h3 id=&#34;用什么做开发&#34;&gt;用什么做开发&lt;/h3&gt;
@@ -70,11 +70,40 @@ Paris·Qian Sen</description>
 
 &lt;ul&gt;
 &lt;li&gt;Zsh：加git, ssh-agent插件 (See more @ &lt;a href=&#34;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;VIM/gedit: 我是用 DigitalOcean 的时候，看他们的官方教程学得 Vim，感觉挺好用的，反而不习惯 nano 这种功能用选项的笔记本工具了。gedit 嘛就是用 GUI 界面的时候用。&lt;/li&gt;
 &lt;li&gt;Atom: (See more @ &lt;a href=&#34;https://github.com/qiansen1386/frontend-dev-vue#suggested-atom-plugins&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/frontend-dev-vue#suggested-atom-plugins&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Google-Chrome-stable: 谷歌大法好！ (看这里 @ &lt;a href=&#34;https://kangax.github.io/compat-table/es6/&#34; target=&#34;_blank&#34;&gt;ECMAScript compatibility table&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mozilla.org/en-US/firefox/developer/&#34; target=&#34;_blank&#34;&gt;Firefox Developer Edition&lt;/a&gt; Firefox 一般比 Google 更尊重标准。Google 跟进标准很快，不过有时候觉得自己的实现才是 Best practice&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/creationix/nvm&#34; target=&#34;_blank&#34;&gt;Node Version Manager&lt;/a&gt;: &lt;code&gt;nvm&lt;/code&gt; 我一般都是必装的。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;安装流程&#34;&gt;安装流程&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果出现 &lt;code&gt;sudo node&lt;/code&gt;，或者 &lt;code&gt;sudo npm&lt;/code&gt; 时，出现 &lt;code&gt;Command Not Found&lt;/code&gt; 错误。建议执行以下代码，把 node 复制一份到 &lt;code&gt;usr&lt;/code&gt;。
+详见 @ &lt;a href=&#34;http://stackoverflow.com/questions/21215059/cant-use-nvm-from-root-or-sudo&#34; target=&#34;_blank&#34;&gt;Can&amp;rsquo;t use NVM from root (or sudo)&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps#-installing-nodejs-on-a-vps&#34; target=&#34;_blank&#34;&gt;How To Install Node.js with NVM (Node Version Manager) on a VPS - DigitalOcean&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;推荐配置&#34;&gt;推荐配置&lt;/h3&gt;
+
+&lt;p&gt;|处理器|分配等效 4 逻辑核|
+|内存|&lt;code&gt;6~8G&lt;/code&gt;，亲测，如果只分配&lt;code&gt;4G&lt;/code&gt;，用 &lt;code&gt;Atom&lt;/code&gt; 和 &lt;code&gt;Chrome&lt;/code&gt; 会卡|
+|硬盘|我放了&lt;code&gt;300G&lt;/code&gt;，放心地往大了放就好了，这不是实际使用空间，只是最大使用空间。|
+|显存|&lt;code&gt;768M&lt;/code&gt;最大，如果允许我早就分配&lt;code&gt;1G&lt;/code&gt;了233|
+|打印机|要手动删除虚拟打印机，不为什么，反正用不到，看着烦|
+|驱动|不需要特殊驱动，但是VMware Tools一定要装，跟VirtualBox extension pack是一个意思|&lt;/p&gt;
+
+&lt;h3 id=&#34;安装注意事项&#34;&gt;安装注意事项&lt;/h3&gt;
+
+&lt;p&gt;配置好硬件之后，就可以安装了。VMware 在装 ubuntu 的时候，并不用真正的走流程安装的（手动装当然也可以）。
+它问一些基本信息，然后用一个私有方案复制文件，就可以直接“简易安装”，不是很懂。我默认安装下来。跟自己装没啥区别。
+折腾输入法的时候有些麻烦，但是没有什么好总结的，莫名其妙就坏了，莫名其妙就好了。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;千万别乱装软件源。如果出错了就取消掉。&lt;/li&gt;
+&lt;li&gt;安装完 &lt;code&gt;Fcitx&lt;/code&gt; 之后，不要手贱卸载 &lt;code&gt;ibus&lt;/code&gt;。这货跟很多 unity 组件有依赖，卸载他，ubuntu desktop的组件们也会消失。&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;喂丸·待续
