@@ -17,25 +17,25 @@ title = "在瘟到死石中使用 Linux 进行开发"
 先说结论，目前我的选择是免费版 `VMware Workstation Player 12`(非商业用途使用) 加 `Ubuntu 16.04 LTS`。目前 Ubuntu 还是有些小毛病。但是正常开发上网看片都没问题。
 
 
-FAQs 和技术选型的详解
+FAQs
 ------
 
 ### 为毛用虚拟机
 
-大多数的娱乐和工作工具还是必须用 Windows 的（尤其是中文环境），我又不想折腾 Wine，完~
+大多数的娱乐和工作工具还是必须用 Windows 的（尤其是中文环境）且不想折腾 Wine<br>完~
 
 
 ### 作为早期 Deepin 用户为毛不支持 Deepin
 
-1. Deepin 在新加坡用慢啊…… 每次 `apt-get update` 都等得我想死啊。用了 Ubuntu 之后，感觉简直如飞般顺滑。
-2. Deepin 在 VirtualBox 里卡得一逼。Ubuntu 在 virtualBox 比 Deepin 强多了。它本身不建议使用虚拟机环境也是有道理的。
+1. Deepin 在新加坡软件更新巨慢啊……不仅源的数量多，而且最近的镜像在印尼。每次 `apt-get update` 都等得我想死啊。用了 Ubuntu 之后，5~6 个源，下载速度也有提高毕竟来自星国大的镜像站就在本地。
+2. Deepin 在 VirtualBox 里卡得一逼。Ubuntu 在 virtualBox 比 Deepin 强多了。它本身不建议使用虚拟机环境也是有道理的。（我依然推荐VMware）
 3. 稳定压倒一切（此处仅指软件）
  
 
 ### 为毛不用 VirtualBox
 
 我用过，可是你知道你最大只能给你的 VM 加 128M 的显存么？！！！！我一开始以为 Linux 不吃显存，可是 tm 动不动就卡啊， Deepin是直接死机，Ubuntu是死一会儿好一会儿，而且驱动貌似也有问题。
-当，你在 VMware 里分配给虚拟机 `768M` 的显存之后，你就会看到屏幕所有的动画都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些隐藏 API 可以做到这些吧，可是为毛要折腾呢？
+当，VMware 里最多可以分配给虚拟机的显存数量为 `768M`。你就会看到屏幕所有的动画几乎都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些隐藏 API 可以做到这些吧，可是为毛要折腾呢？
 稳定压倒一切
 
 
@@ -46,11 +46,38 @@ FAQs 和技术选型的详解
 我用这些东西：
 
 - Zsh：加git, ssh-agent插件 (See more @ https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh)
+- VIM/gedit: 我是用 DigitalOcean 的时候，看他们的官方教程学得 Vim，感觉挺好用的，反而不习惯 nano 这种功能用选项的笔记本工具了。gedit 嘛就是用 GUI 界面的时候用。
 - Atom: (See more @ https://github.com/qiansen1386/frontend-dev-vue#suggested-atom-plugins)
-- Google-Chrome-stable: 谷歌大法好！ (看这里 @ [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/))
+- Google-Chrome-stable: 谷歌大法好！ (看这里 @ [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/)) 
+- [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) Firefox 一般比 Google 更尊重标准。Google 跟进标准很快，不过有时候觉得自己的实现才是 Best practice
+- [Node Version Manager](https://github.com/creationix/nvm): `nvm` 我一般都是必装的。
 
 
-### 安装流程
+> 如果出现 `sudo node`，或者 `sudo npm` 时，出现 `Command Not Found` 错误。建议执行以下代码，把 node 复制一份到 `usr`。
+详见 @ [Can't use NVM from root (or sudo)](http://stackoverflow.com/questions/21215059/cant-use-nvm-from-root-or-sudo) & [How To Install Node.js with NVM (Node Version Manager) on a VPS - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps#-installing-nodejs-on-a-vps)
+```shell
+n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+```
+
+
+### 推荐配置
+
+|处理器|分配等效 4 逻辑核|
+|内存|`6~8G`，亲测，如果只分配`4G`，用 `Atom` 和 `Chrome` 会卡|
+|硬盘|我放了`300G`，放心地往大了放就好了，这不是实际使用空间，只是最大使用空间。|
+|显存|`768M`最大，如果允许我早就分配`1G`了233|
+|打印机|要手动删除虚拟打印机，不为什么，反正用不到，看着烦|
+|驱动|不需要特殊驱动，但是VMware Tools一定要装，跟VirtualBox extension pack是一个意思|
+
+
+### 安装注意事项
+
+配置好硬件之后，就可以安装了。VMware 在装 ubuntu 的时候，并不用真正的走流程安装的（手动装当然也可以）。
+它问一些基本信息，然后用一个私有方案复制文件，就可以直接“简易安装”，不是很懂。我默认安装下来。跟自己装没啥区别。
+折腾输入法的时候有些麻烦，但是没有什么好总结的，莫名其妙就坏了，莫名其妙就好了。
+
+1. 千万别乱装软件源。如果出错了就取消掉。
+2. 安装完 `Fcitx` 之后，不要手贱卸载 `ibus`。这货跟很多 unity 组件有依赖，卸载他，ubuntu desktop的组件们也会消失。
 
 > 喂丸·待续
 <div class="thumbinner" style="width:222px;">
