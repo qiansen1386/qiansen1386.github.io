@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', 'Source Han Sans', STXihei, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Source Han Sans', 思源黑体, PingFangSC-Regular, 'Hiragino Sans GB', "STHeiti Light", 华文细黑, 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
 }
 
 h1,
@@ -60,7 +60,7 @@ canvas.accelerated {
 .post {
   line-height: 2.5;
   font-size:16px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04rem;
 }
 
 @media screen and (min-height: 830px) {
