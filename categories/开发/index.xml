@@ -26,7 +26,7 @@ Paris·Qian Sen</description>
 &lt;h2 id=&#34;结论&#34;&gt;结论&lt;/h2&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Update: 知名 YouTube 主播 &lt;a href=&#34;https://www.youtube.com/user/quidsup&#34; target=&#34;_blank&#34;&gt;quidsup&lt;/a&gt; 一直在安利 Ubuntu Mate/Linux Mint……Unity 貌似吃内存和显存很多。我尝试了一下。嗯，果然被 Linux Mint 洗脑了。虽然 Ubuntu Unity 确实很漂亮，但是感觉基于 Gnome3 的 Cinnamon 更省资源，更流畅，也更传统（毕竟基于Gnome）。（纯主观感受，毫无科学依据）&lt;/p&gt;
+&lt;p&gt;Update: 知名 YouTube 主播 &lt;a href=&#34;https://www.youtube.com/user/quidsup&#34; target=&#34;_blank&#34;&gt;quidsup&lt;/a&gt; 一直在安利 Ubuntu Mate/Linux Mint……Unity 貌似吃内存和显存很多。我尝试了一下。虽然 Ubuntu Unity 确实很漂亮，但是感觉基于 Gnome3 的 Cinnamon 更省资源，更流畅，也更传统（毕竟基于Gnome）。（纯主观感受，毫无科学依据）不过呢，我已经折腾很久的 Ubuntu 了。感觉还是不需要再折腾下去了。Popularity is my first concern.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;先说结论，目前我的选择是免费版 &lt;code&gt;VMware Workstation Player 12&lt;/code&gt;(非商业用途使用) 加 &lt;code&gt;Ubuntu 16.04 LTS&lt;/code&gt;。目前 Ubuntu 还是有些小毛病。但是正常开发上网看片都没问题。&lt;/p&gt;
@@ -51,9 +51,11 @@ Paris·Qian Sen</description>
 
 &lt;h3 id=&#34;为毛不用-virtualbox&#34;&gt;为毛不用 VirtualBox&lt;/h3&gt;
 
-&lt;p&gt;我用过，可是你知道你最大只能给你的 VM 加 128M 的显存么？！！！！我一开始以为 Linux 不吃显存，可是 tm 动不动就卡啊， Deepin是直接死机，Ubuntu是死一会儿好一会儿，而且驱动貌似也有问题。
+&lt;p&gt;&lt;del&gt;我用过，可是你知道你最大只能给你的 VM 加 128M 的显存么？！！！！我一开始以为 Linux 不吃显存，可是 tm 动不动就卡啊， Deepin是直接死机，Ubuntu是死一会儿好一会儿，而且驱动貌似也有问题。
 当，VMware 里分配给虚拟机的显存数量默认为 &lt;code&gt;768M&lt;/code&gt;。你就会看到屏幕所有的动画几乎都毫无卡顿，几乎媲美原生系统。相信我，你绝对再也回不去了！！！只要我接到新的赚外快机会，我就买商业版！真的，太爽了！软件的稳定就是安心！可能 VirtualBox 有些 &lt;code&gt;CLI  API&lt;/code&gt; 可以做到这些吧，可是为毛要折腾呢？
-稳定压倒一切&lt;/p&gt;
+稳定压倒一切&lt;/del&gt;
+128M 只是2D视频的显存。128已经够用了。而用于3D的显存是无限的，显卡上有多少就可以用多少。
+至于为什么会卡，我还是不太清楚。如果我将来可以换一个SSD作为主力硬盘的话，我的确很有可能会转回去使用 &lt;code&gt;VirtualBox&lt;/code&gt;。&lt;/p&gt;
 
 &lt;h3 id=&#34;用什么做开发&#34;&gt;用什么做开发&lt;/h3&gt;
 
@@ -108,6 +110,10 @@ sudo apt-get install firefox
 &lt;li&gt;安装完 &lt;code&gt;Fcitx&lt;/code&gt; 和 &lt;code&gt;sogou&lt;/code&gt; 之后，不要手贱卸载 &lt;code&gt;ibus&lt;/code&gt;。这货跟很多 unity 组件有依赖，卸载他，ubuntu desktop的组件们也会跟着消失。（这种情况下，重装 &lt;code&gt;ibus&lt;/code&gt; 可能管用；如果不管用，则需要把当前的 &lt;code&gt;.compiz-1&lt;/code&gt; 文件夹改名为 &lt;code&gt;.compiz-1.old&lt;/code&gt; 之类的。重置默认设置。之后备份出来的的 &lt;code&gt;.compiz-1&lt;/code&gt; 文件夹就可以删掉了。）&lt;/li&gt;
 &lt;li&gt;Linux 锁定状态下，是否可以通过 Chrome remote Desktop访问，我目前不太清楚。但是访问锁定状态下的 Windows 里的虚拟机里的锁定状态下的 Linux 里的 &lt;code&gt;Chrome RDP&lt;/code&gt; 就实在是做不到了，需要穿过太多层了。任何一层阻隔了访问权限也会出问题，而且搞不好就会暴露很多安全隐患不建议这么做，最好用共享网盘分享文件，而非共享访问权限。&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;官方自带的 Backup 组件，在安装 &lt;code&gt;Chrome RDP&lt;/code&gt; 之后会出现异常反应，如无休止地占用海量内存（症状类似内存泄漏）。建议不要安装 Google RDP，尚不知道 TeamViewer 等其他&lt;code&gt;VNC&lt;/code&gt;软件是否有类似 Bug。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&#34;本土化-与-个性化&#34;&gt;本土化 与 个性化&lt;/h3&gt;
 
