@@ -8,8 +8,21 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 May 2016 08:25:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 May 2016 21:30:27 +0800</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>与友人于江畔闲谈小酌有感</title>
+      <link>https://qiansen1386.github.io/post/2016/05/chit-chat-w-friend-by-river-bank</link>
+      <pubDate>Wed, 11 May 2016 21:30:27 +0800</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/05/chit-chat-w-friend-by-river-bank</guid>
+      <description>&lt;pre&gt;
+春来心外花千束  日日眉锁为哪般
+假寐江畔凭栏处  无风星汉起波澜
+&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>编程中的网瘾少年</title>
@@ -1084,32 +1097,6 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
 顺便分享一个毫不煽情而又振聋发聩的演讲。（另，袁腾飞也曾发表有类似于“生活在自我营造的 bubble 里”一样的自陈）&lt;/p&gt;
 
 &lt;p&gt;&lt;small style=&#34;float:right&#34;&gt;写于公元二零一六年一月下旬&lt;/small&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://qiansen1386.github.io/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/license/</guid>
-      <description>
-
-&lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
-
-&lt;h2 id=&#34;non-coding-content&#34;&gt;Non-Coding Content&lt;/h2&gt;
-
-&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;知识共享许可协议&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;如无特殊说明，本站非源码内容均采用&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/a&gt;进行许可。商业转载请另行联系。&lt;/p&gt;
-
-&lt;p&gt;All non-coding content is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;source-code&#34;&gt;Source code&lt;/h2&gt;
-
-&lt;p&gt;源代码项目将另行制定发布协议。但一般我会倾向于使用 MIT。我最讨厌的协议即为 AGPL，我这辈子应该都不会用到它，但是未来的事情谁说得好呢。&lt;/p&gt;
-
-&lt;p&gt;Source Code might be licensed under other license. Usually I prefer MIT. I hate AGPL the most, I believe I would never use it, but who knows.&lt;/p&gt;
 </description>
     </item>
     
