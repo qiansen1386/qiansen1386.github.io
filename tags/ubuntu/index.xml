@@ -120,7 +120,7 @@ sudo apt-get install firefox
 &lt;ol&gt;
 &lt;li&gt;Fctix =&amp;gt; Sogou 拼音（必须）&lt;/li&gt;
 &lt;li&gt;WPS (中文字体)（可选）&lt;/li&gt;
-&lt;li&gt;思源黑体（可选）&lt;/li&gt;
+&lt;li&gt;思源黑体（自带 Noto 的版本）&lt;/li&gt;
 &lt;li&gt;有道词典（没有快捷键呼出，没有用户登录，略鸡肋）&lt;/li&gt;
 &lt;li&gt;一个扁平化的黑色系主题！嘿嘿嘿。&lt;/li&gt;
 &lt;/ol&gt;
