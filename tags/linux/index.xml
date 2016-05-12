@@ -91,12 +91,46 @@ sudo apt-get install firefox
 
 &lt;h3 id=&#34;推荐配置&#34;&gt;推荐配置&lt;/h3&gt;
 
-&lt;p&gt;|处理器|分配等效 4 逻辑核|
-|内存|&lt;code&gt;6~8G&lt;/code&gt;，亲测，如果只分配&lt;code&gt;4G&lt;/code&gt;，用 &lt;code&gt;Atom&lt;/code&gt; 和 &lt;code&gt;Chrome&lt;/code&gt; 会卡|
-|硬盘|我放了&lt;code&gt;300G&lt;/code&gt;，放心地往大了放就好了，这不是实际使用空间，只是最大使用空间。|
-|显存|&lt;code&gt;1G&lt;/code&gt;吧|
-|打印机|要手动删除虚拟打印机，不为什么，反正用不到，看着烦|
-|驱动|不需要特殊驱动，但是VMware Tools一定要装，跟VirtualBox extension pack是一个意思|&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类目&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;处理器&lt;/td&gt;
+&lt;td&gt;分配等效 4 逻辑核&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;6~8G&lt;/code&gt;，亲测，如果只分配&lt;code&gt;4G&lt;/code&gt;，用 &lt;code&gt;Atom&lt;/code&gt; 和 &lt;code&gt;Chrome&lt;/code&gt; 会卡&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;硬盘&lt;/td&gt;
+&lt;td&gt;我放了&lt;code&gt;300G&lt;/code&gt;，放心地往大了放就好了，这不是实际使用空间，只是最大使用空间。&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;显存&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1G&lt;/code&gt;吧&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;打印机&lt;/td&gt;
+&lt;td&gt;要手动删除虚拟打印机，不为什么，反正用不到，看着烦&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;驱动&lt;/td&gt;
+&lt;td&gt;不需要特殊驱动，但是VMware Tools一定要装，跟VirtualBox extension pack是一个意思&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h3 id=&#34;安装注意事项&#34;&gt;安装注意事项&lt;/h3&gt;
 
