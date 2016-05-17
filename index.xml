@@ -8,8 +8,101 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 May 2016 21:30:27 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 May 2016 22:47:39 +0800</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quora：烂程序猿的特征都有啥？</title>
+      <link>https://qiansen1386.github.io/post/2016/05/what-are-the-characteristics-of-a-bad-software-engineer</link>
+      <pubDate>Thu, 12 May 2016 22:47:39 +0800</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/05/what-are-the-characteristics-of-a-bad-software-engineer</guid>
+      <description>
+
+&lt;h2 id=&#34;what-are-the-characteristics-of-a-bad-software-engineer&#34;&gt;What are the characteristics of a bad software engineer?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik?srid=3Eg3&#34; target=&#34;_blank&#34;&gt;Originally answered by Nachiket Naik, software developer, artist, reader, writer, thinker and compassionate human being&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;据我观察，烂软件工程师有有以下几种特征：&lt;/p&gt;
+
+&lt;p&gt;In my experience, these are some characteristics of bad software engineers:&lt;/p&gt;
+
+&lt;p&gt;壹 &lt;strong&gt;Stack Overflow 的搬运机器人&lt;/strong&gt;：这类人一发现有报错，就顺手 Google 一下，接着把他们查到的第一个方法拿来试。问题不在于从 stack Overflow 搬运，私以为 SOF 有比任何参考手册和文档都更多的解决方案内容。所以别误会，SOF 即便不是最好也是超好的资源。问题在于不理解这些方案的后果，不清楚应用的适用场景，不确定其是否真正能对应手头的问题，的情况下，就机械地照搬。我看过不止一次，比起近在眼前的代码和系统，人们反而更愿意去相信网络论坛的说法。&lt;/p&gt;
+
+&lt;p&gt;1) &lt;strong&gt;The Stack Overflow bot&lt;/strong&gt;: This person ran into an error, did a quick Google search and applied the first solution they found. The problem here is not that of copying from Stack Overflow. I think there are more solutions on Stack Overflow than any reference guide or manual. Don&amp;rsquo;t get me wrong, it&amp;rsquo;s a wonderful resource, if not the best. The problem is the robotic application of it without understanding the consequences. The problem is the application of it without fully understanding the context of it and whether it really applies to the current problem at hand. More often than not, I have seen people believe more of what they see on online forums than the code/system in front of them.&lt;/p&gt;
+
+&lt;p&gt;贰 &lt;strong&gt;“老子又不是测试人员”&lt;/strong&gt;：我不用测试我的代码，那是测试人员的工作。即便在这个敏捷开发的方法论已经无比成熟的年代，我也没觉得吃这种态度的人比之前少了多少。人们依旧对测试十分懈怠。一部分源于他们对部署测试环境不感兴趣；另一方面，他们缺乏测试相关的系统知识。（还部分源于开发者社群对测试人员心照不宣的轻视）&lt;/p&gt;
+
+&lt;p&gt;2) &lt;strong&gt;The I-am-not-a-tester&lt;/strong&gt;: I don&amp;rsquo;t need to test the code; that is the job of the testers. I don&amp;rsquo;t think that even in this age of mature Agile methodologies, this attitude has waned. There is still an inertia against testing their code. Part of it comes from lacking the interest to set up a testing environment and partly from lack of coherent knowledge of testing. (Is it also partly due to an unspoken stigma against testers in the developer community.)&lt;/p&gt;
+
+&lt;p&gt;叁 &lt;strong&gt;“我讨厌文档”&lt;/strong&gt;：一些人认为代码文档必须写得很诗意，而他们写不出这种东西，由此推出写文档肯定不是他们的工作。我觉得这是开发长效稳定代码的最大威胁！好的软件不是提供成千上万好功能的软件。好软件是只包含少许功能，却能被众人一直使用，还能被成百上千人查阅、更新、修改。这种对技术交流和精准细致的文档毫不关心的程序猿将成为公司成功的重大阻碍。&lt;/p&gt;
+
+&lt;p&gt;3) &lt;strong&gt;The I-hate-documentation&lt;/strong&gt;: Some people believe that code documentation must be poetic and hence they lack the skill to do it, ergo not their job. In my opinion, these are the #1 foes of sustainable software. Good software is not software that provides a million cool features. Good software is one that has a few good features that are used consistently by many people and read/updated/modified by a thousand. This brand of developers who believes less in technical communication and precise and detailed documentation is the greatest weed to a company&amp;rsquo;s success.&lt;/p&gt;
+
+&lt;p&gt;肆 &lt;strong&gt;丑陋&lt;/strong&gt;：我的代码能用，然而：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;我有表意不明的变量名：x, flag, str, arr 等等&lt;/li&gt;
+&lt;li&gt;我写的大多数代码都包含在一个冗长的方法中&lt;/li&gt;
+&lt;li&gt;没有缩进（译注：还有乱缩进）&lt;/li&gt;
+&lt;li&gt;没有一以贯之的编码规范、风格&lt;/li&gt;
+&lt;li&gt;全局变量到处瞎鸡巴放&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这是我个人最反感的一点。这并不代表代码很差，它很可能还是一段颇具巧思的好代码。即便锦帽貂裘，若是丢进了垃圾堆里，也没人找得到它，没人愿意清理它，跟别提佩戴和使用了。&lt;/p&gt;
+
+&lt;p&gt;4) &lt;strong&gt;The ugly&lt;/strong&gt;: My code works, but:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I have variables named x, flag, str, arr, etc.&lt;/li&gt;
+&lt;li&gt;Most of what I write is in one giant method.&lt;/li&gt;
+&lt;li&gt;There is no indentation.&lt;/li&gt;
+&lt;li&gt;No consistent coding convention or style.&lt;/li&gt;
+&lt;li&gt;Global variables spewed all over the place, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is the most annoying thing for me personally. It&amp;rsquo;s not the issue that the code is bad. It could potentially be the greatest piece of code written. But if a diamond necklace is buried in the debris of the Titanic, nobody will find it, and nobody will want to clean it, wear it, use it.&lt;/p&gt;
+
+&lt;p&gt;伍 &lt;strong&gt;短期投资者&lt;/strong&gt;：他写代码。他部署代码。他走了。他不研究业务逻辑，他不在乎学到东西题。给他一段代码，他会连夜搞它一整晚，第二天他回给你的是一个已经修好的的软件。除此之外的东西就一概欠奉了。有时候，开发者要有点自私心，人应该不仅仅在乎交活日期，也要注重经手这个项目你能学到什么。&lt;/p&gt;
+
+&lt;p&gt;5) &lt;strong&gt;The short-term investor&lt;/strong&gt;: He codes. He deploys. He moves on. No attempt to learn the problem. No interest in the domain. Just give this guy a piece of code, he will slog on it overnight and hand it over. You got a fix/working software. Nothing more achieved from it. Sometimes, it&amp;rsquo;s important that you have certain selfishness in the developer, one who not only cares about the deadline, but also cares about what he/she got to learn from it.&lt;/p&gt;
+
+&lt;p&gt;陸 &lt;strong&gt;异议人士&lt;/strong&gt;：“这肯定不是老子干的”，“这一团糟”，“反正不是我的问题”，“这跟我的修改无关，是远处的XXX的错”，“我讨厌这个（每天 BB 这句话 10 次)”，“我没法修这东西，谁搞坏的谁来修”
+呵呵，写这个代码的已经离职了，你什么时候走？&lt;/p&gt;
+
+&lt;p&gt;6) &lt;strong&gt;The protester&lt;/strong&gt;: &amp;ldquo;I didn&amp;rsquo;t do this&amp;rdquo;. &amp;ldquo;This looks bad&amp;rdquo;. &amp;ldquo;Not my problem&amp;rdquo;. &amp;ldquo;This isn&amp;rsquo;t related really to my fix, but someone way over there made a mistake&amp;rdquo;. &amp;ldquo;I hate this (loop this sentence 10 times a day)&amp;rdquo;, &amp;ldquo;I can&amp;rsquo;t fix this, get the person who made this code to fix it&amp;rdquo;.
+The person who coded that mistake has moved on, when will you?&lt;/p&gt;
+
+&lt;p&gt;柒 &lt;strong&gt;独裁者&lt;/strong&gt;：“My way or the highway”（要么听我的要么滚）是他们的信条。他们对人不对事，这是场他们的解决方案与你的解决方案之间的对决。我想这里面肯定有不少争吵。他们会回来指责你的代码，即使你的代码运行良好，测试完善，看起来完全没问题，他们也会很不爽。这些人是工作效率的一大制约，并且在压力来临的时候，他们也是最先崩溃的，最先跳起来指指点点。即便他们是很有经验很好的开发者，他们对团队也是不利的。&lt;/p&gt;
+
+&lt;p&gt;7) &lt;strong&gt;The dictator&lt;/strong&gt;: My way or the highway is their motto. It&amp;rsquo;s their &amp;ldquo;ideas&amp;rdquo; vs &amp;ldquo;your ideas&amp;rdquo;, not &amp;ldquo;project ideas&amp;rdquo;. It&amp;rsquo;s their solution vs your solution. I bet there will be an argument for sure. Somehow they will keep coming back to a part of code that you implemented. It somehow discomforts them even if it works, tests, and looks perfectly fine. This person is a big bottleneck to productivity and will be the first person to crumble under pressure and start pointing fingers. This person is not good for the team, however experienced/good a developer he may be.&lt;/p&gt;
+
+&lt;p&gt;捌 &lt;strong&gt;怕事鬼&lt;/strong&gt;：当某位 JAVA 程序猿听到他要被迫写一段 Python 代码时，傻掉了。当某位程序猿发现需要改注册表时，慌掉了。当程序猿发现必须往数据库里添些东西的时候，吓哭了。这些人会竭尽所能地避免走出他们的舒适区。他们对触碰系统的某些部分有着非同寻常的迷信忌讳。见得多了，我就明白了，这些现象对新手开发者而言还挺常见的。好的程序猿则更倾向于或快或慢地探索舒适区之外世界。&lt;/p&gt;
+
+&lt;p&gt;8) &lt;strong&gt;The overcautious&lt;/strong&gt;: The Java developer who just froze when he learned that he would have to write a Python script. The developer who panicked on learning that something in the registry needs changing. The developer who cringes at having to input things in the database. These people will do anything to avoid getting out of their comfort zone. They have weird superstitions related to having to touch certain parts of the system. I have learned, from personal experience, that this phenomenon is common with new developers. Good developers show a tendency to slowly/swiftly move out of their comfort zone in exploration.&lt;/p&gt;
+
+&lt;p&gt;玖 &lt;strong&gt;一芥莽夫&lt;/strong&gt;：忘了备份，快照，同时开好多代码的工作目录，忘记登出系统，把生产环境的代码乱放等等。这些是菜鸟的常见错误，等他们慢慢成长，会变得越来越专业的。&lt;/p&gt;
+
+&lt;p&gt;9) &lt;strong&gt;The careless&lt;/strong&gt;: Forgets to take a backup, snapshots, has multiple working directories of code, leaves system out, prints in production code, etc. Again, this is a newbie tendency and gets better with more professional exposure.&lt;/p&gt;
+
+&lt;p&gt;拾 &lt;strong&gt;懒惰的默认式程序猿？&lt;/strong&gt;他们骄傲于能够快速找到窍门让系统恢复正常。他们总能给目测无比复杂的问题，找到魔法一般的解决办法。我的经验是，这些花招十个里有九个是银样蜡枪头，就表面功夫而已。这些差劲的花招早晚有一天会坏掉，而且被迫修复他们的代价会比立刻认认真真地修好它所花的时间更高。&lt;/p&gt;
+
+&lt;p&gt;10) &lt;strong&gt;The lazy pseudo-hacker&lt;/strong&gt;: They pride themselves at being able to trick the system into working. They find magical solutions to seemingly complex problems. My experience says that 9 out of 10 times, it&amp;rsquo;s just a facade. The hack is bad and will crash sooner or later and will cost much more than having to deal with it, with extra time right now.&lt;/p&gt;
+
+&lt;p&gt;补充：留言，点赞，开新楼之类的废话，不翻译了。
+EDIT: Please drop in comments. Maybe we could start a new follow-up question as to how a managers/peers/colleagues could handle these cases because almost all of them can be helped to become better. A design pattern of sorts for fixing programmer smells. :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Updated Dec 5, 2014&lt;/small&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;后记： 我觉得这个篇文章的作者的确点出了几个点，不过就我个人感觉这完全是一种基于过往经验的偏见。举例而言，Linus 就是独裁者；而好的程序猿对代码都有洁癖；天天做恶心的代码，没有人不抱怨的。情商的养育是一个系统的话题，情商不行，干什么都不行，也不光是程序猿了啊。扯多了就扯远了。总之这是篇有水分的文章，尽信书不如无书。
+另外，程序猿一言不合，拔键盘相向我觉得也挺好理解的吧。不说了，我和同事去医院缝针了。Yes, My patch wins!
+好吧，我就是 dictator 型的，my way or no way，我的必然是最简单最好懂也最好维护的方案，不过我一般不强迫他们，如果 Design pattern 的基础不牢固，有些抽象方法你解释给他们，他们也听不懂。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>与友人于江畔闲谈小酌有感</title>
@@ -1064,73 +1157,6 @@ What is the ultmate solution, use one calculation, the ultmate O(1) solution:&lt
 &lt;li&gt;&lt;a href=&#34;https://github.com/zyro/hyde-x&#34; target=&#34;_blank&#34;&gt;hugo-hype-x-theme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wercker.com&#34; target=&#34;_blank&#34;&gt;Wercker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>写于 2016 年初的一段话</title>
-      <link>https://qiansen1386.github.io/post/2016/01/written-in-early-2016</link>
-      <pubDate>Sun, 17 Jan 2016 06:02:46 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/2016/01/written-in-early-2016</guid>
-      <description>
-
-&lt;h2 id=&#34;年轻人最不缺的就是时间-么&#34;&gt;年轻人最不缺的就是时间……么？&lt;/h2&gt;
-
-&lt;p&gt;2015 年跨年之际，知名文化科普读书卖书财经评论创业指导粉丝经营活动策划品牌构建公司——罗辑思维，举办了一场盛大的跨年演讲《时间的朋友》。
-其中罗振宇分享自己年过 40 的人生信念的时候说了以下两句台词&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;大学生为什么就不能去创业？他们本来就是无产者，成本如此之低，为什么不试试？年轻人最能浪费的就是时间。&lt;/li&gt;
-&lt;li&gt;我写的东西一定有意思么？未见得吧。我拼的就是早上六点我不睡觉，比我聪明有天赋的媒体人还在睡觉。我的优势就是我岁数越大，我的觉就越少。（有删改）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这尼玛对年轻人好不公平23333&lt;/p&gt;
-
-&lt;p&gt;每个人每天只有24枚硬币，年轻人要交8到10枚的日租。而剩下的钱怎么花则是一个一辈子的问题。在网上和一个人的距离可谓咫尺天涯，瞬息万里。一个若干年没见的好友，在网上就好像天天俯首可见的邻里。正所谓士别三日当刮目相待，有的时候一个人过了十好几年却仿佛都活到狗身上去了，辣么无知辣么无聊辣么没有深度，鸡毛蒜皮又油盐酱醋，虽然知道世界上包括自己在内百分之八十的人都是傻逼，但是发现自己是个傻逼这件事本身特别二逼。知识有多么的让人愉悦，无知就有多么的让人惊悚。倘若每天都任凭游戏视频电视动漫占据人的一生，十年之后，不知道彼时的自己那时该有多空虚，多么肤浅。这样的未来，让人如何接受。不为了别人，也要努力拼搏，努力学习，努力进取。不再像年轻时那般，立志于造就一个有我比没有我略好的世界，只是为了让现在的自己真诚地面对自己的本心，让将来的自己可以不必后悔。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;题外话：哲学这东西真的需要多听百家之言啊。我暂时不做李开复的信徒了，今天我是尼采的信徒，而明天我会信奉什么道理就让明天的我再去决定吧。（顺便李开复自己貌似也开始因自己大病初愈与世界的顽固两方面原因而反思“世界因你而不同”的信条）&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;开心就好&#34;&gt;开心就好&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;老子曰：“大道廢，有仁義；智慧出，有大僞；六親不和，有孝慈；國家昏亂，有忠臣”。故自勉，善战者无浩浩之功，何须宠辱皆惊。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;人生顺畅通达之时，自诩不喝鸡汤，不求安慰。曾暗讽同僚亲朋与故旧：常励志者必自哀，自信何须鸡汤补，开心何须口号提。人生若是能一帆风顺，此番说法倒也无可厚非。然而人生百年怎可能让你无名小卒事事平顺，所向披靡。人生入逆境，尝以先前之言自讽，乃叹曰，此真乃伤口撒盐，锉骨诛心之语。人生已经如此凄切，何须落井下石。可知，先前万事平顺之说，乃是自欺。若神思安定，当不至于内心幽暗至此。人生波波折折，或起或落，乃是天道。顺天道而为之，方能成就人为。事事与他人相较，别人做得好则自勉，我也可以；做得不好则飘飘然，惰性乃出；每每关切家国天下，何曾顾得自身酱醋餐茶。You only live once， why the hell give a shit about others. Success doesn&amp;rsquo;t matter, happiness mather, yeah, do only the thing you love and do it well.&lt;/p&gt;
-
-&lt;p&gt;几天前，雷军在公司内部年会中谈了以下内容，如晨钟暮鼓振聋发聩：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;年初我们定了一个8000万台的销售预期，面对这样的市场形势，不知不觉我们把预期当成了任务。我们所有的工作，都不自觉地围绕这个任务来展开，每天都在想怎么完成。在这样的压力下，我们的动作变形了，每个人脸上都一点一点失去了笑容。
-。。。省略部分内容
-所以我们定下了2016年最重要的战略：开心就好。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;是的啊，如果连&lt;strong&gt;开心&lt;/strong&gt;都成了奢望，还怎么有脸说可以给世界带来&lt;strong&gt;爱与希望&lt;/strong&gt;？&lt;/p&gt;
-
-&lt;p&gt;所谓士气，拆开揉碎了讲，不过也就是每天开开心心，做事热情高效。你自己心情如此之糟，连带你的同僚上下都不爽，何苦来哉。缘分断了就是断了，与其相濡以沫不如相忘于江湖。再续前缘神马的多无聊，世界这么大你倒是去转转啊23333&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;有的时候觉得自己很消极，尼采说嫉妒不是罪恶，可是有的时候又觉得胜负心真是各种苦难的源泉。自我尊重自我觉醒与自我为难相提并论时，怎么求解？
-&lt;pre&gt;
-立功立言立德，像雾像雨像风。
-与其励志成功，不若难得平庸！
-有钱不过三餐，怎比一帘幽梦。
-闲来两行代码，窗外万盏霓灯。
-时人驰往苍穹，我自垂钓江中；
-彼可摘星揽月，叟且醉枕清风。
-&lt;/pre&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这，便是我在 2015 年的年末最大的感受。&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xCvV_4qu78U&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-顺便分享一个毫不煽情而又振聋发聩的演讲。（另，袁腾飞也曾发表有类似于“生活在自我营造的 bubble 里”一样的自陈）&lt;/p&gt;
-
-&lt;p&gt;&lt;small style=&#34;float:right&#34;&gt;写于公元二零一六年一月下旬&lt;/small&gt;&lt;/p&gt;
 </description>
     </item>
     
