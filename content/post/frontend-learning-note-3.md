@@ -12,7 +12,7 @@ The Lesson I Learnt
 ### Line-ending issue
 
 Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
-Unwated `\r` will appears everywhere...
+Unwated `\r` will appears everywhere during `vagrant up`...
 
 ### scripts heading
 
@@ -41,6 +41,11 @@ The end, I am afraid that I have to go for the `--no-bin-links` approach. Em, th
 
 Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby's. Because I am not only new to it, but also too anxious. Whereas, Ruby's syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn't get chance to practice `Metaprogramming` much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages. 
 
+### Vim
+
+Whenever I used my mouse cursor, it will entry the `VISUAL` mode. However, all I wanted is just use the terminal's build-in copy-paste feature. The bottom line is: I managed to prevent that by creating a `.vimrc` file under my `~/` home folder with a special setting `set mouse=r`.
+
+
 Time for Referances
 -----------
 
@@ -52,3 +57,10 @@ Time for Referances
 - [How I boosted my Vim](http://nvie.com/posts/how-i-boosted-my-vim/)
 - [Learn VIM interactively with openvim](http://www.openvim.com/)
 - [Vim Is Awesome: Make It Better With These 5 Customizations](http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/)
+ 
+
+### VirtualBox + Ubuntu
+
+> I think the best developer OS for me by far is Ubuntu. Fedora is not so popular and quirk in some ways. Deepin is bueatiful but slow and sometimes not so reliable.
+
+- [Speed up Ubuntu on VirtualBox](https://thomas.vanhoutte.be/miniblog/guide-speed-up-ubuntu-virtualbox/)
