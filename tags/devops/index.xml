@@ -24,7 +24,7 @@ Paris·Qian Sen</description>
 &lt;h3 id=&#34;line-ending-issue&#34;&gt;Line-ending issue&lt;/h3&gt;
 
 &lt;p&gt;Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
-Unwated &lt;code&gt;\r&lt;/code&gt; will appears everywhere&amp;hellip;&lt;/p&gt;
+Unwated &lt;code&gt;\r&lt;/code&gt; will appears everywhere during &lt;code&gt;vagrant up&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 
 &lt;h3 id=&#34;scripts-heading&#34;&gt;scripts heading&lt;/h3&gt;
 
@@ -52,16 +52,30 @@ end
 
 &lt;p&gt;Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby&amp;rsquo;s. Because I am not only new to it, but also too anxious. Whereas, Ruby&amp;rsquo;s syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn&amp;rsquo;t get chance to practice &lt;code&gt;Metaprogramming&lt;/code&gt; much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages.&lt;/p&gt;
 
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;p&gt;Whenever I used my mouse cursor, it will entry the &lt;code&gt;VISUAL&lt;/code&gt; mode. However, all I wanted is just use the terminal&amp;rsquo;s build-in copy-paste feature. The bottom line is: I managed to prevent that by creating a &lt;code&gt;.vimrc&lt;/code&gt; file under my &lt;code&gt;~/&lt;/code&gt; home folder with a special setting &lt;code&gt;set mouse=r&lt;/code&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;time-for-referances&#34;&gt;Time for Referances&lt;/h2&gt;
 
 &lt;h3 id=&#34;vagrant&#34;&gt;Vagrant&lt;/h3&gt;
 
-&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+&lt;h3 id=&#34;vim-1&#34;&gt;VIM&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://nvie.com/posts/how-i-boosted-my-vim/&#34; target=&#34;_blank&#34;&gt;How I boosted my Vim&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.openvim.com/&#34; target=&#34;_blank&#34;&gt;Learn VIM interactively with openvim&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/&#34; target=&#34;_blank&#34;&gt;Vim Is Awesome: Make It Better With These 5 Customizations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;virtualbox-ubuntu&#34;&gt;VirtualBox + Ubuntu&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I think the best developer OS for me by far is Ubuntu. Fedora is not so popular and quirk in some ways. Deepin is bueatiful but slow and sometimes not so reliable.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://thomas.vanhoutte.be/miniblog/guide-speed-up-ubuntu-virtualbox/&#34; target=&#34;_blank&#34;&gt;Speed up Ubuntu on VirtualBox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

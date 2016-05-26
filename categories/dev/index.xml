@@ -29,7 +29,7 @@ Paris·Qian Sen</description>
 
 &lt;p&gt;In my experience, these are some characteristics of bad software engineers:&lt;/p&gt;
 
-&lt;p&gt;壹 &lt;strong&gt;Stack Overflow 的搬运机器人&lt;/strong&gt;：这类人一发现有报错，就顺手 Google 一下，接着把他们查到的第一个方法拿来试。问题不在于从 stack Overflow 搬运，私以为 SOF 有比任何参考手册和文档都更多的解决方案内容。所以别误会，SOF 即便不是最好也是超好的资源。问题在于不理解这些方案的后果，不清楚应用的适用场景，不确定其是否真正能对应手头的问题，的情况下，就机械地照搬。我看过不止一次，比起近在眼前的代码和系统，人们反而更愿意去相信网络论坛的说法。&lt;/p&gt;
+&lt;p&gt;壹 &lt;strong&gt;Stack Overflow 的搬运机器人&lt;/strong&gt;：这类人一发现有报错，就顺手 Google 一下，接着把他们查到的第一个方法拿来试。问题不在于从 stack Overflow 搬运，私以为 SOF 有比任何参考手册和文档都更多的解决方案内容。所以别误会，SOF 即便不是最好也是超好的资源。问题在于他不理解这些方案可能造成的影响，不清楚其适用场景，不确定其是否真正能对应手头的问题。什么都不知道，就瞎 JB 照搬。比起近在眼前的代码和系统，人们反而更愿意去相信网络论坛的说法，这种事我见得多了。&lt;/p&gt;
 
 &lt;p&gt;1) &lt;strong&gt;The Stack Overflow bot&lt;/strong&gt;: This person ran into an error, did a quick Google search and applied the first solution they found. The problem here is not that of copying from Stack Overflow. I think there are more solutions on Stack Overflow than any reference guide or manual. Don&amp;rsquo;t get me wrong, it&amp;rsquo;s a wonderful resource, if not the best. The problem is the robotic application of it without understanding the consequences. The problem is the application of it without fully understanding the context of it and whether it really applies to the current problem at hand. More often than not, I have seen people believe more of what they see on online forums than the code/system in front of them.&lt;/p&gt;
 
@@ -37,11 +37,11 @@ Paris·Qian Sen</description>
 
 &lt;p&gt;2) &lt;strong&gt;The I-am-not-a-tester&lt;/strong&gt;: I don&amp;rsquo;t need to test the code; that is the job of the testers. I don&amp;rsquo;t think that even in this age of mature Agile methodologies, this attitude has waned. There is still an inertia against testing their code. Part of it comes from lacking the interest to set up a testing environment and partly from lack of coherent knowledge of testing. (Is it also partly due to an unspoken stigma against testers in the developer community.)&lt;/p&gt;
 
-&lt;p&gt;叁 &lt;strong&gt;“我讨厌文档”&lt;/strong&gt;：一些人认为代码文档必须写得很诗意，而他们写不出这种东西，由此推出写文档肯定不是他们的工作。我觉得这是开发长效稳定代码的最大威胁！好的软件不是提供成千上万好功能的软件。好软件是只包含少许功能，却能被众人一直使用，还能被成百上千人查阅、更新、修改。这种对技术交流和精准细致的文档毫不关心的程序猿将成为公司成功的重大阻碍。&lt;/p&gt;
+&lt;p&gt;叁 &lt;strong&gt;“我讨厌文档”&lt;/strong&gt;：一些人认为代码文档必须写得很诗意，而他们写不出这种东西，由此推出写文档肯定不是他们的工作范畴。我觉得这是开发长效稳定代码的最大威胁！好的软件不是提供成千上万好功能的软件。好软件是只包含少许功能，却能被众人一直使用，还能被成百上千人查阅、更新、修改。这种对技术交流和精准细致的文档毫不关心的程序猿将成为公司成功的重大阻碍。&lt;/p&gt;
 
 &lt;p&gt;3) &lt;strong&gt;The I-hate-documentation&lt;/strong&gt;: Some people believe that code documentation must be poetic and hence they lack the skill to do it, ergo not their job. In my opinion, these are the #1 foes of sustainable software. Good software is not software that provides a million cool features. Good software is one that has a few good features that are used consistently by many people and read/updated/modified by a thousand. This brand of developers who believes less in technical communication and precise and detailed documentation is the greatest weed to a company&amp;rsquo;s success.&lt;/p&gt;
 
-&lt;p&gt;肆 &lt;strong&gt;丑陋&lt;/strong&gt;：我的代码能用，然而：&lt;/p&gt;
+&lt;p&gt;肆 &lt;strong&gt;代码之丑&lt;/strong&gt;：我的代码能用，然而：（译注：有本书叫代码之美）&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;我有表意不明的变量名：x, flag, str, arr 等等&lt;/li&gt;
@@ -51,7 +51,7 @@ Paris·Qian Sen</description>
 &lt;li&gt;全局变量到处瞎鸡巴放&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;这是我个人最反感的一点。这并不代表代码很差，它很可能还是一段颇具巧思的好代码。即便锦帽貂裘，若是丢进了垃圾堆里，也没人找得到它，没人愿意清理它，跟别提佩戴和使用了。&lt;/p&gt;
+&lt;p&gt;这是我个人最反感的一点。这并不代表代码很差，它很可能还是一段颇具巧思的好代码。即便锦帽貂裘，若是丢进了垃圾堆里，也没人找得到它，没人愿意清理它，跟别提佩戴和使用了。（译注：一句明珠暗投，怎么英文说起来这么复杂啊，嘲讽 +1s）&lt;/p&gt;
 
 &lt;p&gt;4) &lt;strong&gt;The ugly&lt;/strong&gt;: My code works, but:&lt;/p&gt;
 
@@ -65,17 +65,17 @@ Paris·Qian Sen</description>
 
 &lt;p&gt;This is the most annoying thing for me personally. It&amp;rsquo;s not the issue that the code is bad. It could potentially be the greatest piece of code written. But if a diamond necklace is buried in the debris of the Titanic, nobody will find it, and nobody will want to clean it, wear it, use it.&lt;/p&gt;
 
-&lt;p&gt;伍 &lt;strong&gt;短期投资者&lt;/strong&gt;：他写代码。他部署代码。他走了。他不研究业务逻辑，他不在乎学到东西题。给他一段代码，他会连夜搞它一整晚，第二天他回给你的是一个已经修好的的软件。除此之外的东西就一概欠奉了。有时候，开发者要有点自私心，人应该不仅仅在乎交活日期，也要注重经手这个项目你能学到什么。&lt;/p&gt;
+&lt;p&gt;伍 &lt;strong&gt;只看重短期利益&lt;/strong&gt;：他写代码；他部署代码；他走了。他不研究业务逻辑，他不在乎学不学得到东西。给他一段代码，他会连夜搞它一整晚，第二天他回给你的是一个已经修好的的软件。除此之外的东西就一概欠奉了。有时候，开发者要有点私心，人应该不仅仅着眼于交活日期，也要注重经手这个项目你能学到什么。&lt;/p&gt;
 
 &lt;p&gt;5) &lt;strong&gt;The short-term investor&lt;/strong&gt;: He codes. He deploys. He moves on. No attempt to learn the problem. No interest in the domain. Just give this guy a piece of code, he will slog on it overnight and hand it over. You got a fix/working software. Nothing more achieved from it. Sometimes, it&amp;rsquo;s important that you have certain selfishness in the developer, one who not only cares about the deadline, but also cares about what he/she got to learn from it.&lt;/p&gt;
 
-&lt;p&gt;陸 &lt;strong&gt;异议人士&lt;/strong&gt;：“这肯定不是老子干的”，“这一团糟”，“反正不是我的问题”，“这跟我的修改无关，是远处的XXX的错”，“我讨厌这个（每天 BB 这句话 10 次)”，“我没法修这东西，谁搞坏的谁来修”
-呵呵，写这个代码的已经离职了，你什么时候走？&lt;/p&gt;
+&lt;p&gt;陸 &lt;strong&gt;异议人士&lt;/strong&gt;：“这不是老子干的”，“写得shenmegui”，“反正不是我的问题”，“这跟我的修改无关，这是XX组的XXX的错”，“我讨厌这个（每天都 BB 这句话至少 10 次)”，“我没法修这东西，谁搞坏的让谁来修”
+呵呵，写这个代码的那货已经不在了，你什么时候走呢？&lt;/p&gt;
 
 &lt;p&gt;6) &lt;strong&gt;The protester&lt;/strong&gt;: &amp;ldquo;I didn&amp;rsquo;t do this&amp;rdquo;. &amp;ldquo;This looks bad&amp;rdquo;. &amp;ldquo;Not my problem&amp;rdquo;. &amp;ldquo;This isn&amp;rsquo;t related really to my fix, but someone way over there made a mistake&amp;rdquo;. &amp;ldquo;I hate this (loop this sentence 10 times a day)&amp;rdquo;, &amp;ldquo;I can&amp;rsquo;t fix this, get the person who made this code to fix it&amp;rdquo;.
 The person who coded that mistake has moved on, when will you?&lt;/p&gt;
 
-&lt;p&gt;柒 &lt;strong&gt;独裁者&lt;/strong&gt;：“My way or the highway”（要么听我的要么滚）是他们的信条。他们对人不对事，这是场他们的解决方案与你的解决方案之间的对决。我想这里面肯定有不少争吵。他们会回来指责你的代码，即使你的代码运行良好，测试完善，看起来完全没问题，他们也会很不爽。这些人是工作效率的一大制约，并且在压力来临的时候，他们也是最先崩溃的，最先跳起来指指点点。即便他们是很有经验很好的开发者，他们对团队也是不利的。&lt;/p&gt;
+&lt;p&gt;柒 &lt;strong&gt;独裁者&lt;/strong&gt;：“My way or the highway”（要么听我的要么滚）是他们的信条。他们对人不对事，这是场他们的解决方案与你的解决方案之间的对决。我想这里面肯定有不少争吵。他们会回来指责你的代码，即使你的代码运行良好，测试完善，看起来完全没问题，他们也会很不爽。这些人是工作效率的一大制约，并且在压力来临的时候，他们也是最先崩溃的，最先跳起来指指点点。即便他们是很有经验很好的开发者，他们对团队也是不利的。（译注：个人感觉后面的是在讲情商问题，而且有点主观臆断外加夸大其词。如果你下属的计划很糙，那么由你独裁未必是错，不过注意不要捞过界。工程领域是很黑白分明的，只讲效率不讲人情，真理只有一个的时候，应有当仁不让于师的精神。处处妥协结果做出来的东西没法用是不负责任的做法）&lt;/p&gt;
 
 &lt;p&gt;7) &lt;strong&gt;The dictator&lt;/strong&gt;: My way or the highway is their motto. It&amp;rsquo;s their &amp;ldquo;ideas&amp;rdquo; vs &amp;ldquo;your ideas&amp;rdquo;, not &amp;ldquo;project ideas&amp;rdquo;. It&amp;rsquo;s their solution vs your solution. I bet there will be an argument for sure. Somehow they will keep coming back to a part of code that you implemented. It somehow discomforts them even if it works, tests, and looks perfectly fine. This person is a big bottleneck to productivity and will be the first person to crumble under pressure and start pointing fingers. This person is not good for the team, however experienced/good a developer he may be.&lt;/p&gt;
 
@@ -83,11 +83,11 @@ The person who coded that mistake has moved on, when will you?&lt;/p&gt;
 
 &lt;p&gt;8) &lt;strong&gt;The overcautious&lt;/strong&gt;: The Java developer who just froze when he learned that he would have to write a Python script. The developer who panicked on learning that something in the registry needs changing. The developer who cringes at having to input things in the database. These people will do anything to avoid getting out of their comfort zone. They have weird superstitions related to having to touch certain parts of the system. I have learned, from personal experience, that this phenomenon is common with new developers. Good developers show a tendency to slowly/swiftly move out of their comfort zone in exploration.&lt;/p&gt;
 
-&lt;p&gt;玖 &lt;strong&gt;一芥莽夫&lt;/strong&gt;：忘了备份，快照，同时开好多代码的工作目录，忘记登出系统，把生产环境的代码乱放等等。这些是菜鸟的常见错误，等他们慢慢成长，会变得越来越专业的。&lt;/p&gt;
+&lt;p&gt;玖 &lt;strong&gt;一芥莽夫&lt;/strong&gt;：忘了备份，快照，同时开好多代码的工作目录，忘记登出系统，把生产环境的代码乱放等等。同样，这些也是菜鸟的常见错误，等他们慢慢成长，会变得越来越专业的。&lt;/p&gt;
 
 &lt;p&gt;9) &lt;strong&gt;The careless&lt;/strong&gt;: Forgets to take a backup, snapshots, has multiple working directories of code, leaves system out, prints in production code, etc. Again, this is a newbie tendency and gets better with more professional exposure.&lt;/p&gt;
 
-&lt;p&gt;拾 &lt;strong&gt;懒惰的默认式程序猿？&lt;/strong&gt;他们骄傲于能够快速找到窍门让系统恢复正常。他们总能给目测无比复杂的问题，找到魔法一般的解决办法。我的经验是，这些花招十个里有九个是银样蜡枪头，就表面功夫而已。这些差劲的花招早晚有一天会坏掉，而且被迫修复他们的代价会比立刻认认真真地修好它所花的时间更高。&lt;/p&gt;
+&lt;p&gt;拾 &lt;strong&gt;懒惰的默认式程序猿？&lt;/strong&gt;他们骄傲于能够快速找到窍门让系统恢复正常。他们总能给目测无比复杂的问题，找到神奇如魔法一般的解决方案。而我的经验是，这些花招里十个有九个是银样蜡枪头，就表面功夫而已。这些差劲的花招早晚有一天会坏掉，而且被迫修复它们的代价会比当下认认真真地修好它所花的时间成本更高。&lt;/p&gt;
 
 &lt;p&gt;10) &lt;strong&gt;The lazy pseudo-hacker&lt;/strong&gt;: They pride themselves at being able to trick the system into working. They find magical solutions to seemingly complex problems. My experience says that 9 out of 10 times, it&amp;rsquo;s just a facade. The hack is bad and will crash sooner or later and will cost much more than having to deal with it, with extra time right now.&lt;/p&gt;
 
@@ -97,9 +97,9 @@ EDIT: Please drop in comments. Maybe we could start a new follow-up question as 
 &lt;p&gt;&lt;small&gt;Updated Dec 5, 2014&lt;/small&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;后记： 我觉得这个篇文章的作者的确点出了几个点，不过就我个人感觉这完全是一种基于过往经验的偏见。举例而言，Linus 就是独裁者；而好的程序猿对代码都有洁癖；天天做恶心的代码，没有人不抱怨的。情商的养育是一个系统的话题，情商不行，干什么都不行，也不光是程序猿了啊。扯多了就扯远了。总之这是篇有水分的文章，尽信书不如无书。
+&lt;p&gt;后记： 我觉得这个篇文章的作者的确点出了几个点，不过就我个人感觉这完全是一种基于过往经验的偏见。举例而言，Linus 就是独裁者；而好的程序猿对代码都有洁癖；天天做恶心的代码，没有人不抱怨的。情商的养育是一个系统的话题，情商不行，干什么都不行，也不光是程序猿了啊。扯多了就扯远了。总之这是篇有水分的文章，有一定的观点但也不能尽信，因为本来美德与恶念就是一体的两面。
 另外，程序猿一言不合，拔键盘相向我觉得也挺好理解的吧。不说了，我和同事去医院缝针了。Yes, My patch wins!
-好吧，我就是 dictator 型的，my way or no way，我的必然是最简单最好懂也最好维护的方案，不过我一般不强迫他们，如果 Design pattern 的基础不牢固，有些抽象方法你解释给他们，他们也听不懂。&lt;/p&gt;
+好吧，我也是 dictator 型的，my way or no way，我的必然是最简单最好懂也最好维护的方案。不过我一般不强迫他们，如果 Design pattern 的基础不牢固，有些抽象方法你解释给他们，他们也听不懂。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>
@@ -117,7 +117,7 @@ EDIT: Please drop in comments. Maybe we could start a new follow-up question as 
 &lt;h3 id=&#34;line-ending-issue&#34;&gt;Line-ending issue&lt;/h3&gt;
 
 &lt;p&gt;Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
-Unwated &lt;code&gt;\r&lt;/code&gt; will appears everywhere&amp;hellip;&lt;/p&gt;
+Unwated &lt;code&gt;\r&lt;/code&gt; will appears everywhere during &lt;code&gt;vagrant up&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 
 &lt;h3 id=&#34;scripts-heading&#34;&gt;scripts heading&lt;/h3&gt;
 
@@ -145,16 +145,30 @@ end
 
 &lt;p&gt;Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby&amp;rsquo;s. Because I am not only new to it, but also too anxious. Whereas, Ruby&amp;rsquo;s syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn&amp;rsquo;t get chance to practice &lt;code&gt;Metaprogramming&lt;/code&gt; much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages.&lt;/p&gt;
 
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;p&gt;Whenever I used my mouse cursor, it will entry the &lt;code&gt;VISUAL&lt;/code&gt; mode. However, all I wanted is just use the terminal&amp;rsquo;s build-in copy-paste feature. The bottom line is: I managed to prevent that by creating a &lt;code&gt;.vimrc&lt;/code&gt; file under my &lt;code&gt;~/&lt;/code&gt; home folder with a special setting &lt;code&gt;set mouse=r&lt;/code&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;time-for-referances&#34;&gt;Time for Referances&lt;/h2&gt;
 
 &lt;h3 id=&#34;vagrant&#34;&gt;Vagrant&lt;/h3&gt;
 
-&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+&lt;h3 id=&#34;vim-1&#34;&gt;VIM&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://nvie.com/posts/how-i-boosted-my-vim/&#34; target=&#34;_blank&#34;&gt;How I boosted my Vim&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.openvim.com/&#34; target=&#34;_blank&#34;&gt;Learn VIM interactively with openvim&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/&#34; target=&#34;_blank&#34;&gt;Vim Is Awesome: Make It Better With These 5 Customizations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;virtualbox-ubuntu&#34;&gt;VirtualBox + Ubuntu&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I think the best developer OS for me by far is Ubuntu. Fedora is not so popular and quirk in some ways. Deepin is bueatiful but slow and sometimes not so reliable.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://thomas.vanhoutte.be/miniblog/guide-speed-up-ubuntu-virtualbox/&#34; target=&#34;_blank&#34;&gt;Speed up Ubuntu on VirtualBox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
