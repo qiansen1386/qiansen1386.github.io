@@ -2,7 +2,6 @@
 categories = ["English", "中文"]
 date = "2016-05-12T22:39:42+08:00"
 description = ""
-draft = true
 tags = ["翻译"]
 title = "学舌与跟读 —— 学英语の最速方法！GET√"
 
