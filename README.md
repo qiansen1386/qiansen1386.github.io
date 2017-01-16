@@ -9,7 +9,7 @@ Projects involved:
 ------------------
 
 * [Hugo](https://gohugo.io/)
-* [hugo-steam-theme](https://github.com/digitalcraftsman/hugo-steam-theme)
+* [hugo-hyde-x-theme](https://github.com/zyro/hyde-x)
 * [Wercker](wercker.com)
 
 Customization
