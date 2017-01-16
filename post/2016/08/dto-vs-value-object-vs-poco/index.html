@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dev</title>
+  <title>DTO, Entity, Value Object, POJO/POCO/POPO 的区别</title>
   
   <link rel="stylesheet" href="/css/poole.css">
   <link rel="stylesheet" href="/css/hyde.css">
@@ -24,8 +24,7 @@
 
   
   
-  <link href="https://qiansen1386.github.io/categories/dev/index.xml" rel="alternate" type="application/rss+xml" title="东方孤思子のBlog
-Paris·Qian Sen" />
+  
   <meta name="description" content="本文木有简述">
   <meta name="keywords" content="开发, 中文">
   
@@ -96,52 +95,57 @@ Paris·Qian Sen" />
 
 
 <div class="content container">
-  <ul class="posts">
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/08/dto-vs-value-object-vs-poco">DTO, Entity, Value Object, POJO/POCO/POPO 的区别</a>
+  <div class="post">
+    <h1 class="post-title">DTO, Entity, Value Object, POJO/POCO/POPO 的区别</h1>
+    <span class="post-date">Aug 29, 2016 &middot; <a href="https://qiansen1386.github.io/post/2016/08/dto-vs-value-object-vs-poco#disqus_thread">Comments</a>
     
-    &middot;
+    <br/>
     <a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a>
     </span>
-    &middot; <time>Aug 29, 2016</time></li>
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/05/what-are-the-characteristics-of-a-bad-software-engineer">Quora：烂程序猿的特征都有啥？</a>
     
-    &middot;
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
-    </span>
-    &middot; <time>May 12, 2016</time></li>
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/04/frontend-learning-note-3">Frontend Learning Note 3 - Vagrant, VM &amp; Shell</a>
-    
-    &middot;
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
-    </span>
-    &middot; <time>Apr 9, 2016</time></li>
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/04/frontend-learning-note-2">Frontend Learning Notes 2 - Direction Shifted</a>
-    
-    &middot;
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
-    </span>
-    &middot; <time>Apr 3, 2016</time></li>
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/03/frontend-learning-note-1">Frontend Learning Notes - Starting Point</a>
-    
-    &middot;
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
-    </span>
-    &middot; <time>Mar 16, 2016</time></li>
-  
-    <li><a href="https://qiansen1386.github.io/post/2016/03/recursion-demo-in-typescript">Recursion-Demo in TypeScript &amp; How it get better</a>
-    
-    &middot;
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a>
-    </span>
-    &middot; <time>Mar 7, 2016</time></li>
-  
-  </ul>
+
+<h2 id="dto-vs-entity-vs-value-object-vs-pojo-poco-popo">DTO vs Entity vs Value Object vs POJO/POCO/POPO</h2>
+
+<p>Definations:</p>
+
+<p>DTO =&gt; Data Transfer Object, a object which contains no logics, used to pass through application bounderies.</p>
+
+<p>Entity =&gt; Value Object + identity.(We will not talk about Entity in following articles, you get the idea, they are the same)</p>
+
+<p>Value Object =&gt; Value Object can contains methods</p>
+
+<p>POJO/POCO/POPO =&gt; Plain Object with/without State(Data properties) + Behavior(methods), both ValueObject &amp; DTO can be considered as POJO.</p>
+
+<p>ref: <a href="http://enterprisecraftsmanship.com/2015/04/13/dto-vs-value-object-vs-poco/" target="_blank">http://enterprisecraftsmanship.com/2015/04/13/dto-vs-value-object-vs-poco/</a></p>
+
+  </div>
+  <div id="disqus_thread"></div>
 </div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "qiansen1386";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "qiansen1386";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
 <script src="https://qiansen1386.github.io/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

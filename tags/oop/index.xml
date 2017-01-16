@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oop on 东方孤思子のBlog
+Paris·Qian Sen</title>
+    <link>https://qiansen1386.github.io/tags/oop/</link>
+    <description>Recent content in Oop on 东方孤思子のBlog
+Paris·Qian Sen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 29 Aug 2016 17:54:45 +0800</lastBuildDate>
+    <atom:link href="https://qiansen1386.github.io/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DTO, Entity, Value Object, POJO/POCO/POPO 的区别</title>
+      <link>https://qiansen1386.github.io/post/2016/08/dto-vs-value-object-vs-poco</link>
+      <pubDate>Mon, 29 Aug 2016 17:54:45 +0800</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2016/08/dto-vs-value-object-vs-poco</guid>
+      <description>
+
+&lt;h2 id=&#34;dto-vs-entity-vs-value-object-vs-pojo-poco-popo&#34;&gt;DTO vs Entity vs Value Object vs POJO/POCO/POPO&lt;/h2&gt;
+
+&lt;p&gt;Definations:&lt;/p&gt;
+
+&lt;p&gt;DTO =&amp;gt; Data Transfer Object, a object which contains no logics, used to pass through application bounderies.&lt;/p&gt;
+
+&lt;p&gt;Entity =&amp;gt; Value Object + identity.(We will not talk about Entity in following articles, you get the idea, they are the same)&lt;/p&gt;
+
+&lt;p&gt;Value Object =&amp;gt; Value Object can contains methods&lt;/p&gt;
+
+&lt;p&gt;POJO/POCO/POPO =&amp;gt; Plain Object with/without State(Data properties) + Behavior(methods), both ValueObject &amp;amp; DTO can be considered as POJO.&lt;/p&gt;
+
+&lt;p&gt;ref: &lt;a href=&#34;http://enterprisecraftsmanship.com/2015/04/13/dto-vs-value-object-vs-poco/&#34; target=&#34;_blank&#34;&gt;http://enterprisecraftsmanship.com/2015/04/13/dto-vs-value-object-vs-poco/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
