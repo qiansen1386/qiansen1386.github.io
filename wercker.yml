@@ -11,7 +11,7 @@ deploy:
     - leipert/git-push:
          gh_oauth: $GH_TOKEN
          gh_pages: true
-         gh_pages_domain: qiansen1386.yii2.cn
+         gh_pages_domain: www.parisqian.com
          basedir: public
          branch: master
          clean_removed_files: true
