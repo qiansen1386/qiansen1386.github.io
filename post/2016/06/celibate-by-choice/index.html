@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frontend Learning Note 3 - Vagrant, VM &amp; Shell</title>
+  <title>Celibate By Choice?</title>
   
   <link rel="stylesheet" href="https://qiansen1386.github.io/css/poole.css">
   <link rel="stylesheet" href="https://qiansen1386.github.io/css/hyde.css">
@@ -96,72 +96,36 @@
 
 <div class="content container">
   <div class="post">
-    <h1 class="post-title">Frontend Learning Note 3 - Vagrant, VM &amp; Shell</h1>
-    <span class="post-date">Apr 9, 2016 &middot; <a href="https://qiansen1386.github.io/post/2016/04/frontend-learning-note-3#disqus_thread">Comments</a>
+    <h1 class="post-title">Celibate By Choice?</h1>
+    <span class="post-date">Jun 22, 2016 &middot; <a href="https://qiansen1386.github.io/post/2016/06/celibate-by-choice#disqus_thread">Comments</a>
     
     <br/>
-    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/dev">dev</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
+    <a class="label" href="https://qiansen1386.github.io/categories/%E6%84%9F%E6%82%9F">感悟</a><a class="label" href="https://qiansen1386.github.io/categories/english">English</a>
     </span>
     
 
-<h2 id="the-lesson-i-learnt">The Lesson I Learnt</h2>
+<h2 id="独身主义的女孩">独身主义的女孩</h2>
 
-<h3 id="line-ending-issue">Line-ending issue</h3>
+<p>I met a girl today, who was disappointed in love a few months ago. When I was tried to resume her faith on marrige,
+she explained a nearly-celibacy idea about that love could inevitably cause both parties to change. Of cource, I couldn&rsquo;t convince her in that short amount of time, so I never intended to do so.</p>
 
-<p>Make sure the line ending of your provision script is LF-only(unix-style), otherwise the behaviors would be very unpredictable.
-Unwated <code>\r</code> will appears everywhere during <code>vagrant up</code>&hellip;</p>
+<p>Everybody changes, they change constently, and they changes both mentally and physically, no matter you are in a relationship or not. That is my experience. For me, clinging about whether you will still be you or not would be a compeletely non-sence. Here is a fun fact, every body-cell have their life-span, it could be a few months or few years, or even few days(sperm). Once they reached a end, usually they will be replaced with a new one. Many people believes that 7 years later, there will be no old cells, thus we would become essentially new people. I don&rsquo;t want to argu biologic here, what I want to say is there won&rsquo;t be a INNER-SELF, just no! We only live at this moment, in the next moment, if our moods change we might behave very very differently. If you could not even predict next 5 minutes, why bother about 5 years?</p>
 
-<h3 id="scripts-heading">scripts heading</h3>
-
-<p><code>#!/bin/bash</code> is not omissible. Of course, you can use <code>#!/bin/sh</code> or <code>#!/bin/zsh</code>.</p>
-
-<h3 id="symlinks-are-huge-problem">Symlinks are huge problem!</h3>
-
-<p><a href="https://github.com/npm/npm/issues/7308" target="_blank">npm-issues#7308</a> =&gt; Symlinks within shared folder could not be sync between Win and Posix OS. However many NPM packages would like to create bin-links(symlinks of executable file within bin folder). So whenever you tried to install some packages, it is very likely to fail. So there are 3 potential solutions: 1. try to make it work by proper config virtualbox. 2. Move the node_modules out of synced-folder. 3. use <code>--no-bin-links</code> flag for <code>npm install</code>.
-Let me just reveal the final answer. Only No.3 works, with side-effect though.</p>
-
-<p>Firstly, there is script provided by <a href="https://github.com/drmyersii" target="_blank">drmyersii</a>(The author of <a href="https://github.com/drmyersii/vagrant-node-env" target="_blank">vagrant-node-env</a>)</p>
-
-<pre><code class="language-Ruby">config.vm.provider &quot;virtualbox&quot; do |v|
-    v.customize [&quot;setextradata&quot;, :id, &quot;VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant&quot;, &quot;1&quot;]
-end
-</code></pre>
-
-<p>It doesn&rsquo;t work at least for Windows 7 Host. I didn&rsquo;t investigated further, due to tied schedule. You can try it if you want, I&rsquo;d like to know if it works on you :P</p>
-
-<p>Then, I tried to created a <code>node_modules/</code> folder under <code>/tmp/</code>, but another unexpected issue supprised me. <a href="https://github.com/npm/npm/issues/10013" target="_blank">npm-issue#10013</a> It turns out the NPM 3 introduced some special checks, causing the breaks of <code>npm install</code>. If npm fixed this in further versions, or if you can roll back to a ealier version, It could be the best choice. With no side effects, and can be easily setup using provision scripts. I would continue following on.</p>
-
-<p>The end, I am afraid that I have to go for the <code>--no-bin-links</code> approach. Em, that means there will be no more bin links. peroid. That would make cli operations much more undesirable. If you need those short-cuts, try to install them globally as well. So that when you call them, the global version can still response to u. Dirty, but works.</p>
-
-<h3 id="ruby">Ruby</h3>
-
-<p>Nothing to share, just to show off how I learnt a new language! (@ beginer level..) Ruby is like PHP, lovers love it, haters hate it. I love PHP, but I hate Ruby at the first place. Its unique syntax caused me so many frustration. To be clear, it is my problem, not Ruby&rsquo;s. Because I am not only new to it, but also too anxious. Whereas, Ruby&rsquo;s syntax is so distinctive(also complicated). But hey, I tried it, and it was fun when I start to get it! I didn&rsquo;t get chance to practice <code>Metaprogramming</code> much. What I can still tell is, the syntax suger is super handy. On the other hand, it is not as terse as golang/python, meaning that there is still a significant learning curve for coder who use other languages.</p>
-
-<h3 id="vim">Vim</h3>
-
-<p>Whenever I used my mouse cursor, it will entry the <code>VISUAL</code> mode. However, all I wanted is just use the terminal&rsquo;s build-in copy-paste feature. The bottom line is: I managed to prevent that by creating a <code>.vimrc</code> file under my <code>~/</code> home folder with a special setting <code>set mouse=r</code>.</p>
-
-<h2 id="time-for-referances">Time for Referances</h2>
-
-<h3 id="vagrant">Vagrant</h3>
-
-<h3 id="vim-1">VIM</h3>
+<p>As I said, I didn&rsquo;t buy her idea at that moment, however when I re-process the whole story, I gotta say I was deeply inspired and influenced by her innocent and wild thoughts. Why? I still remember someone saids &ldquo;a criteria for a good merrage is the life-styles of both parties might shift toward a better healthier way, because of each other&rdquo;. I used to believe it and still do. However, after the conversation I started to question about the opposite side, Like:</p>
 
 <ul>
-<li><a href="http://nvie.com/posts/how-i-boosted-my-vim/" target="_blank">How I boosted my Vim</a></li>
-<li><a href="http://www.openvim.com/" target="_blank">Learn VIM interactively with openvim</a></li>
-<li><a href="http://www.makeuseof.com/tag/5-things-need-put-vim-config-file/" target="_blank">Vim Is Awesome: Make It Better With These 5 Customizations</a></li>
+<li>How to defined a healthy life-style?</li>
+<li>What if they couldn&rsquo;t manage to get a common view? (like my father and mather)</li>
+<li>What if they changed towards bad life-styles instead?</li>
+<li>What if there happens to be a party who don&rsquo;t want to compromise or change at all?</li>
 </ul>
 
-<h3 id="virtualbox-ubuntu">VirtualBox + Ubuntu</h3>
+<p>Clearly there are lots of challenges to be solved in the future. Because I don&rsquo;t have a experience, I could not come out of a legit answer from no where, and assume that is the truth once for all. Hence I could hardly answer her doubt.</p>
 
-<blockquote>
-<p>I think the best developer OS for me by far is Ubuntu. Fedora is not so popular and quirk in some ways. Deepin is bueatiful but slow and sometimes not so reliable.</p>
-</blockquote>
+<p>There is one thing I can say, uncertainty will bring along fear, but mostly it is born of diffidence. Just like If we are not certain about getting to work, we would probably tend to shun away from it, like extending your study, or procrastinating at home. Everyone experience that mind-transition, to be fair, it might not be very enjoyable. But like what Dory do, if you don&rsquo;t know what to do, just keep swiming. eventually you will make it! Once you find a job, working will no longer be a uncertain mysterious duanting monster for you. It is just a new way to study, and get paid! Once you find your true love, you probably would find every single change to improve yourself to better fit your mate. If you become happier than ever before, would changes really considered a bad thing? If one of parties refuse to swim forward, severance might not be a bad thing.</p>
 
-<ul>
-<li><a href="https://thomas.vanhoutte.be/miniblog/guide-speed-up-ubuntu-virtualbox/" target="_blank">Speed up Ubuntu on VirtualBox</a></li>
-</ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=86 src="https://music.163.com/outchain/player?type=2&id=27678693&auto=1&height=66"></iframe>
+<iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=919c8f7392a51b097483dd4e4e57dd81&tvId=201709700&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="100%" height="100%"></iframe>
 
   </div>
   <div id="disqus_thread"></div>
