@@ -51,7 +51,7 @@ disqusShortname = "qiansen1386"
     truncate = true
 
     # Used when a given page doesn't set its own.
-    defaultDescription = "本文木有简述"
+    defaultDescription = ""
     defaultKeywords = "开发, 中文"
 
     # Hide estimated reading time for posts.
