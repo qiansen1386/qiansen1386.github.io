@@ -1,5 +1,24 @@
+<link rel="stylesheet" href="{{ "/css/hyde-overrides.css" | relURL }}" lazyload>
+<link rel="stylesheet" href="{{ "/css/hyde-x.css" | relURL }}" lazyload>
+<link rel="stylesheet" href="{{ "/css/site.css" | relURL }}" lazyload>
+{{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/" | absURL }}{{ .Site.Params.highlight }}.min.css" lazyload>{{ end }}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" lazyload>
+{{ with .Site.Params.customCSS }}<link rel="stylesheet" href="{{ . }}" lazyload>{{ end }}
+{{ with .Site.Params.googleAnalytics }}
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', '{{ . }}', 'auto');
+    ga('send', 'pageview');
+</script>
+{{ end }}
 {{ if isset .Site.Params "highlight" }}
-<script src="{{ "js/highlight.pack.js" | absURL }}"></script>
+<script src="{{ "js/highlight.pack.js" | absURL }}" async></script>
 <script>hljs.initHighlightingOnLoad();</script>{{ end }}
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
