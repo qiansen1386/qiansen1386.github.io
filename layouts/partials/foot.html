@@ -1,3 +1,6 @@
+<!-- CSS -->
+<link rel="stylesheet" href="{{ "/css/poole.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/css/hyde.css" | relURL }}">
 <link rel="stylesheet" href="{{ "/css/hyde-overrides.css" | relURL }}" lazyload>
 <link rel="stylesheet" href="{{ "/css/hyde-x.css" | relURL }}" lazyload>
 <link rel="stylesheet" href="{{ "/css/site.css" | relURL }}" lazyload>
@@ -18,7 +21,7 @@
 </script>
 {{ end }}
 {{ if isset .Site.Params "highlight" }}
-<script src="{{ "js/highlight.pack.js" | relURL }}" async></script>
+<script src="js/highlight.pack.js" async></script>
 <script>hljs.initHighlightingOnLoad();</script>{{ end }}
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
