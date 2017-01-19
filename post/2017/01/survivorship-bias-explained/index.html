@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>什么是幸存者偏差啊啊啊啊！！！</title>
+  
+  
+  
+  <meta name="description" content="告诉你什么是幸存者偏差。它影响你有多大啊！">
+  <meta name="keywords" content="开发, 中文">
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=144">
+  <link rel="shortcut icon" href="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=16" />
+  
+
+</head>
+<body class="theme-base-08">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+        <img src="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=150"
+             alt="gravatar" title="东方孤思子&lt;br&gt;Paris Qian Sen">
+      
+      <h2>东方孤思子<br>Paris Qian Sen</h2>
+      <p class="lead">Profesional Coding<br>Simple Living<br>Creative Thinking</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://qiansen1386.github.io/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://qiansen1386.github.io/about/">Who am I</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/qiansen1386"><i class="fa fa-github-square fa-2x"></i></a>
+      
+      <a href="http://stackexchange.com/users/1586938/paris-qian"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      <a href="https://sg.linkedin.com/in/parisqiansen"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://plus.google.com/&#43;Parisqiansen/posts"><i class="fa fa-google-plus-square fa-2x"></i></a>
+      
+      <a href="https://twitter.com/qiansen1386"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC1rGIQJUQABgRyA-edmRlKg"><i class="fa fa-youtube-square fa-2x"></i></a>
+      <a href="https://qiansen1386.github.io/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-2x"></i></a>
+      </li>
+    </ul>
+
+    
+
+    <p><a href="https://qiansen1386.github.io/license/" class="copyright">Some Rights Reserved &copy; 2017</a><br>
+      Proudly powered by <a href="https://gohugo.io">Hugo</a> <br>
+      Theme: Customized <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">什么是幸存者偏差啊啊啊啊！！！</h1>
+    <span class="post-date">Jan 19, 2017 &middot; <a href="https://qiansen1386.github.io/post/2017/01/survivorship-bias-explained#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="https://qiansen1386.github.io/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://qiansen1386.github.io/categories/%E4%B8%AD%E6%96%87">中文</a>
+    </span>
+    
+
+<p>Survivorship Bias? Explained!
+定义：<strong>一种由于忽视信息的收集筛选过程，而造成的分析误差。</strong></p>
+
+<p>#案例学习一：
+<strong>基于一样的筛选模型反复得出同样的结论而加重错误的<a href="https://zh.wikipedia.org/zh/刻板印象" target="_blank">刻板印象</a>，从而在全社会上引起歧视性心理。</strong></p>
+
+<h2 id="胸大无脑">胸大无脑</h2>
+
+<blockquote>
+<p>漂亮女孩都是傻逼</p>
+
+<p>人天赋是恒定的，美貌点得多，智商就少。</p>
+</blockquote>
+
+<p>你们对漂亮女生的歧视实在太严重了！请尊重现实：很多人长得不漂亮，也不聪明。</p>
+
+<p>那么真实的情况是如何呢？</p>
+
+<table>
+<thead>
+<tr>
+<th>♂模拟场景♀</th>
+<th align="center">平庸</th>
+<th align="center">优秀</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">普通のGirl</td>
+<td align="center">杰出のGirl</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">普通のBoy</td>
+<td align="center">MiBoy</td>
+</tr>
+</tbody>
+</table>
+
+<p>假设他们各自的数量都是8，吉利嘛。</p>
+
+<table>
+<thead>
+<tr>
+<th>嬲</th>
+<th align="center">平庸</th>
+<th align="center">优秀</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">8</td>
+<td align="center">8</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">8</td>
+<td align="center">8</td>
+</tr>
+</tbody>
+</table>
+
+<p>接下来，再模拟一个象限，这次坐标值换成颜值！然后把两个象限叠加起来，构建新的模型！</p>
+
+<table>
+<thead>
+<tr>
+<th>平庸：优秀</th>
+<th align="center">不美</th>
+<th align="center">美</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">女屌：女生</td>
+<td align="center">花瓶：女神</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">男屌：男生</td>
+<td align="center">傻白甜：男神</td>
+</tr>
+</tbody>
+</table>
+
+<p>理论上，假定美丑和智商没有相关性。那么优秀与平庸应该是平均分布在新象限内的！</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">不美</th>
+<th align="center">美</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">4:4</td>
+<td align="center">4:4</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">4:4</td>
+<td align="center">4:4</td>
+</tr>
+</tbody>
+</table>
+
+<p>（妈蛋，好不吉利）</p>
+
+<p>如你所见如果世界是完美的，那么聪明的美女应该和聪明的帅哥一样多。
+可是这貌似和我们的意识不相符啊！我们明明觉得异性里面傻逼比较多嘛。直男直女多到爆嘛。究竟是怎么样一回事嘞！</p>
+
+<p>Here we 狗！接下来就是揭wo晓lai答zhuang案bi的时候了！</p>
+
+<p>因为人类会对性取向的性别过分关注啊！由此减少了对同性（排除同和双）的关注！
+又因为人类不会太在乎比自己差劲的人啊！由此减少了对平庸人群的关注啊！
+为了简化计算，我们假设一个是异性恋女生，她应该不会太在乎一般的女生……</p>
+
+<table>
+<thead>
+<tr>
+<th>女生少了一半诶！</th>
+<th align="center">平庸</th>
+<th align="center">优秀</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center"><del>普通のGirl</del></td>
+<td align="center">杰出のGirl</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">普通のBoy</td>
+<td align="center">爱国Boy</td>
+</tr>
+</tbody>
+</table>
+
+<p>然后再把这个数据导入到新的象限就不得了咯</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">不美</th>
+<th align="center">美</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">0:4</td>
+<td align="center">0:4</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">4:4</td>
+<td align="center">4:4</td>
+</tr>
+</tbody>
+</table>
+
+<p>看！在男生里，找一个优秀帅哥的几率是25%。而在女生里找一个完美女神的概率是50%诶！！所以你会觉得找到一个完美男神简直难啊！男上佳-&gt;难啊！
+如果这些优秀帅哥都都比较早熟早早成家立业呢。情况就更加不妙了。比方说……被其他女生抢走了3位。已婚=隐身这是常识吧？除非你是人妻控或者小三迷。</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">不美</th>
+<th align="center">美</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>女</td>
+<td align="center">0:4</td>
+<td align="center">0:4</td>
+</tr>
+
+<tr>
+<td>男</td>
+<td align="center">4:4</td>
+<td align="center">4:1</td>
+</tr>
+</tbody>
+</table>
+
+<p>额，神tm只剩7.6%的概率遇到他了好不好。还没完哦，此时是不是平庸帅哥比有内涵的帅哥的概率高了4倍呢？如果你按照上面的筛选流程走下来，你简直觉得异性都是傻逼是“绝对の真理”啊！
+然而，如你所见，你，只是，眼中只剩，“幸存者”了而已。因为你主动去忽略掉了那些对你而言不重要的因素，而使得你的判断产生了巨大的误差啊。
+从今天起，重新审视一下，你身边长得又丑，智商又低的同性吧！你就不会觉得异性都是傻逼了呢。然后就可以因为比下有余而志得意满，继续浑浑噩噩得生活下去了呢！怎么样，窝这锅（毒）鸡汤可还美味啊！</p>
+
+<p>reference：一个讲为什么你觉得漂亮女孩都不优秀的英文动画视频，原视频找不到了，希望大家如果知道可以提供下资源。</p>
+
+<h2 id="女司机">女司机</h2>
+
+<p>同理，社会上流行着：女司机开车慢，反应慢，油门刹车分不清楚，女司机磨合期头次上路成为“女魔头”，等等歧视性的刻板印象。可实际上，分析一下整体数据，你会发现，女司机开车比男司机谨慎安全很多，事故比例小很多。
+reference：飞碟说</p>
+
+<blockquote>
+<p>如果下次再有人跟你说，女生都是XXX，你就可以义正言辞地告诉他：<strong>这是幸存者偏差啊！</strong>然后你就被讨厌了……科科
+（最近比较迷两个台湾的视频Up主谷阿莫和<a href="https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ" target="_blank">啾啾鞋</a>）</p>
+</blockquote>
+
+<h1 id="案例学习二">案例学习二：</h1>
+
+<p>结论与筛选步骤强相关，与群体属性弱相关。但是分析原因的时候忽略筛选环节。
+这里面有无意识忽略的行为，也有有意识忽略从而刻意进行误导的坏人～( TロT)σ</p>
+
+<p><strong>成功学：“XXX成功是因为XXX啊，科科”。</strong></p>
+
+<p>说起来好像很有道理，但是实际上是说罗圈话，放罗圈屁。他成功了，从他身上提炼出任何特质都可以附会上去。可本质上依旧是“他成功，所以他成功”，这些特质本身可能并无明显因果关系。</p>
+
+<blockquote>
+<p>e.g. 乔布斯是男的，雷军是男的，柳传志是男的，任正非是男的。所以要成为成功的企业家必须是男性。其实是有选择的筛选出了大量的男性成功企业家。如果有选择性的筛选出落魄的男乞丐，最后的结论很可能就是：男性很容易沦为乞丐。这个例子很显眼，但是很多数据分析是不把筛选过程告诉你的。所以原始数据很重要！</p>
+</blockquote>
+
+<p>结语：很多地域歧视和打标签的现象都是因为刻板印象，而刻板印象的形成很大一部分原因是因为幸存者偏差。本质上人处理信息的手段就是要归纳世界信息为有限的标签，由此才能按图索骥，梳理思路。可惜的是这个过程必然丢失细节，而给误导言论以可乘之机。而幸存者偏差只是种类繁多的误导手段中的一种，而其他的手段，包括进来流行的数据误导，就不是本篇的内容了。欢迎大家多思考少受骗，待人以真诚而不要以有色眼镜视人。
+&gt; 比戴有色眼镜看人更危险的是，你带着有色眼镜，还不自知！ —— 网络视频作者抽风</p>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "qiansen1386";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "qiansen1386";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<link rel="stylesheet" href="/css/poole.css">
+<link rel="stylesheet" href="/css/hyde.css">
+<link rel="stylesheet" href="/css/hyde-overrides.css" lazyload>
+<link rel="stylesheet" href="/css/hyde-x.css" lazyload>
+<link rel="stylesheet" href="/css/site.css" lazyload>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/railscasts.min.css" lazyload>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" lazyload>
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-47725881-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<script src="js/highlight.pack.js" async></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript">
+var sc_project=9662348; 
+var sc_invisible=0; 
+var sc_security="e5e8f246";
+document.write("<sc"+"ript type='text/javascript' src='https://secure.statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="https://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/9662348/0/e5e8f246/0/" alt="shopify
+traffic stats"></a></div></noscript>
+
+</body>
+</html>
+

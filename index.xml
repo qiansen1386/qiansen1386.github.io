@@ -8,8 +8,258 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 29 Aug 2016 17:54:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jan 2017 23:34:14 +0800</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>什么是幸存者偏差啊啊啊啊！！！</title>
+      <link>https://qiansen1386.github.io/post/2017/01/survivorship-bias-explained</link>
+      <pubDate>Thu, 19 Jan 2017 23:34:14 +0800</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2017/01/survivorship-bias-explained</guid>
+      <description>
+
+&lt;p&gt;Survivorship Bias? Explained!
+定义：&lt;strong&gt;一种由于忽视信息的收集筛选过程，而造成的分析误差。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;#案例学习一：
+&lt;strong&gt;基于一样的筛选模型反复得出同样的结论而加重错误的&lt;a href=&#34;https://zh.wikipedia.org/zh/刻板印象&#34; target=&#34;_blank&#34;&gt;刻板印象&lt;/a&gt;，从而在全社会上引起歧视性心理。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;胸大无脑&#34;&gt;胸大无脑&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;漂亮女孩都是傻逼&lt;/p&gt;
+
+&lt;p&gt;人天赋是恒定的，美貌点得多，智商就少。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;你们对漂亮女生的歧视实在太严重了！请尊重现实：很多人长得不漂亮，也不聪明。&lt;/p&gt;
+
+&lt;p&gt;那么真实的情况是如何呢？&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;♂模拟场景♀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;平庸&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;优秀&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;普通のGirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;杰出のGirl&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;普通のBoy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;MiBoy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;假设他们各自的数量都是8，吉利嘛。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;嬲&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;平庸&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;优秀&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;接下来，再模拟一个象限，这次坐标值换成颜值！然后把两个象限叠加起来，构建新的模型！&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;平庸：优秀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;不美&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;美&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;女屌：女生&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;花瓶：女神&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;男屌：男生&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;傻白甜：男神&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;理论上，假定美丑和智商没有相关性。那么优秀与平庸应该是平均分布在新象限内的！&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;不美&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;美&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;（妈蛋，好不吉利）&lt;/p&gt;
+
+&lt;p&gt;如你所见如果世界是完美的，那么聪明的美女应该和聪明的帅哥一样多。
+可是这貌似和我们的意识不相符啊！我们明明觉得异性里面傻逼比较多嘛。直男直女多到爆嘛。究竟是怎么样一回事嘞！&lt;/p&gt;
+
+&lt;p&gt;Here we 狗！接下来就是揭wo晓lai答zhuang案bi的时候了！&lt;/p&gt;
+
+&lt;p&gt;因为人类会对性取向的性别过分关注啊！由此减少了对同性（排除同和双）的关注！
+又因为人类不会太在乎比自己差劲的人啊！由此减少了对平庸人群的关注啊！
+为了简化计算，我们假设一个是异性恋女生，她应该不会太在乎一般的女生……&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;女生少了一半诶！&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;平庸&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;优秀&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;del&gt;普通のGirl&lt;/del&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;杰出のGirl&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;普通のBoy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;爱国Boy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;然后再把这个数据导入到新的象限就不得了咯&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;不美&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;美&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0:4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;看！在男生里，找一个优秀帅哥的几率是25%。而在女生里找一个完美女神的概率是50%诶！！所以你会觉得找到一个完美男神简直难啊！男上佳-&amp;gt;难啊！
+如果这些优秀帅哥都都比较早熟早早成家立业呢。情况就更加不妙了。比方说……被其他女生抢走了3位。已婚=隐身这是常识吧？除非你是人妻控或者小三迷。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;不美&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;美&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;女&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0:4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4:1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;额，神tm只剩7.6%的概率遇到他了好不好。还没完哦，此时是不是平庸帅哥比有内涵的帅哥的概率高了4倍呢？如果你按照上面的筛选流程走下来，你简直觉得异性都是傻逼是“绝对の真理”啊！
+然而，如你所见，你，只是，眼中只剩，“幸存者”了而已。因为你主动去忽略掉了那些对你而言不重要的因素，而使得你的判断产生了巨大的误差啊。
+从今天起，重新审视一下，你身边长得又丑，智商又低的同性吧！你就不会觉得异性都是傻逼了呢。然后就可以因为比下有余而志得意满，继续浑浑噩噩得生活下去了呢！怎么样，窝这锅（毒）鸡汤可还美味啊！&lt;/p&gt;
+
+&lt;p&gt;reference：一个讲为什么你觉得漂亮女孩都不优秀的英文动画视频，原视频找不到了，希望大家如果知道可以提供下资源。&lt;/p&gt;
+
+&lt;h2 id=&#34;女司机&#34;&gt;女司机&lt;/h2&gt;
+
+&lt;p&gt;同理，社会上流行着：女司机开车慢，反应慢，油门刹车分不清楚，女司机磨合期头次上路成为“女魔头”，等等歧视性的刻板印象。可实际上，分析一下整体数据，你会发现，女司机开车比男司机谨慎安全很多，事故比例小很多。
+reference：飞碟说&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;如果下次再有人跟你说，女生都是XXX，你就可以义正言辞地告诉他：&lt;strong&gt;这是幸存者偏差啊！&lt;/strong&gt;然后你就被讨厌了……科科
+（最近比较迷两个台湾的视频Up主谷阿莫和&lt;a href=&#34;https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ&#34; target=&#34;_blank&#34;&gt;啾啾鞋&lt;/a&gt;）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;案例学习二&#34;&gt;案例学习二：&lt;/h1&gt;
+
+&lt;p&gt;结论与筛选步骤强相关，与群体属性弱相关。但是分析原因的时候忽略筛选环节。
+这里面有无意识忽略的行为，也有有意识忽略从而刻意进行误导的坏人～( TロT)σ&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;成功学：“XXX成功是因为XXX啊，科科”。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;说起来好像很有道理，但是实际上是说罗圈话，放罗圈屁。他成功了，从他身上提炼出任何特质都可以附会上去。可本质上依旧是“他成功，所以他成功”，这些特质本身可能并无明显因果关系。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;e.g. 乔布斯是男的，雷军是男的，柳传志是男的，任正非是男的。所以要成为成功的企业家必须是男性。其实是有选择的筛选出了大量的男性成功企业家。如果有选择性的筛选出落魄的男乞丐，最后的结论很可能就是：男性很容易沦为乞丐。这个例子很显眼，但是很多数据分析是不把筛选过程告诉你的。所以原始数据很重要！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;结语：很多地域歧视和打标签的现象都是因为刻板印象，而刻板印象的形成很大一部分原因是因为幸存者偏差。本质上人处理信息的手段就是要归纳世界信息为有限的标签，由此才能按图索骥，梳理思路。可惜的是这个过程必然丢失细节，而给误导言论以可乘之机。而幸存者偏差只是种类繁多的误导手段中的一种，而其他的手段，包括进来流行的数据误导，就不是本篇的内容了。欢迎大家多思考少受骗，待人以真诚而不要以有色眼镜视人。
+&amp;gt; 比戴有色眼镜看人更危险的是，你带着有色眼镜，还不自知！ —— 网络视频作者抽风&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>DTO, Entity, Value Object, POJO/POCO/POPO 的区别</title>
@@ -1089,23 +1339,6 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 &lt;h3 id=&#34;best-practics&#34;&gt;Best Practics&lt;/h3&gt;
 
 &lt;p&gt;-&lt;a href=&#34;http://xiaodongtongxue.github.io/2016/03/21/Web%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/&#34; target=&#34;_blank&#34;&gt;HTML5、CSS3、ES6编程规范 by 小栋同学&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>一个人的不作恶宣言</title>
-      <link>https://qiansen1386.github.io/post/2016/03/dont-be-evil</link>
-      <pubDate>Mon, 14 Mar 2016 04:33:40 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/2016/03/dont-be-evil</guid>
-      <description>&lt;p&gt;读很火的微信贴&lt;a href=&#34;http://finance.ce.cn/rolling/201603/14/t20160314_9475267.shtml&#34; target=&#34;_blank&#34;&gt;为什么谷歌越来越牛逼，而百度却沦为江湖骗子？答案在这里&lt;/a&gt;有感&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/1759658/13750388/38750806-ea40-11e5-9007-b4e619251292.jpeg&#34; alt=&#34;w020160314481863857100&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我愿做一个有信仰的无神论者。
-我坚信自由主义，利己主义与实用主义可以和正直善良的价值观完美契合。
-恻隐之心难道不是人之常情？我愿用一生去证明唯利是图根本就是短视，绝不是利己主义的本意。无需神佛，人性本身便是光辉。
-人会从本心出发自然而然的造福社会，因此自由必须是善良的基础。而强制的善良是伪善，强制的功利主义是以善为名的肆无忌惮。&lt;/p&gt;
 </description>
     </item>
     
