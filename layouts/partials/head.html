@@ -10,9 +10,6 @@
   {{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }}" />{{ end }}
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">
   <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/css/poole.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "/css/hyde.css" | relURL }}">
 
   <!-- Icons -->
   {{ with .Site.Params.gravatarHash }}
