@@ -8,8 +8,24 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Jan 2017 23:34:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jan 2017 11:24:58 +0800</lastBuildDate>
     <atom:link href="https://qiansen1386.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Free will is hard</title>
+      <link>https://qiansen1386.github.io/post/2017/01/free-will-is-hard</link>
+      <pubDate>Sat, 21 Jan 2017 11:24:58 +0800</pubDate>
+      
+      <guid>https://qiansen1386.github.io/post/2017/01/free-will-is-hard</guid>
+      <description>&lt;p&gt;Somebody developed a sophisticated way of  humiliating people, discouraging people, depressing people, in order to ultimately manipulate them by enforcing and utilizing their diffidence. Those who do are usually incompetent, but whom they controlled are usually outstanding. F**k!&lt;/p&gt;
+
+&lt;p&gt;Free will is what I advocate, thus stockholm syndrome is what I hated the most. For parrents of those lost generation, If u are not willing to nourish ur children with love don&amp;rsquo;t give birth to them at the first place. As a human, I am begging u to derive power from ur deep heart and learn to be your own master.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remember life might be tough but always fair.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;reference： &lt;a href=&#34;https://www.zhihu.com/question/54959260&#34; target=&#34;_blank&#34;&gt;男友说“我们适合先从炮友做起再发展到结婚的对象”，这真的好吗？&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>什么是幸存者偏差啊啊啊啊！！！</title>
@@ -1283,65 +1299,6 @@ export * from &amp;quot;singapore&amp;quot;;
 &lt;p&gt;视频简介：
 臨床心理學家 Meg Jay 提供二十歲的新世代年輕人一則的訊息：不同於一般觀點，你的二十歲人生並非無足輕重的十年。Jay在這場引人入勝的演講中說，儘管婚姻、工作及孩子是之後的事，不代表你不能現在就開始規劃。她提出三項建議，告訴二十多歲的年輕人該如何掌握人生中決定性的十年。&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Frontend Learning Notes - Starting Point</title>
-      <link>https://qiansen1386.github.io/post/2016/03/frontend-learning-note-1</link>
-      <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
-      
-      <guid>https://qiansen1386.github.io/post/2016/03/frontend-learning-note-1</guid>
-      <description>
-
-&lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
-Even those great themes seem to have flaws, or require customization. And then I thought, if none of the theme is perfect
-for me, why not craft one by my own. Since I always been fascinated by the frontend development, I take it as a
-oppertunaty to bring my frontend skill sets to another level.&lt;/p&gt;
-
-&lt;p&gt;So I created the stupid &lt;a href=&#34;github.com/qiansen1386/hugo-polygon-theme&#34; target=&#34;_blank&#34;&gt;hugo-polygon-theme&lt;/a&gt;. I have got to say, the name is pretty arbitrary.
-Even worse, I don&amp;rsquo;t have a clue even after I started. I start to realised that I need to have more input before I make an output.
-Hence, I started my long-term(supposed to be) voyage. Here are the resources that absolutely worth more attention.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Some of the resources are written in Chinese. Sorry for the inconvenience, coz those materials are slightly easier for me to understand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;html5&#34;&gt;HTML5:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://html5boilerplate.com/&#34; target=&#34;_blank&#34;&gt;H5 boilerplate&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/usage.md&#34; target=&#34;_blank&#34;&gt;H5 boilerplate Docs&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.initializr.com/builder?print&amp;amp;h5bp-content&amp;amp;modernizr&amp;amp;h5bp-chromeframe&amp;amp;h5bp-analytics&amp;amp;h5bp-favicon&amp;amp;h5bp-robots&amp;amp;h5bp-humans&amp;amp;h5bp-404&amp;amp;h5bp-adobecrossdomain&amp;amp;h5bp-css&amp;amp;h5bp-csshelpers&amp;amp;h5bp-mediaqueryprint&amp;amp;h5bp-mediaqueries&amp;amp;simplehtmltag&amp;amp;izr-emptyscript&#34; title=&#34;H5 boilerplate my custom build (a minimized version)&#34; target=&#34;_blank&#34;&gt;H5 boilerplate my custom build (a minimized version)&lt;/a&gt; (Html5 boilerplate)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;css&#34;&gt;CSS:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://semantic-ui.com/&#34; target=&#34;_blank&#34;&gt;Semantic UI&lt;/a&gt; (LESS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://davidtheclark.com/excited-about-postcss/&#34; target=&#34;_blank&#34;&gt;Excited about postcss &amp;ndash; DAVID CLARK&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://benfrain.com/breaking-up-with-sass-postcss/&#34; target=&#34;_blank&#34;&gt;Breaking up with Sass: it’s not you, it’s me &amp;ndash; Ben Frain&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://twin.github.io/css-preprocessing-drama/&#34; target=&#34;_blank&#34;&gt;CSS Preprocessing Drama&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ai/about-postcss/blob/master/speech.md&#34; target=&#34;_blank&#34;&gt;Speech of &amp;ldquo;About-postcss&amp;rdquo; &amp;ndash; AI&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ashleynolan.co.uk/blog/postcss-a-review&#34; target=&#34;_blank&#34;&gt;PostCSS – Sass Killer or Preprocessing Pretender?&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://learnlayout.com/&#34; target=&#34;_blank&#34;&gt;Learn CSS Layout(I18N-provided)&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://itmyhome.gitbooks.io/css/content/&#34; target=&#34;_blank&#34;&gt;CSS 编码规范&lt;/a&gt; (CSS fundamentals)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arguseye.gitbooks.io/postcss/content/plugins.html&#34; target=&#34;_blank&#34;&gt;PostCSS的相关知识&lt;/a&gt; (PostCSS)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;js&#34;&gt;JS:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/&#34; target=&#34;_blank&#34;&gt;What Is AMD, CommonJS, and UMD?&lt;/a&gt; (Loading)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/TypeScript&#34; target=&#34;_blank&#34;&gt;TypeScript &amp;ndash;维基百科&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/smartkid/archive/2012/10/05/A_First_Look_Of_TypeScript.html&#34; target=&#34;_blank&#34;&gt;Typescript 初体验&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhongsp.gitbooks.io/typescript-handbook/content/&#34; target=&#34;_blank&#34;&gt;TypeScript Handbook（中文版）&lt;/a&gt; (TypeScript)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.75team.com/archives/882&#34; target=&#34;_blank&#34;&gt;[译]神马是AMD, CommonJS, UMD?&lt;/a&gt; (Translation of &amp;ldquo;What Is AMD, CommonJS, and UMD?&amp;rdquo;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;best-practics&#34;&gt;Best Practics&lt;/h3&gt;
-
-&lt;p&gt;-&lt;a href=&#34;http://xiaodongtongxue.github.io/2016/03/21/Web%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/&#34; target=&#34;_blank&#34;&gt;HTML5、CSS3、ES6编程规范 by 小栋同学&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
