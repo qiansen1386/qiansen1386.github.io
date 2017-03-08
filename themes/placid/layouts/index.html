@@ -8,8 +8,7 @@
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
       <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-      {{ if isset .Params "categories" }}
-      <br/>
+      {{ if isset .Params "categories" }}<br/>
       {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       {{ if eq .Site.Params.truncate false }}
@@ -17,18 +16,13 @@
       {{ else if .Description }}
       <p>{{ .Description }}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
-      {{ else }}
-      {{ .Summary }}
-      {{ if .Truncated }}<a href="{{ .Permalink }}">Read On &rarr;</a>{{ end }}
-      {{ end }}
+      {{ else }}{{ .Summary }}{{ if .Truncated }}<a href="{{ .Permalink }}">Read On &rarr;</a>{{ end }}{{ end }}
     </div>
     {{ end }}
     {{ template "_internal/pagination.html" . }}
   </div>
 </div>
-
-{{ with .Site.DisqusShortname }}
-<script type="text/javascript">
+{{ with .Site.DisqusShortname }}<script type="text/javascript">
 var disqus_shortname = {{ . }};
 (function () {
     var s = document.createElement('script'); s.async = true;
@@ -36,7 +30,6 @@ var disqus_shortname = {{ . }};
     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-{{ end }}
+</script>{{ end }}
 <script type="text/javascript" color="81,81,81" opacity='0.3' zIndex="-2" count="150" src="{{ "js/canvas-nest.min.js" | relURL }}" async></script>
 {{ partial "foot.html" . }}

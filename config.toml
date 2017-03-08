@@ -16,7 +16,7 @@ uglyurls = false # No XXX.html ending but less complex, come on you are a comput
 
 paginate = 10
 # 主题限定
-theme = "hyde-x"
+theme = "placid"
 disqusShortname = "qiansen1386"
 
 [author]
