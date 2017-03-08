@@ -3,20 +3,20 @@
   <channel>
     <title>Postcss on 东方孤思子のBlog
 Paris·Qian Sen</title>
-    <link>https://qiansen1386.github.io/tags/postcss/</link>
+    <link>https://parisqian.com/tags/postcss/</link>
     <description>Recent content in Postcss on 东方孤思子のBlog
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 03 Apr 2016 16:40:00 +0000</lastBuildDate>
-    <atom:link href="https://qiansen1386.github.io/tags/postcss/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://parisqian.com/tags/postcss/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Frontend Learning Notes 2 - Direction Shifted</title>
-      <link>https://qiansen1386.github.io/post/2016/04/frontend-learning-note-2</link>
+      <link>https://parisqian.com/post/2016/04/frontend-learning-note-2</link>
       <pubDate>Sun, 03 Apr 2016 16:40:00 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/post/2016/04/frontend-learning-note-2</guid>
+      <guid>https://parisqian.com/post/2016/04/frontend-learning-note-2</guid>
       <description>
 
 &lt;h2 id=&#34;my-confession&#34;&gt;My Confession&lt;/h2&gt;
@@ -138,10 +138,10 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
     
     <item>
       <title>Frontend Learning Notes - Starting Point</title>
-      <link>https://qiansen1386.github.io/post/2016/03/frontend-learning-note-1</link>
+      <link>https://parisqian.com/post/2016/03/frontend-learning-note-1</link>
       <pubDate>Wed, 16 Mar 2016 07:03:51 +0000</pubDate>
       
-      <guid>https://qiansen1386.github.io/post/2016/03/frontend-learning-note-1</guid>
+      <guid>https://parisqian.com/post/2016/03/frontend-learning-note-1</guid>
       <description>
 
 &lt;p&gt;Recently, I have migrated to Hugo Site generator as you can see. I was pretty disappointed with most of the theme.
