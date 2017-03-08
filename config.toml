@@ -3,7 +3,7 @@ baseurl = "https://parisqian.com/"
 # 个人定制
 title = "东方孤思子のBlog\nParis·Qian Sen"
 # 语言
-languageCode = "zh-cn"
+languageCode = "zh-Hans"
 hasCJKLanguage=true # if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
 # 其它选项
 MetaDataFormat = "toml"
