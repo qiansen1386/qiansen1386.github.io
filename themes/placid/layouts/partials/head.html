@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,7 +10,7 @@
   {{/* RSS */}}{{ $siteTitle := .Site.Title }}{{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }}" />{{ end }}
   {{/* Icons */}}{{ with .Site.Params.gravatarHash }}<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.gravatar.com/avatar/{{ . }}?s=144">
   <link rel="shortcut icon" href="https://www.gravatar.com/avatar/{{ . }}?s=16" />{{else}}<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | relURL }}">
-  <link href="{{ "/favicon.png" | relURL }}" rel="icon">{{ end}}
+  <link href="{{ "/favicon.ico" | relURL }}" rel="icon">{{ end }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
 {{ partial "sidebar.html" . }}
