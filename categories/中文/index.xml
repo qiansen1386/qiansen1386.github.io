@@ -8,8 +8,92 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 19 Jan 2017 23:34:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Apr 2017 15:14:31 +0800</lastBuildDate>
     <atom:link href="https://parisqian.com/categories/%E4%B8%AD%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IndexedDB 2.0 更新了！</title>
+      <link>https://parisqian.com/post/2017/04/indexeddb-2-0-is-now-supported</link>
+      <pubDate>Wed, 26 Apr 2017 15:14:31 +0800</pubDate>
+      
+      <guid>https://parisqian.com/post/2017/04/indexeddb-2-0-is-now-supported</guid>
+      <description>
+
+&lt;h2 id=&#34;indexeddb-2-0-is-now-supported&#34;&gt;IndexedDB 2.0 is now supported&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;IndexedDB 是一个浏览器内置的 NoSQL 底层实现，它允许你存储简单值以及结构化数据。不过即便是在 Mozilla 的手册上 （&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API&#34; target=&#34;_blank&#34;&gt;IndexedDB - Web API 接口 | MDN&lt;/a&gt;）也是推荐使用第三方封装的库而非直接调用这个 API。Hacker News 上更是招来一片有关 API复杂，没有 SQL 功能的抱怨。这也就是为什么截止到 2017 四月 26 日。整个互联网上有关 IndexedDB 2.0 的中文内容是 0（A big flat zero）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;IndexedDB 就是一个简单的 NoSQL 实现，你可以在其上自行封装 API，甚至于封装一个 SQL 语法接口也未尝不可。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;题外话：因为所有 WebSQL 的实现背后都是 SQLite，所以委员会觉得这个提案已经不太可能进行标准化了。对于委员会的人来说，写一个 SQLite 的说明文件当标准，实在没有意义了。标准的价值就在于统筹多个实现，而因为只有一个实现，标准也就没有了价值。喜欢 SQLite 你就用 WebSQL 就行，反正不同实现的背后都是它。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;根据 &lt;a href=&#34;https://www.chromestatus.com/feature/5812621622116352&#34; target=&#34;_blank&#34;&gt;Chrome 的功能状态日志&lt;/a&gt; ，2.0 包括以下功能：
+* Binary keys（二进制的键，准确讲是 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer&#34; target=&#34;_blank&#34;&gt;Arraybuffer&lt;/a&gt;、&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray&#34; target=&#34;_blank&#34;&gt;typed array objects&lt;/a&gt;，和
+ &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView&#34; target=&#34;_blank&#34;&gt;DataView&lt;/a&gt; 加索引）
+* Object store（对象存储）
+* index renaming（索引重命名）
+* getKey() on IDBObjectStore
+* getPrimaryKey() on IDBIndex&lt;/p&gt;
+
+&lt;p&gt;总体上而言是对旧 API 的补完，如果你不了解第一代，建议先把第一代用起来，因为第一代的浏览器支持已经很全面，甚至包括 IE10。而 2.0 的更新对数据库作者们而言更是喜大普奔，解决了一些之前的顽疾。期待有更多基于 IndexedDB 的好库涌现。如果你习惯 Mongo 或者 Firebase 这类 NoSQL 的话，直接用或自己做个简单封装也未尝不可。（不过话说他的 API 真的是炒鸡强大也炒鸡复杂）&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;mozilla-开发博客的-博文-1-摘要&#34;&gt;Mozilla 开发博客的&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;博文&lt;/a&gt;摘要&lt;/h4&gt;
+
+&lt;h5 id=&#34;setters-to-idbobjectstore-name-and-idbindex-name&#34;&gt;Setters to &lt;code&gt;IDBObjectStore.name&lt;/code&gt; and &lt;code&gt;IDBIndex.name&lt;/code&gt;&lt;/h5&gt;
+
+&lt;p&gt;之前版本的 Index 你可以增减对象存储或索引的方式来升级数据架构，但是并不能重命名。基本上，这意味着你永远没法准确命名，因为随着时间的推移，很多东西的内在含义都可能会发生变化。而现在可以对数据库架构进行更好地升级修改：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let request = indexedDB.open(&amp;quot;messageDB&amp;quot;, 2);
+request.onupgradeneeded = (event) =&amp;gt; {
+  let txn = event.target.transaction;
+  let store = txn.objectStore(&amp;quot;text messages&amp;quot;);
+
+  store.name = &amp;quot;mobile messages&amp;quot;;
+  let index = store.index(&amp;quot;recipient&amp;quot;);
+  index.name = &amp;quot;recipients&amp;quot;;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;#####&lt;code&gt;IDBDatabase.onclose()&lt;/code&gt;
+新加了一个数据库的生命周期钩子 &lt;code&gt;close&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let request = indexedDB.open(&amp;quot;bookstore&amp;quot;);
+request.onsuccess = (event) =&amp;gt; {
+  let db = event.target.result;
+
+  db.onclose = (event) =&amp;gt; {
+    alert(&amp;quot;the database: &amp;quot; + db.name + &amp;quot;was closed outside the script!&amp;quot;);
+  };
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;。。。 更多内容请&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;参考原文（En）&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;浏览器支持&#34;&gt;浏览器支持&lt;/h4&gt;
+
+&lt;p&gt;Firefox 51，Chrome 58，Opera release 45&lt;/p&gt;
+
+&lt;h4 id=&#34;结语&#34;&gt;结语&lt;/h4&gt;
+
+&lt;p&gt;有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:&lt;strong&gt;是什么&lt;/strong&gt;和&lt;strong&gt;为了什么&lt;/strong&gt;。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 [github 上搜索 indexedDB Wrapper]。我因为还没有重度使用过它就不献丑了。&lt;/p&gt;
+
+&lt;h4 id=&#34;ref&#34;&gt;Ref:&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/&#34; target=&#34;_blank&#34;&gt;[0]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）&lt;/a&gt;
+&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;[1] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&lt;/a&gt;
+&lt;a href=&#34;https://w3c.github.io/IndexedDB/&#34; target=&#34;_blank&#34;&gt;[2]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>什么是幸存者偏差啊啊啊啊！！！</title>
@@ -1302,56 +1386,6 @@ Hence, I started my long-term(supposed to be) voyage. Here are the resources tha
 我坚信自由主义，利己主义与实用主义可以和正直善良的价值观完美契合。
 恻隐之心难道不是人之常情？我愿用一生去证明唯利是图根本就是短视，绝不是利己主义的本意。无需神佛，人性本身便是光辉。
 人会从本心出发自然而然的造福社会，因此自由必须是善良的基础。而强制的善良是伪善，强制的功利主义是以善为名的肆无忌惮。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>使用命令行真的比使用可视化界面好吗？</title>
-      <link>https://parisqian.com/post/2016/03/why-command-line-is-oftenly-better-than-gui-in-cs</link>
-      <pubDate>Tue, 08 Mar 2016 20:28:36 +0000</pubDate>
-      
-      <guid>https://parisqian.com/post/2016/03/why-command-line-is-oftenly-better-than-gui-in-cs</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;说明：转载自己的知乎答案。没办法写得太好了，让人自我陶醉。装逼一旦开始，要怎么才能停止……&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;问：&lt;strong&gt;「&lt;a href=&#34;https://www.zhihu.com/question/40868797/answer/88604865?group_id=690384002342752256&#34; target=&#34;_blank&#34;&gt;知乎：使用命令行真的比使用可视化界面好吗？&lt;/a&gt;」&lt;/strong&gt;&lt;br&gt;
-为什么好多人都喜欢使用命令行呢？ 可视化界面不是计算机史上的进步吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;看情况，但是具体到IT领域，很多种情况下敲代码比可视化强得多。以下详谈&lt;/p&gt;
-
-&lt;p&gt;首先，命令行肯定不是绝对的好啊。对于普罗大众而言，显然可视化才是必须的。
-比如游戏，文档编辑，数据分析，尤其是对于*不需要培训*的普通用户来说GUI必须是刚需……GUI是计算机普及的一大革命浪潮。乔总怎么会错呢。只是世事无绝对，命令行有命令行的好。&lt;/p&gt;
-
-&lt;h3 id=&#34;那么什么情况下应该用命令行呢-命令行的优点有哪些呢&#34;&gt;那么什么情况下应该用命令行呢？命令行的优点有哪些呢？&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-效率-效率-效率-还是tmd效率&#34;&gt;1. 效率，效率，效率，还是tmd效率&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1‘ 把某个目录下的所有*.raw文件复制到另一个文件夹，如果当前目录下鱼龙混杂，你怎么处理呢？
-用命令行调用 robocopy / rsync，加特定参数就可以很方便得进行处理，这边复制完了，那边文件还没挑完呢。&lt;/li&gt;
-&lt;li&gt;2’ 通用的代码，我可以把指令写成脚本，下次直接执行就好了。但是GUI你要一遍一遍地重复，没有任何可以继承沉淀下来的东西&lt;/li&gt;
-&lt;li&gt;3‘ 在Linux下命令行可以操作系统的几乎任何组件，Windows略差，但最近进步也很明显。反之图形界面的话，你需要任务管理器管理进程，用“服务”工具管理服务，用计划任务管理定时任务。要顺利完成部署任务，你要同时开多少软件呢？翻来覆去得点来点去你不烦么？另外，下次部署你又要重做一遍，请参考上一小条。&lt;/li&gt;
-&lt;li&gt;4‘ 一个不带界面的Linux发行版，连服务器数据库应用程序等等，全部加载到内存可能只有一两百兆。一个入门级的VPS就搞定了。但，如果加上GUI，随便一个GUI都要100M到500M之间，服务器主业是用来服务用户的，不是服务运维的。你可以用命令行做到同样的事，多浪费几倍的资源，用户却得不到任何显著地好处，这种事企业是不会做的。&lt;/li&gt;
-&lt;li&gt;5’ etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;2-稳定-可移植性强&#34;&gt;2. 稳定-&amp;gt;可移植性强&lt;/h4&gt;
-
-&lt;p&gt;命令行一个命令可以复制粘贴，分享给天底下所有的运维开发，对于继续进行操作的程序猿而言，查一条指令，可比扒翻几篇教程容易多了。GUI软件则不然，以万恶的微软举例，每一代Office界面都不同吧？菜单都有区别吧？上一代的教程未必适用于下一个版本吧？&lt;/p&gt;
-
-&lt;h4 id=&#34;3-鼠标不适合快速操作-与其来回切换鼠标键盘-不如始终使用键盘&#34;&gt;3. 鼠标不适合快速操作，与其来回切换鼠标键盘，不如始终使用键盘。&lt;/h4&gt;
-
-&lt;p&gt;要提高操作效率，很多情况下都会强调要背快捷键。键盘的可输入信息比鼠标高太多了。而且键盘操作更简单，按下去就是按下去，容错性很强；而鼠标则需要点击到特定位置，对按钮的大小，视线与鼠标轨迹等等都有要求，UX设计不好的软件用鼠标很难用。况且仅仅用鼠标你是什么都做不到的，但是仅用键盘，你可以做到大多数事情。&lt;/p&gt;
-
-&lt;h4 id=&#34;4-开发省心省钱&#34;&gt;4. 开发省心省钱&lt;/h4&gt;
-
-&lt;p&gt;设计UI是需要成本的，调整UI更是件费心费力的工作。而程序猿写程序顺带开发一套命令行界面很轻松，UX的设计简单很多，也不需要太多美学素养。这一点在互联网行业更是及其重要的。用一个shell界面，开发测试运维压测部署全部都能做，而在Web界面里模仿Windows界面比模仿控制台界面要难一万倍。&lt;/p&gt;
-
-&lt;p&gt;你们看这些是不是已经很多了，但是其实还有一个很重要的内容没有讲到呢！那就是&lt;strong&gt;DevOps&lt;/strong&gt;！用脚本批量化自动化地同时处理海量服务器节点，部署运维，错误回滚，平稳降级，弹性扩容等等领域，如果没有脚本和命令行是不可能做到的。计算机的发展趋势就是把“人”的因素从机器集群中剥离出去，从而极大得解放生产力，获得更稳定的业务结构。
-&lt;strong&gt;但是命令行对新手不太友好，能否熟练应用命令行算是一个高手和新手能显著拉开效率差距的点。&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     

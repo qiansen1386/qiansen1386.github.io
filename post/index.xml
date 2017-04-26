@@ -8,8 +8,92 @@ Paris·Qian Sen</title>
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 21 Jan 2017 11:24:58 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Apr 2017 15:14:31 +0800</lastBuildDate>
     <atom:link href="https://parisqian.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IndexedDB 2.0 更新了！</title>
+      <link>https://parisqian.com/post/2017/04/indexeddb-2-0-is-now-supported</link>
+      <pubDate>Wed, 26 Apr 2017 15:14:31 +0800</pubDate>
+      
+      <guid>https://parisqian.com/post/2017/04/indexeddb-2-0-is-now-supported</guid>
+      <description>
+
+&lt;h2 id=&#34;indexeddb-2-0-is-now-supported&#34;&gt;IndexedDB 2.0 is now supported&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;IndexedDB 是一个浏览器内置的 NoSQL 底层实现，它允许你存储简单值以及结构化数据。不过即便是在 Mozilla 的手册上 （&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API&#34; target=&#34;_blank&#34;&gt;IndexedDB - Web API 接口 | MDN&lt;/a&gt;）也是推荐使用第三方封装的库而非直接调用这个 API。Hacker News 上更是招来一片有关 API复杂，没有 SQL 功能的抱怨。这也就是为什么截止到 2017 四月 26 日。整个互联网上有关 IndexedDB 2.0 的中文内容是 0（A big flat zero）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;IndexedDB 就是一个简单的 NoSQL 实现，你可以在其上自行封装 API，甚至于封装一个 SQL 语法接口也未尝不可。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;题外话：因为所有 WebSQL 的实现背后都是 SQLite，所以委员会觉得这个提案已经不太可能进行标准化了。对于委员会的人来说，写一个 SQLite 的说明文件当标准，实在没有意义了。标准的价值就在于统筹多个实现，而因为只有一个实现，标准也就没有了价值。喜欢 SQLite 你就用 WebSQL 就行，反正不同实现的背后都是它。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;根据 &lt;a href=&#34;https://www.chromestatus.com/feature/5812621622116352&#34; target=&#34;_blank&#34;&gt;Chrome 的功能状态日志&lt;/a&gt; ，2.0 包括以下功能：
+* Binary keys（二进制的键，准确讲是 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer&#34; target=&#34;_blank&#34;&gt;Arraybuffer&lt;/a&gt;、&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray&#34; target=&#34;_blank&#34;&gt;typed array objects&lt;/a&gt;，和
+ &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView&#34; target=&#34;_blank&#34;&gt;DataView&lt;/a&gt; 加索引）
+* Object store（对象存储）
+* index renaming（索引重命名）
+* getKey() on IDBObjectStore
+* getPrimaryKey() on IDBIndex&lt;/p&gt;
+
+&lt;p&gt;总体上而言是对旧 API 的补完，如果你不了解第一代，建议先把第一代用起来，因为第一代的浏览器支持已经很全面，甚至包括 IE10。而 2.0 的更新对数据库作者们而言更是喜大普奔，解决了一些之前的顽疾。期待有更多基于 IndexedDB 的好库涌现。如果你习惯 Mongo 或者 Firebase 这类 NoSQL 的话，直接用或自己做个简单封装也未尝不可。（不过话说他的 API 真的是炒鸡强大也炒鸡复杂）&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;mozilla-开发博客的-博文-1-摘要&#34;&gt;Mozilla 开发博客的&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;博文&lt;/a&gt;摘要&lt;/h4&gt;
+
+&lt;h5 id=&#34;setters-to-idbobjectstore-name-and-idbindex-name&#34;&gt;Setters to &lt;code&gt;IDBObjectStore.name&lt;/code&gt; and &lt;code&gt;IDBIndex.name&lt;/code&gt;&lt;/h5&gt;
+
+&lt;p&gt;之前版本的 Index 你可以增减对象存储或索引的方式来升级数据架构，但是并不能重命名。基本上，这意味着你永远没法准确命名，因为随着时间的推移，很多东西的内在含义都可能会发生变化。而现在可以对数据库架构进行更好地升级修改：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let request = indexedDB.open(&amp;quot;messageDB&amp;quot;, 2);
+request.onupgradeneeded = (event) =&amp;gt; {
+  let txn = event.target.transaction;
+  let store = txn.objectStore(&amp;quot;text messages&amp;quot;);
+
+  store.name = &amp;quot;mobile messages&amp;quot;;
+  let index = store.index(&amp;quot;recipient&amp;quot;);
+  index.name = &amp;quot;recipients&amp;quot;;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;#####&lt;code&gt;IDBDatabase.onclose()&lt;/code&gt;
+新加了一个数据库的生命周期钩子 &lt;code&gt;close&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let request = indexedDB.open(&amp;quot;bookstore&amp;quot;);
+request.onsuccess = (event) =&amp;gt; {
+  let db = event.target.result;
+
+  db.onclose = (event) =&amp;gt; {
+    alert(&amp;quot;the database: &amp;quot; + db.name + &amp;quot;was closed outside the script!&amp;quot;);
+  };
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;。。。 更多内容请&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;参考原文（En）&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;浏览器支持&#34;&gt;浏览器支持&lt;/h4&gt;
+
+&lt;p&gt;Firefox 51，Chrome 58，Opera release 45&lt;/p&gt;
+
+&lt;h4 id=&#34;结语&#34;&gt;结语&lt;/h4&gt;
+
+&lt;p&gt;有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:&lt;strong&gt;是什么&lt;/strong&gt;和&lt;strong&gt;为了什么&lt;/strong&gt;。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 [github 上搜索 indexedDB Wrapper]。我因为还没有重度使用过它就不献丑了。&lt;/p&gt;
+
+&lt;h4 id=&#34;ref&#34;&gt;Ref:&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/&#34; target=&#34;_blank&#34;&gt;[0]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）&lt;/a&gt;
+&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;[1] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&lt;/a&gt;
+&lt;a href=&#34;https://w3c.github.io/IndexedDB/&#34; target=&#34;_blank&#34;&gt;[2]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Free will is hard</title>
@@ -1282,22 +1366,6 @@ export * from &amp;quot;singapore&amp;quot;;
 &lt;p&gt;这种感觉估计很多程序员都体会过，当你设计的算法得出了正确结果的时候，当你自以为解决了一个海森堡 Bug（Heisenbug，表示不可重现）的时候，当你完成了一段精妙代码的时候，你摘下厚重的眼镜，推开铺满灰尘的书桌，打开办公室唯一的窗户，迎着夕阳把一只废弃的圆珠笔扔出窗外，然后冲着天空大喊：还有谁？这是一种拔剑四顾心茫然的情怀。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.ituring.com.cn/tupubarticle/2796&#34; target=&#34;_blank&#34;&gt;《码农：Linus 与 Linux》之 Linus，一生只为寻找欢笑 作者:池建强&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Meg Jay: Why 30 is not the new 20</title>
-      <link>https://parisqian.com/post/2016/03/why-30-is-not-the-new-20</link>
-      <pubDate>Thu, 17 Mar 2016 05:52:09 +0000</pubDate>
-      
-      <guid>https://parisqian.com/post/2016/03/why-30-is-not-the-new-20</guid>
-      <description>&lt;p&gt;YouTube 好视频分享。（原视频是李开复（Kaifu Lee）分享在Twitter的。）
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/-GG1rYgGJao&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;视频简介：
-臨床心理學家 Meg Jay 提供二十歲的新世代年輕人一則的訊息：不同於一般觀點，你的二十歲人生並非無足輕重的十年。Jay在這場引人入勝的演講中說，儘管婚姻、工作及孩子是之後的事，不代表你不能現在就開始規劃。她提出三項建議，告訴二十多歲的年輕人該如何掌握人生中決定性的十年。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>
