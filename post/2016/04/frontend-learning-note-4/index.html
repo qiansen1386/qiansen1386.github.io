@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="开发, 中文">
+  <title>Frontend Learning Note 4 - NPM, ES6, ESlint, WebPack &amp; Bootstrap</title>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=144">
+  <link rel="shortcut icon" href="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=16" />
+</head>
+<body class="theme-base-08">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+        <img src="https://www.gravatar.com/avatar/c6f58a99408d7e443ce3c791eb0647ad?s=150"
+             alt="gravatar" title="东方孤思子&lt;br&gt;Paris Qian Sen">
+      
+      <h2>东方孤思子<br>Paris Qian Sen</h2>
+      <p class="lead">Profesional Coding<br>Simple Living<br>Creative Thinking</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://parisqian.com/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://parisqian.com/about/">Who am I</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/qiansen1386"><i class="fa fa-github-square fa-2x"></i></a>
+      
+      <a href="http://stackexchange.com/users/1586938/paris-qian"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      <a href="https://sg.linkedin.com/in/parisqiansen"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://plus.google.com/&#43;Parisqiansen/posts"><i class="fa fa-google-plus-square fa-2x"></i></a>
+      
+      <a href="https://twitter.com/qiansen1386"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UC1rGIQJUQABgRyA-edmRlKg"><i class="fa fa-youtube-square fa-2x"></i></a>
+      <a href="https://parisqian.com/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-2x"></i></a>
+      </li>
+    </ul>
+
+    
+
+    <p><a href="https://parisqian.com/license/" class="copyright">Some Rights Reserved &copy; 2017</a><br>
+      Proudly powered by <a href="https://gohugo.io">Hugo</a> <br>
+      Theme: Customized <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">Frontend Learning Note 4 - NPM, ES6, ESlint, WebPack &amp; Bootstrap</h1>
+    <span class="post-date">Apr 11, 2016 &middot; <a href="https://parisqian.com/post/2016/04/frontend-learning-note-4#disqus_thread">Comments</a>
+    <br/>
+    <a class="label" href="https://parisqian.com/categories/%E5%BC%80%E5%8F%91">开发</a><a class="label" href="https://parisqian.com/categories/dev">dev</a><a class="label" href="https://parisqian.com/categories/english">English</a><a class="label" href="https://parisqian.com/categories/%E4%B8%AD%E6%96%87">中文</a>
+    </span>
+    
+
+<h3 id="babel">Babel</h3>
+
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2016/01/babel.html" target="_blank">Babel 入门教程(阮一峰)</a></li>
+</ul>
+
+<h3 id="eslint">ESlint</h3>
+
+<p>Eslint have tons of configuration options, each of them have a specific purpose, backgound, limitation and so on. I do tried to figure it out myself, however, I is considerably time-consuming to study all of them. In the end, I just want to stick to one pre-configured settings to prevent my head from exploding ^_^</p>
+
+<p>The reason I chose Standard, because, I don&rsquo;t remember the exact reason, at first I want to choose Google&rsquo;s. But In the end, I just reallised it is too enterprise-oriented. After research I think the Standard style is the best for me, at this moment, and it is also recommended by Evan You. The ecosystem around it is pretty solid as well. You can get atom plugins for Linter, Formatter, Highlighter, and so on. All of them can work with Vue perfectly. It is pretty handy indeed. You can choose whatever you want, but at least this combo can save me tons of time, I think I will stick to it for a while.</p>
+
+<h2 id="referances">Referances</h2>
+
+<h3 id="eslint-1">ESlint</h3>
+
+<ul>
+<li><a href="https://github.com/feross/eslint-config-standard" target="_blank">Standard - ESLint Shareable Config</a></li>
+<li><a href="http://standardjs.com/" target="_blank">JavaScript Standard Style</a></li>
+<li><a href="https://www.youtube.com/watch?v=gsfbh17Ax9I" target="_blank">Are Semicolons Necessary in JavaScript? (Youtube)</a></li>
+<li><a href="https://atom.io/packages/linter-eslint" target="_blank">linter-eslint (Atom Plugin)</a></li>
+<li><a href="https://atom.io/packages/standard-formatter" target="_blank">Standard Formatter</a></li>
+</ul>
+
+<h3 id="vue">Vue</h3>
+
+<ul>
+<li><a href="https://laracasts.com/series/learning-vue-step-by-step" target="_blank">Learning Vue 1.0: Step By Step</a></li>
+<li><a href="http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/" target="_blank">Vue.js：a (re)introduction (English)</a></li>
+<li><a href="http://zhuanlan.zhihu.com/p/20302927" target="_blank">Vue.js：a (re)introduction (中文)</a></li>
+<li><a href="https://github.com/vuejs/vue/wiki/1.0.0-binding-syntax-cheatsheet" target="_blank">1.0.0 binding syntax cheatsheet</a></li>
+</ul>
+
+<h3 id="webpack">Webpack</h3>
+
+<ul>
+<li><a href="https://youtu.be/VkTCL6Nqm6Y" target="_blank">OSCON 2014: How Instagram.com Works</a>  # Detailed logic of WebPack</li>
+<li><a href="http://sokra.github.io/slides/webpack" target="_blank">Introduction to webpack - Sokra&rsquo;s semiofficial Slides</a></li>
+<li><a href="http://sokra.github.io/slides/frontend-optimize" target="_blank">Advanced Frontend Optimization (with webpack) - Sokra</a></li>
+<li><a href="https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9" target="_blank">Webpack — The Confusing Parts by @rajaraodv </a></li>
+</ul>
+
+<h3 id="bonus">Bonus</h3>
+
+<ul>
+<li><a href="http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html" target="_blank">和 Vue.js 框架的作者聊聊前端框架开发背后的故事</a></li>
+<li><a href="http://www.imooc.com/video/6346" target="_blank">Vue.js-数据驱动的组件化前端开发）- 尤雨溪</a></li>
+</ul>
+
+<h3 id="so-long-my-learning-note">So long, my learning note</h3>
+
+<p>I have passed this entry-level phase on ES2015 for so long. Just for some reason the final page of the series is never published. I feel its time to draw an end.
+Some of those articles are still relevant, however I believes Google and brain are way more useful than bookmarks.
+Perhaps, I won&rsquo;t publish any bookmark-list like this in the foreseeable future.</p>
+
+<p>Remember?
+&gt; &ldquo;You aren&rsquo;t gonna need it&rdquo; ^_-</p>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+<script type="text/javascript">
+var disqus_shortname = "qiansen1386";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script type="text/javascript">
+    var disqus_shortname = "qiansen1386";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<link rel="stylesheet" href="/css/poole.css">
+<link rel="stylesheet" href="/css/hyde.css">
+<link rel="stylesheet" href="/css/hyde-overrides.css" lazyload>
+<link rel="stylesheet" href="/css/hyde-x.css" lazyload>
+<link rel="stylesheet" href="/css/site.css" lazyload>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/railscasts.min.css" lazyload>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" lazyload>
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-47725881-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<script src="js/highlight.pack.js" async></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript">
+var sc_project=9662348; 
+var sc_invisible=0; 
+var sc_security="e5e8f246";
+document.write("<sc"+"ript type='text/javascript' src='https://secure.statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="https://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/9662348/0/e5e8f246/0/" alt="shopify
+traffic stats"></a></div></noscript>
+
+</body>
+</html>
+

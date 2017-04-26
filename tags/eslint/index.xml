@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>东方孤思子のBlog
+Paris·Qian Sen</title>
+    <link>https://parisqian.com/tags/eslint/index.xml</link>
+    <description>Recent content on 东方孤思子のBlog
+Paris·Qian Sen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <atom:link href="https://parisqian.com/tags/eslint/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Frontend Learning Note 4 - NPM, ES6, ESlint, WebPack &amp; Bootstrap</title>
+      <link>https://parisqian.com/post/2016/04/frontend-learning-note-4</link>
+      <pubDate>Mon, 11 Apr 2016 05:06:44 +0000</pubDate>
+      
+      <guid>https://parisqian.com/post/2016/04/frontend-learning-note-4</guid>
+      <description>
+
+&lt;h3 id=&#34;babel&#34;&gt;Babel&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2016/01/babel.html&#34; target=&#34;_blank&#34;&gt;Babel 入门教程(阮一峰)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;eslint&#34;&gt;ESlint&lt;/h3&gt;
+
+&lt;p&gt;Eslint have tons of configuration options, each of them have a specific purpose, backgound, limitation and so on. I do tried to figure it out myself, however, I is considerably time-consuming to study all of them. In the end, I just want to stick to one pre-configured settings to prevent my head from exploding ^_^&lt;/p&gt;
+
+&lt;p&gt;The reason I chose Standard, because, I don&amp;rsquo;t remember the exact reason, at first I want to choose Google&amp;rsquo;s. But In the end, I just reallised it is too enterprise-oriented. After research I think the Standard style is the best for me, at this moment, and it is also recommended by Evan You. The ecosystem around it is pretty solid as well. You can get atom plugins for Linter, Formatter, Highlighter, and so on. All of them can work with Vue perfectly. It is pretty handy indeed. You can choose whatever you want, but at least this combo can save me tons of time, I think I will stick to it for a while.&lt;/p&gt;
+
+&lt;h2 id=&#34;referances&#34;&gt;Referances&lt;/h2&gt;
+
+&lt;h3 id=&#34;eslint-1&#34;&gt;ESlint&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/feross/eslint-config-standard&#34; target=&#34;_blank&#34;&gt;Standard - ESLint Shareable Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://standardjs.com/&#34; target=&#34;_blank&#34;&gt;JavaScript Standard Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gsfbh17Ax9I&#34; target=&#34;_blank&#34;&gt;Are Semicolons Necessary in JavaScript? (Youtube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34; target=&#34;_blank&#34;&gt;linter-eslint (Atom Plugin)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/standard-formatter&#34; target=&#34;_blank&#34;&gt;Standard Formatter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vue&#34;&gt;Vue&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://laracasts.com/series/learning-vue-step-by-step&#34; target=&#34;_blank&#34;&gt;Learning Vue 1.0: Step By Step&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/&#34; target=&#34;_blank&#34;&gt;Vue.js：a (re)introduction (English)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zhuanlan.zhihu.com/p/20302927&#34; target=&#34;_blank&#34;&gt;Vue.js：a (re)introduction (中文)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vuejs/vue/wiki/1.0.0-binding-syntax-cheatsheet&#34; target=&#34;_blank&#34;&gt;1.0.0 binding syntax cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;webpack&#34;&gt;Webpack&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/VkTCL6Nqm6Y&#34; target=&#34;_blank&#34;&gt;OSCON 2014: How Instagram.com Works&lt;/a&gt;  # Detailed logic of WebPack&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sokra.github.io/slides/webpack&#34; target=&#34;_blank&#34;&gt;Introduction to webpack - Sokra&amp;rsquo;s semiofficial Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sokra.github.io/slides/frontend-optimize&#34; target=&#34;_blank&#34;&gt;Advanced Frontend Optimization (with webpack) - Sokra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9&#34; target=&#34;_blank&#34;&gt;Webpack — The Confusing Parts by @rajaraodv &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus&#34;&gt;Bonus&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html&#34; target=&#34;_blank&#34;&gt;和 Vue.js 框架的作者聊聊前端框架开发背后的故事&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.imooc.com/video/6346&#34; target=&#34;_blank&#34;&gt;Vue.js-数据驱动的组件化前端开发）- 尤雨溪&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;so-long-my-learning-note&#34;&gt;So long, my learning note&lt;/h3&gt;
+
+&lt;p&gt;I have passed this entry-level phase on ES2015 for so long. Just for some reason the final page of the series is never published. I feel its time to draw an end.
+Some of those articles are still relevant, however I believes Google and brain are way more useful than bookmarks.
+Perhaps, I won&amp;rsquo;t publish any bookmark-list like this in the foreseeable future.&lt;/p&gt;
+
+&lt;p&gt;Remember?
+&amp;gt; &amp;ldquo;You aren&amp;rsquo;t gonna need it&amp;rdquo; ^_-&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

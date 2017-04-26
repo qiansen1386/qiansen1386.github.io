@@ -3,7 +3,7 @@
   <channel>
     <title>东方孤思子のBlog
 Paris·Qian Sen</title>
-    <link>https://parisqian.com/</link>
+    <link>https://parisqian.com/index.xml</link>
     <description>Recent content on 东方孤思子のBlog
 Paris·Qian Sen</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -422,6 +422,138 @@ she explained a nearly-celibacy idea about that love could inevitably cause both
     </item>
     
     <item>
+      <title>前端开发笔记番外篇：在瘟到死上玩壳（中文读者福利）</title>
+      <link>https://parisqian.com/post/2016/05/frontend-learning-note-extra-1</link>
+      <pubDate>Fri, 13 May 2016 20:31:05 +0000</pubDate>
+      
+      <guid>https://parisqian.com/post/2016/05/frontend-learning-note-extra-1</guid>
+      <description>
+
+&lt;h2 id=&#34;内容概要&#34;&gt;内容概要&lt;/h2&gt;
+
+&lt;p&gt;这篇主要讲什么呢……恩，是讲一讲进来玩前端在 Windows 上各种折腾 shell 的一些心得。&lt;/p&gt;
+
+&lt;p&gt;先贴开源仓库地址 &lt;a href=&#34;https://github.com/qiansen1386/my-zsh-config&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/my-zsh-config&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-下的神器-babun-http-babun-github-io&#34;&gt;Windows 下的神器 &lt;a href=&#34;http://babun.github.io/&#34; target=&#34;_blank&#34;&gt;babun&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;反正目前，&lt;code&gt;Cygwin mintty&lt;/code&gt; 就是目前最好的模拟器。主要是完美复制了，组件化插件，管线，做好一件事的 Linux 哲学。
+我对 &lt;code&gt;Bash on Windows&lt;/code&gt; 的热情一下子就减小了好多。要啥自行车啊，谁知道微软的这破玩意儿好不好用呢……&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;微软就喜欢提供自以为是最优解的一条龙服务。每次看它 presentation 里做得炫酷牛逼的各种 Magic ，我就怕得不行……&lt;code&gt;.Net&lt;/code&gt; 从 1 到 2 到 4 到 Core，妈的打脸多少次了……每次看它投入大量资源到一个软件，把他包装的各种完善，然后几天之后等到开源社区有更好的解决方案了，之前高大上的完善软件瞬间就变成一堆老旧过时的笨重垃圾。这叫一个酸爽。老老实实做一个功能，把接口做好，让社区彼此协作，每人做好一个小组件，感觉这才是比较符合我审美的哲学。当然&lt;code&gt;.NET&lt;/code&gt;的粉丝们请不要和我撕逼，我承认微软在新 CEO 上台之后做得很多举措都是让人眼前一亮，且微软同学们的代码质量都是过硬的。就是有些 API 设计得各种叠床架屋脱裤放屁打脸狂魔（逃&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;当然，&lt;code&gt;mintty&lt;/code&gt; 的集大成者 &lt;code&gt;Babun&lt;/code&gt; 不是没有毛病的，刚装上的时候，各种出问题。比如有的时候按 &lt;code&gt;tab&lt;/code&gt; 键没有反应。此时的修理办法就是，在控制台里输入 &lt;code&gt;compinit&lt;/code&gt; 重新生成下不知道是缓存还是啥。不过每次打开都这样输入一遍，也不是个事儿。幸好伟大的社区对这种常见错误，都早有解决之法。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 这里只提供一个简单的解法。虽然我自己用过是这样，但是不保证你们用了也是这样。请不要觉得这都是特技，化学的成分，其实原贴里有补充其他的办法。
+compaudit | xargs chmod g-w
+rm -f ~/.zcompdump; compinit
+cp `ls .zcompdump*`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;输入这三行代码就重新生成一下 &lt;code&gt;.zcompdump&lt;/code&gt; 文件，一般来说都可以搞定。
+详情请见：&lt;a href=&#34;https://github.com/babun/babun/issues/159&#34; target=&#34;_blank&#34;&gt;babun-Issues#159&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;zsh-oh-my-zsh&#34;&gt;Zsh &amp;amp; oh-my-zsh&lt;/h2&gt;
+
+&lt;p&gt;buban 自带 &lt;code&gt;Zsh&lt;/code&gt; 和 &lt;code&gt;Oh-my-zsh&lt;/code&gt;.
+没有装过 zsh 的小伙伴请参考 &lt;a href=&#34;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&#34; target=&#34;_blank&#34;&gt;https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# Install Zsh
+sudo apt-get install -y zsh
+# Install Oh-my-zsh
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+# Change default shell to zsh
+sudo chsh -s /bin/zsh vagrant
+# Use default template for .zshrc settings
+sudo cp /home/vagrant/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;哼，才不是广告。。。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;简单到不行。
+接下来修改 &lt;code&gt;.zshrc&lt;/code&gt; 配置文件。
+主要改两处，一是&lt;strong&gt;主题&lt;/strong&gt;，二是&lt;strong&gt;插件&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;先说主题&#34;&gt;先说主题&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/agnoster/3712874&#34; target=&#34;_blank&#34;&gt;agnoster&lt;/a&gt; 主题是我目前觉得最好看的自带主题，也希望大家也可以分享下各位认为好看的主题。（由于官方精力所限不在收录第三方主题，大量主题都是游离状态，需要自己在 GitHub 淘宝）&lt;/p&gt;
+
+&lt;p&gt;修改主题的方法就是，找到 &lt;code&gt;ZSH_THEME=&lt;/code&gt; 这一行，把原文改成 &lt;code&gt;ZSH_THEME=&amp;quot;agnoster&amp;quot;&lt;/code&gt;。（如果是非官方主题请确保下载主题文件到）
+这个主题有个毛病（一个需要特殊配置的功能），就是参考了 Python 社区做得的一个编辑器插件神器 Powerline 的做法。在 shell 状态栏里放了很多 unicode 的符号。然而等宽字体一般不包含全部 unicode 字符。所以你在 shell 里打 &lt;code&gt;echo &amp;quot;\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699&amp;quot;&lt;/code&gt; 一般显示为乱码。所以需要安装一个定制的字体，把这些字符打包进去。也就是传说中的 &lt;a href=&#34;https://github.com/powerline/fonts&#34; target=&#34;_blank&#34;&gt;Powerline-patched font&lt;/a&gt;。随便选一个装就好，这样就可以看到这些字符了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;注意： Babun 在瘟到死系统下，只识别 &lt;code&gt;.otf&lt;/code&gt; 扩展的字体。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我喜欢非衬线字体，所以没有试过&lt;code&gt;Hack&lt;/code&gt;这些。&lt;/p&gt;
+
+&lt;p&gt;非衬线里面，主要推荐 &lt;a href=&#34;https://github.com/powerline/fonts/tree/master/FiraMono&#34; target=&#34;_blank&#34;&gt;Fira Mono for Powerline&lt;/a&gt; / &lt;a href=&#34;https://github.com/powerline/fonts/tree/master/SourceCodePro&#34; target=&#34;_blank&#34;&gt;Source Code Pro for Powerline&lt;/a&gt;
+比较不推荐 Droid Sans，因为在本地上用边缘特别粗糙，字重也特别重。其他诸如 UbuntuMono 也挺漂亮的，但是感觉略花俏。有试过其他字体的小伙伴可以分享下他们的感触。
+需要注意的是，&lt;code&gt;regular&lt;/code&gt; 一般字重轻于 &lt;code&gt;Medium&lt;/code&gt;，一般使用还是推荐 &lt;code&gt;regular&lt;/code&gt;。没有试过 &lt;code&gt;Light&lt;/code&gt; 和 &lt;code&gt;UltraLight&lt;/code&gt;，应该更炫酷，不过不常见，没试过。&lt;/p&gt;
+
+&lt;p&gt;额，这个主题，还有一个毛病……(这么多毛病你还要选这个主题，你是不是脑残外貌党……其实我就是啊\(&lt;em&gt;v&lt;/em&gt;)/)&lt;/p&gt;
+
+&lt;p&gt;如果你不在启动脚本里加入 &lt;code&gt;export DEFAULT_USER=&amp;lt;username&amp;gt;&lt;/code&gt; 的话，他会在路径前加上一段 &lt;code&gt;&amp;lt;username&amp;gt; @ &amp;lt;hostname&amp;gt;&lt;/code&gt;， 太不简洁优雅了。所以一定要在 &lt;code&gt;.profile&lt;/code&gt; 啊，这类启动脚本里加上那一句设置 &lt;code&gt;DEFAULT_USER&lt;/code&gt; 的话！&lt;/p&gt;
+
+&lt;p&gt;最终极简效果图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;data:image/png;base64,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&#34; alt=&#34;最终效果图&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;顺便一说，上面这个图我机智地用 base64 编码了之后直接嵌到了网页里。不然单独维护一个 img 文件夹也是很头疼的事情啊。哈哈哈哈哈。看源代码的时候不太美观倒是。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;再说插件&#34;&gt;再说插件&lt;/h3&gt;
+
+&lt;p&gt;插件这个东西不能乱用。有的时候，甚至有些软件会建议用户关闭 zsh 自带的的插件。（貌似是Node还是npm来着）我除了默认的 &lt;code&gt;git&lt;/code&gt; 插件以外，别的插件用的真的不多。不过有一个插件我印象深刻……就是 &lt;code&gt;ssh-agent&lt;/code&gt; 插件。具体原理我不是特别懂。不想信口开河。不过总而言之就是当你加了 &lt;code&gt;ssh&lt;/code&gt; 地址的 git 远端，推送的时候，就需要通过 ssh 的通道。此时，让 git 知道去哪里找到 SSH 的私钥公钥。一般情况下，我们比较熟悉的是把本机的私钥加入到网络服务中，而有的时候，我们需要反过来，把已经注册到某个网络服务中的私钥绑定到其他机器。在 Windows 里，我习惯用 &lt;code&gt;putty&lt;/code&gt; 套件的 &lt;code&gt;pageant&lt;/code&gt; 组件管理 key，用 SourceTree 管理 git。可是在 Linux 里就需要用 Shell 来做这个事，我不是特别熟悉。&lt;/p&gt;
+
+&lt;p&gt;以上内容都可以在 &lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh/wiki/Customization&#34; target=&#34;_blank&#34;&gt;Oh my Zsh Wiki: Customization&lt;/a&gt; 官方文档中找到更详细的说明。&lt;/p&gt;
+
+&lt;h2 id=&#34;重启才能启用配置&#34;&gt;重启才能启用配置？&lt;/h2&gt;
+
+&lt;p&gt;看 &lt;code&gt;source&lt;/code&gt; 的妙用。
+用 &lt;code&gt;source .zshrc&lt;/code&gt; 就能启用 &lt;code&gt;.zshrc&lt;/code&gt; 的配置。&lt;/p&gt;
+
+&lt;h2 id=&#34;神-tm-vim&#34;&gt;神 tm &lt;code&gt;Vim&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;我是来吐槽的，不是夸的。之前我没系统学过 vim，请轻喷。
+&lt;code&gt;set mouse=r&lt;/code&gt; 不知道手打了多少遍，忍无可忍查了查如何配置vim，然后发现只要创建一个 &lt;code&gt;.vimrc&lt;/code&gt; 文件就好。那时候心头一万匹草泥马。23333&lt;/p&gt;
+
+&lt;h2 id=&#34;之前太偷懒-该来的总要来-ssh&#34;&gt;之前太偷懒，该来的总要来→_→SSH&lt;/h2&gt;
+
+&lt;p&gt;ssh-agent 重剑无锋，全靠武功。&lt;/p&gt;
+
+&lt;p&gt;。。。To be Continue。。。&lt;/p&gt;
+
+&lt;h2 id=&#34;从来没重视过-git-alias-直到我用了-babun&#34;&gt;从来没重视过 &lt;code&gt;git alias&lt;/code&gt; 直到我用了 &lt;code&gt;babun&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;babun 自己定制了一批 git 的别名，用之前不理解，用之后才发觉，这才是 tm 终端的正确玩法啊。
+我把 babun 的配置贴在下面好了。喜欢的同学自己可以在终端里按 &lt;code&gt;git config --global --&lt;/code&gt; 玩一下。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-INI&#34;&gt;[alias]
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	cl = clone
+	ci = commit
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue&amp;lt;%an&amp;gt;%Creset&#39; --abbrev-commit --date=relative --all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;题外话，建议给 &lt;code&gt;core.autocrlf&lt;/code&gt; 设为 &lt;code&gt;input&lt;/code&gt;，让 git 不修改源文件的换行符。&lt;code&gt;autocrlf&lt;/code&gt; 表面上很易用。实际上，我感觉他只适用于项目目标为Win，git 服务器为Linux的情况。而如果你的项目目标就是*nix，autocrlf 会把 &lt;code&gt;diff&lt;/code&gt; 功能基本废掉。每行都改动一片红一片绿的世界最好只停留在股市里……&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Quora：烂程序猿的特征都有啥？</title>
       <link>https://parisqian.com/post/2016/05/what-are-the-characteristics-of-a-bad-software-engineer</link>
       <pubDate>Thu, 12 May 2016 22:47:39 +0800</pubDate>
@@ -813,6 +945,74 @@ sudo apt-get install firefox
     </item>
     
     <item>
+      <title>Frontend Learning Note 4 - NPM, ES6, ESlint, WebPack &amp; Bootstrap</title>
+      <link>https://parisqian.com/post/2016/04/frontend-learning-note-4</link>
+      <pubDate>Mon, 11 Apr 2016 05:06:44 +0000</pubDate>
+      
+      <guid>https://parisqian.com/post/2016/04/frontend-learning-note-4</guid>
+      <description>
+
+&lt;h3 id=&#34;babel&#34;&gt;Babel&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2016/01/babel.html&#34; target=&#34;_blank&#34;&gt;Babel 入门教程(阮一峰)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;eslint&#34;&gt;ESlint&lt;/h3&gt;
+
+&lt;p&gt;Eslint have tons of configuration options, each of them have a specific purpose, backgound, limitation and so on. I do tried to figure it out myself, however, I is considerably time-consuming to study all of them. In the end, I just want to stick to one pre-configured settings to prevent my head from exploding ^_^&lt;/p&gt;
+
+&lt;p&gt;The reason I chose Standard, because, I don&amp;rsquo;t remember the exact reason, at first I want to choose Google&amp;rsquo;s. But In the end, I just reallised it is too enterprise-oriented. After research I think the Standard style is the best for me, at this moment, and it is also recommended by Evan You. The ecosystem around it is pretty solid as well. You can get atom plugins for Linter, Formatter, Highlighter, and so on. All of them can work with Vue perfectly. It is pretty handy indeed. You can choose whatever you want, but at least this combo can save me tons of time, I think I will stick to it for a while.&lt;/p&gt;
+
+&lt;h2 id=&#34;referances&#34;&gt;Referances&lt;/h2&gt;
+
+&lt;h3 id=&#34;eslint-1&#34;&gt;ESlint&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/feross/eslint-config-standard&#34; target=&#34;_blank&#34;&gt;Standard - ESLint Shareable Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://standardjs.com/&#34; target=&#34;_blank&#34;&gt;JavaScript Standard Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gsfbh17Ax9I&#34; target=&#34;_blank&#34;&gt;Are Semicolons Necessary in JavaScript? (Youtube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34; target=&#34;_blank&#34;&gt;linter-eslint (Atom Plugin)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/standard-formatter&#34; target=&#34;_blank&#34;&gt;Standard Formatter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vue&#34;&gt;Vue&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://laracasts.com/series/learning-vue-step-by-step&#34; target=&#34;_blank&#34;&gt;Learning Vue 1.0: Step By Step&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/&#34; target=&#34;_blank&#34;&gt;Vue.js：a (re)introduction (English)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zhuanlan.zhihu.com/p/20302927&#34; target=&#34;_blank&#34;&gt;Vue.js：a (re)introduction (中文)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vuejs/vue/wiki/1.0.0-binding-syntax-cheatsheet&#34; target=&#34;_blank&#34;&gt;1.0.0 binding syntax cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;webpack&#34;&gt;Webpack&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/VkTCL6Nqm6Y&#34; target=&#34;_blank&#34;&gt;OSCON 2014: How Instagram.com Works&lt;/a&gt;  # Detailed logic of WebPack&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sokra.github.io/slides/webpack&#34; target=&#34;_blank&#34;&gt;Introduction to webpack - Sokra&amp;rsquo;s semiofficial Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sokra.github.io/slides/frontend-optimize&#34; target=&#34;_blank&#34;&gt;Advanced Frontend Optimization (with webpack) - Sokra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9&#34; target=&#34;_blank&#34;&gt;Webpack — The Confusing Parts by @rajaraodv &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus&#34;&gt;Bonus&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html&#34; target=&#34;_blank&#34;&gt;和 Vue.js 框架的作者聊聊前端框架开发背后的故事&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.imooc.com/video/6346&#34; target=&#34;_blank&#34;&gt;Vue.js-数据驱动的组件化前端开发）- 尤雨溪&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;so-long-my-learning-note&#34;&gt;So long, my learning note&lt;/h3&gt;
+
+&lt;p&gt;I have passed this entry-level phase on ES2015 for so long. Just for some reason the final page of the series is never published. I feel its time to draw an end.
+Some of those articles are still relevant, however I believes Google and brain are way more useful than bookmarks.
+Perhaps, I won&amp;rsquo;t publish any bookmark-list like this in the foreseeable future.&lt;/p&gt;
+
+&lt;p&gt;Remember?
+&amp;gt; &amp;ldquo;You aren&amp;rsquo;t gonna need it&amp;rdquo; ^_-&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Frontend Learning Note 3 - Vagrant, VM &amp; Shell</title>
       <link>https://parisqian.com/post/2016/04/frontend-learning-note-3</link>
       <pubDate>Sat, 09 Apr 2016 05:05:53 +0000</pubDate>
@@ -1003,370 +1203,6 @@ That is exactly why I dropped the semantic UI, because it follows &amp;ldquo;&lt
 &lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/41922432/answer/93346223&#34; target=&#34;_blank&#34;&gt;如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://benjamn.github.io/empirenode-2015&#34; target=&#34;_blank&#34;&gt;The Importance of import and export by Ben Newman on EmpireNode 2015 &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[转] ES6 的模块系统（附CommonJS &amp; AMD 相关）</title>
-      <link>https://parisqian.com/post/2016/03/es6-module-system</link>
-      <pubDate>Mon, 28 Mar 2016 10:14:24 +0000</pubDate>
-      
-      <guid>https://parisqian.com/post/2016/03/es6-module-system</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000003410285&#34; target=&#34;_blank&#34;&gt;原文&lt;/a&gt; by &lt;a href=&#34;https://segmentfault.com/blog/juryxiong&#34; target=&#34;_blank&#34;&gt;Jury Xiong&amp;rsquo;s Blog&lt;/a&gt; 依照&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/cn/&#34; target=&#34;_blank&#34;&gt;知识共享署名-相同方式共享 3.0 中国大陆许可协议&lt;/a&gt;发布&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此文为翻译，原文地址在这儿：&lt;a href=&#34;https://hacks.mozilla.org/2015/08/es6-in-depth-modules/&#34; target=&#34;_blank&#34;&gt;https://hacks.mozilla.org/2015/08/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;ES6 是 ECMAScript 第 6 版本的简称，这是新一代的 JavaScript 的标准。&lt;a href=&#34;https://hacks.mozilla.org/category/es6-in-depth/&#34; target=&#34;_blank&#34;&gt;ES6 in Depth&lt;/a&gt; 是关于 ES6 的一系列新特性的介绍。&lt;/p&gt;
-
-&lt;p&gt;遥想 2007 年，笔者开始在 Mozilla 的 JavaScript 团队工作的时候，那个时候典型的 JavaScript 程序只有一行代码。&lt;/p&gt;
-
-&lt;p&gt;两年之后， Google Map 被发布。但是在那之前不久，JavaScript 的主要用途还是表单验证，当然啦，你的&lt;code&gt;&amp;lt;input onchange=&amp;gt;&lt;/code&gt;处理器平均来说只有一行。&lt;/p&gt;
-
-&lt;p&gt;事过情迁，JavaScript 项目已经变得十分庞大，社区也发展出了一些有助于开发可扩展程序的工具。首先你需要的便是模块系统。模块系统让你得以将你的工作分散在不同的文件和目录中，让它们之前得以互相访问，并且可以非常有效地加载它们。自然而然地，JavaScript 发展出了模块系统，事实上是多个模块系统（AMD，CommonJS，CMD，译者注）。不仅如此，社区还提供了包管理工具（NPM，译者注），让你可以安装和拷贝高度依赖其他模块的软件。也许你会觉得，带有模块特性的 ES6，来得有些晚了。&lt;/p&gt;
-
-&lt;h2 id=&#34;模块基础&#34;&gt;模块基础&lt;/h2&gt;
-
-&lt;p&gt;一个 ES6 的模块是一个包含了 JS 代码的文件。ES6 里没有所谓的 &lt;code&gt;module&lt;/code&gt; 关键字。一个模块看起来就和一个普通的脚本文件一样，除了以下两个区别：&lt;/p&gt;
-
-&lt;p&gt;ES6 的模块自动开启严格模式，即使你没有写 &lt;code&gt;&#39;use strict&#39;&lt;/code&gt;。
-你可以在模块中使用 &lt;code&gt;import&lt;/code&gt; 和 &lt;code&gt;export&lt;/code&gt;。
-让我们先来看看 &lt;code&gt;export&lt;/code&gt;。在模块中声明的任何东西都是默认私有的，如果你想对其他模块 Public，你必须 &lt;code&gt;export&lt;/code&gt; 那部分代码。我们有几种实现方法，最简单的方式是添加一个 &lt;code&gt;export&lt;/code&gt; 关键字。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// kittydar.js - Find the locations of all the cats in an image.
-// (Heather Arthur wrote this library for real)
-// (but she didn&#39;t use modules, because it was 2013)
-
-export function detectCats(canvas, options) {
-  var kittydar = new Kittydar(options);
-  return kittydar.detectCats(canvas);
-}
-
-export class Kittydar {
-  ... several methods doing image processing ...
-}
-
-// This helper function isn&#39;t exported.
-function resizeCanvas() {
-  ...
-}
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你可以在 &lt;code&gt;function&lt;/code&gt;、&lt;code&gt;class&lt;/code&gt;、&lt;code&gt;var&lt;/code&gt;、&lt;code&gt;let&lt;/code&gt; 或 &lt;code&gt;const&lt;/code&gt; 前添加 &lt;code&gt;export&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;如果你想写一个模块，有这些就够了！再也不用把代码放在 IIFE 或者一个回调函数里了。既然你的代码是一个模块，而非脚本文件，那么你生命的一切都会被封装进模块的作用域，不再会有跨模块或跨文件的全局变量。你导出的声明部分则会成为这个模块的 Public API。&lt;/p&gt;
-
-&lt;p&gt;除此之外，模块里的代码和普通代码没啥大区别。它可以访问一些基本的全局变量，比如 &lt;code&gt;Object&lt;/code&gt; 和 &lt;code&gt;Array&lt;/code&gt;。如果你的模块跑在浏览器里，它将可以访问 &lt;code&gt;document&lt;/code&gt; 和 &lt;code&gt;XMLHttpRequest&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;在另外一个文件中，我们可以导入这个模块并且使用 &lt;code&gt;detectCats()&lt;/code&gt; 函数：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// demo.js - Kittydar demo program
-
-import {detectCats} from &amp;quot;kittydar.js&amp;quot;;
-
-function go() {
-    var canvas = document.getElementById(&amp;quot;catpix&amp;quot;);
-    var cats = detectCats(canvas);
-    drawRectangles(canvas, cats);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;要导入多个模块中的接口，你可以这样写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;import {detectCats, Kittydar} from &amp;quot;kittydar.js&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;当你运行一个包含 &lt;code&gt;import&lt;/code&gt; 声明的模块，被引入的模块会先被导入并加载，然后根据依赖关系，每一个模块的内容会使用深度优先的原则进行遍历。跳过已经执行过的模块，以此避免依赖循环。&lt;/p&gt;
-
-&lt;p&gt;这便是模块的基础部分，挺简单的。&lt;/p&gt;
-
-&lt;h2 id=&#34;导出表&#34;&gt;导出表&lt;/h2&gt;
-
-&lt;p&gt;如果你觉得在每个要导出的部分前都写上 export 很麻烦，你可以只写一行你想要导出的变量列表，再用花括号包起来。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;export {detectCats, Kittydar};
-
-// no `export` keyword required here
-function detectCats(canvas, options) { ... }
-class Kittydar { ... }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;导出表不一定要出现在文件的第一行，它可以出现在模块顶级作用域中的任何一行。你可以写多个导出表，也可以在列表中再写上其他 &lt;code&gt;export&lt;/code&gt; 声明，只要没有变量名被重复导出即可。&lt;/p&gt;
-
-&lt;h2 id=&#34;重名命导出和导入&#34;&gt;重名命导出和导入&lt;/h2&gt;
-
-&lt;p&gt;如果导入的变量名恰好和你模块中的变量名冲突了，ES6 允许你给你导入的东西重命名：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// suburbia.js
-
-// Both these modules export something named `flip`.
-// To import them both, we must rename at least one.
-import {flip as flipOmelet} from &amp;quot;eggs.js&amp;quot;;
-import {flip as flipHouse} from &amp;quot;real-estate.js&amp;quot;;
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;类似地，你在导出变量的时候也能重命名。这个特性在你想将同一个变量名导出两次的场景下十分方便，举个栗子：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// unlicensed_nuclear_accelerator.js - media streaming without drm
-// (not a real library, but maybe it should be)
-
-function v1() { ... }
-function v2() { ... }
-
-export {
-  v1 as streamV1,
-  v2 as streamV2,
-  v2 as streamLatestVersion
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;默认导出&#34;&gt;默认导出&lt;/h2&gt;
-
-&lt;p&gt;新一代的标准的设计理念是兼容现有的 &lt;code&gt;CommonJS&lt;/code&gt; 和 &lt;code&gt;AMD&lt;/code&gt; 模块。所以如果你有一个 Node 项目，并且刚刚执行完 &lt;code&gt;npm install lodash&lt;/code&gt;，你的 ES6 代码可以独立引入 Lodash 中的函数：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;import {each, map} from &amp;quot;lodash&amp;quot;;
-
-each([3, 2, 1], x =&amp;gt; console.log(x));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然而如果你已经习惯了 &lt;code&gt;_.each&lt;/code&gt; 或者看不见 &lt;code&gt;_&lt;/code&gt; 的话就浑身难受，当然这样使用 Lodash 也是不错的方式。&lt;/p&gt;
-
-&lt;p&gt;这种情况下，你可以稍微改变一下你的 import 写法，不写花括号：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;import _ from &amp;quot;lodash&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这个简写等价于 &lt;code&gt;import {default as _} from &amp;quot;lodash&amp;quot;;&lt;/code&gt;。所有 &lt;code&gt;CommonJS&lt;/code&gt; 和 &lt;code&gt;AMD&lt;/code&gt; 模块在被 ES6 代码使用的时候都已经有了默认的导出，这个导出和你在 &lt;code&gt;CommonJS&lt;/code&gt; 中 &lt;code&gt;require()&lt;/code&gt; 得到的东西是一样的，那就是 &lt;code&gt;exports&lt;/code&gt; 对象。&lt;/p&gt;
-
-&lt;p&gt;ES6 的模块系统被设计成让你可以一次性引入多个变量。但对于已经存在的 CommonJS 模块来说，你能得到的只有默认导出。举个栗子，在撰写此文之时，据笔者所知，著名的 &lt;a href=&#34;https://github.com/Marak/colors.js&#34; target=&#34;_blank&#34;&gt;colors&lt;/a&gt; 模块并未特意支持 ES6。这是一个由多个 CommonJS 模块组成的模块，正如 npm 上的那些包。然而你依然可以直接将其引入到你的 ES6 代码中。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// ES6 equivalent of `var colors = require(&amp;quot;colors/safe&amp;quot;);`
-import colors from &amp;quot;colors/safe&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你想写自己的默认导出，那也很简单。这里面并没有什么高科技，它和普通的导出没什么两样，除了它的导出名是 &lt;code&gt;default&lt;/code&gt;。你可以使用我们之前已经介绍过的语法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;let myObject = {
-  field1: value1,
-  field2: value2
-};
-export {myObject as default};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样更好：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;export default {
-  field1: value1,
-  field2: value2
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;export default&lt;/code&gt; 关键字后可以跟随任何值：函数，对象，对象字面量，任何你能说得出的东西。&lt;/p&gt;
-
-&lt;h2 id=&#34;模块对象&#34;&gt;模块对象&lt;/h2&gt;
-
-&lt;p&gt;抱歉，这篇文章的内容有点多，但 JavaScript 已经算好的了：因为一些原因，所有语言的模块系统都有一大堆没什么卵用的特性。所幸的是，咱们只有一个话题要讨论了，呃，好吧，两个。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;import * as cows from &amp;quot;cows&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;当你 &lt;code&gt;import *&lt;/code&gt;，被引入进来的是一个 &lt;code&gt;module namespace object&lt;/code&gt;。它的属性是那个模块的导出，所以如果 “cows” 模块导出了一个名为 &lt;code&gt;moo()&lt;/code&gt; 的函数，当你像这样引入了 “cows” 之后，你可以这样写 &lt;code&gt;cows.moo()&lt;/code&gt;。&lt;/p&gt;
-
-&lt;h2 id=&#34;聚合模块&#34;&gt;聚合模块&lt;/h2&gt;
-
-&lt;p&gt;有时候一个包的主模块会引入许多其他模块，然后再将它们以一个统一的方式导出。为了简化这样的代码，我们有一个 import-and-export 的简写方法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Node&#34;&gt;// world-foods.js - good stuff from all over
-
-// import &amp;quot;sri-lanka&amp;quot; and re-export some of its exports
-export {Tea, Cinnamon} from &amp;quot;sri-lanka&amp;quot;;
-
-// import &amp;quot;equatorial-guinea&amp;quot; and re-export some of its exports
-export {Coffee, Cocoa} from &amp;quot;equatorial-guinea&amp;quot;;
-
-// import &amp;quot;singapore&amp;quot; and export ALL of its exports
-export * from &amp;quot;singapore&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这种 &lt;code&gt;export-from&lt;/code&gt; 的表达式和后面跟了一个 &lt;code&gt;export&lt;/code&gt; 的 &lt;code&gt;import-from&lt;/code&gt; 表达式类似。但和真正的导入不同，它并不会在你的作用域中加入二次导出的变量绑定。所以如果你打算在 &lt;code&gt;world-foods.js&lt;/code&gt; 写用到了 &lt;code&gt;Tea&lt;/code&gt; 的代码，就别使用这个简写形式。&lt;/p&gt;
-
-&lt;p&gt;如果 &amp;ldquo;singapore&amp;rdquo; 导出的某一个变量恰巧和其他的导出变量名冲突了，那么这里就会出现一个错误。所以你应该谨慎使用 &lt;code&gt;export *&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;Whew！我们介绍完语法了，接下来进入有趣的环节。&lt;/p&gt;
-
-&lt;h2 id=&#34;import-到底干了啥&#34;&gt;&lt;code&gt;import&lt;/code&gt; 到底干了啥&lt;/h2&gt;
-
-&lt;p&gt;啥也没干，信不信由你。&lt;/p&gt;
-
-&lt;p&gt;噢，你好像看起来没那么好骗。好吧，那你相信标准几乎没有谈到 &lt;code&gt;import&lt;/code&gt; 该做什么吗？你认为这是一件好事还是坏事呢？&lt;/p&gt;
-
-&lt;p&gt;ES6 将模块的加载细节&lt;a href=&#34;http://www.ecma-international.org/ecma-262/6.0/index.html#sec-hostresolveimportedmodule&#34; target=&#34;_blank&#34;&gt;完全交给了实现&lt;/a&gt;，其余的执行部分则&lt;a href=&#34;http://www.ecma-international.org/ecma-262/6.0/index.html#sec-toplevelmoduleevaluationjob&#34; target=&#34;_blank&#34;&gt;规定得非常详细&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;大致来说，当 JS 引擎运行一个模块的时候，它的行为大致可归纳为以下四步：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;解析：引擎实现会阅读模块的源码，并且检查是否有语法错误。&lt;/li&gt;
-&lt;li&gt;加载：引擎实现会（递归地）加载所有被引入的模块。这部分咱还没标准化。&lt;/li&gt;
-&lt;li&gt;链接：引擎实现会为每个新加载的模块创建一个作用域，并且将模块中的声明绑定填入&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;其中，包括从其他模块中引入的。
-当你尝试 &lt;code&gt;import {cake} from &amp;quot;paleo&amp;quot;&lt;/code&gt; 但是 “paleo” 模块并没有导出叫 &lt;code&gt;cake&lt;/code&gt; 的东西时候，你也会在此时得到错误。这很糟糕，因为你离执行 JS，品尝 &lt;code&gt;cake&lt;/code&gt; 只差一步了！&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;执行：终于，JS 引擎开始执行刚加载进来的模块中的代码。到这个时候，&lt;code&gt;import&lt;/code&gt; 的处理过程已经完成，因此当 JS 引擎执行到一行 import 声明的时候，它啥也不会干。
-看到了不？我说了 &lt;code&gt;import&lt;/code&gt; “啥也没干”，没骗你吧？有关编程语言的严肃话题，哥从不说谎。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;不过，现在咱们可以介绍这个体系中有趣的部分了，这是一个非常酷的 trick。正因为这个体系并没有指定加载的细节，也因为你只需要看一眼源码中的 &lt;code&gt;import&lt;/code&gt; 声明就可以在运行前搞清楚模块的依赖，某些 ES6 的实现甚至可以通过预处理就完成所有的工作，然后将模块全部打包成一个文件，最后通过网络分发。像 &lt;a href=&#34;http://www.2ality.com/2015/04/webpack-es6.html&#34; target=&#34;_blank&#34;&gt;webpack&lt;/a&gt; 这样的工具就是做这个事情的。&lt;/p&gt;
-
-&lt;p&gt;这非常的了不起，因为通过网络加载资源是非常耗时的。假设你请求一个资源，接着发现里面有 &lt;code&gt;import&lt;/code&gt; 声明，然后你又得请求更多的资源，这又会耗费更多的时间。一个 naive 的 loader 实现可能会发起许多次网络请求。但有了 webpack，你不仅可以在今天就开始使用 ES6，还可以得到一切模块化的好处并且不向运行时性能妥协。&lt;/p&gt;
-
-&lt;p&gt;原先我们计划过一个详细定义的 ES6 模块加载规范，而且我们做出来了。它没有成为最终标准的原因之一是它无法与打包这一特性调和。模块系统需要被标准化，打包也不应该被放弃，因为它太好了。&lt;/p&gt;
-
-&lt;h2 id=&#34;动态-vs-静态-或者说-规矩和如何打破规矩&#34;&gt;动态 VS 静态，或者说：规矩和如何打破规矩&lt;/h2&gt;
-
-&lt;p&gt;作为一门动态编程语言，JavaScript 令人惊讶地拥有一个静态的模块系统。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;import&lt;/code&gt; 和 &lt;code&gt;export&lt;/code&gt; 只能写在顶级作用域中。你无法在条件语句中使用引入和导出，你也不能在你写的函数作用域中使用 &lt;code&gt;import&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;所有的导出必须显示地指定一个变量名，你也无法通过一个循环动态地引入一堆变量。&lt;/li&gt;
-&lt;li&gt;模块对象被封装起来了，我们无法通过 polyfill 去 hack 一个新 feature。&lt;/li&gt;
-&lt;li&gt;在模块代码运行之前，所有的模块都必须经历加载，解析，链接的过程。没有可以延迟加载，惰性 &lt;code&gt;import&lt;/code&gt; 的语法。&lt;/li&gt;
-&lt;li&gt;对于 &lt;code&gt;import&lt;/code&gt; 错误，你无法在运行时进行 &lt;code&gt;recovery&lt;/code&gt;。一个应用可能包含了几百个模块，其中的任何一个加载失败或链接失败，这个应用就不会运行。你无法在 &lt;code&gt;try/catch&lt;/code&gt; 语句中 &lt;code&gt;import&lt;/code&gt;。（不过正因为 ES6 的模块系统是如此地静态，webpack 可以在预处理时就为你检测出这些错误）。&lt;/li&gt;
-&lt;li&gt;你没办法 hook 一个模块，然后在它被加载之前运行你的一些代码。这意味着模块无法控制它的依赖是如何被加载的。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;只要你的需求都是静态的话，这个模块系统还是很 nice 的。但你还是想 hack 一下，是吗？&lt;/p&gt;
-
-&lt;p&gt;这就是为啥你使用的模块加载系统可能会提供 API。举个栗子，&lt;a href=&#34;http://webpack.github.io/docs/code-splitting.html&#34; target=&#34;_blank&#34;&gt;webpack 有一个 API&lt;/a&gt;，允许你 “code splitting”，按照你的需求去惰性加载模块。这个 API 也能帮你打破上面列出的所有规矩。&lt;/p&gt;
-
-&lt;p&gt;ES6 的模块是非常静态的，这很好——许多强大的编译器工具因此收益。而且，静态的语法已经被设计成可以和动态的，可编程的 loader API 协同工作。&lt;/p&gt;
-
-&lt;h2 id=&#34;我何时能开始使用-es6-模块&#34;&gt;我何时能开始使用 ES6 模块？&lt;/h2&gt;
-
-&lt;p&gt;如果你今天就要开始使用，你需要诸如 &lt;a href=&#34;https://github.com/google/traceur-compiler#what-is-traceur&#34; target=&#34;_blank&#34;&gt;Traceur&lt;/a&gt; 和 &lt;a href=&#34;http://babeljs.io/&#34; target=&#34;_blank&#34;&gt;Babel&lt;/a&gt; 这样的预处理工具。这个系列专题之前也有文章介绍了&lt;a href=&#34;https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/&#34; target=&#34;_blank&#34;&gt;如何使用 Babel 和 Broccoli&lt;/a&gt; 去生成可用于 Web 的 ES6 代码。那篇文章的栗子也被&lt;a href=&#34;https://github.com/givanse/broccoli-babel-examples/tree/master/es6-modules&#34; target=&#34;_blank&#34;&gt;开源在了 GitHub 上&lt;/a&gt;。笔者的&lt;a href=&#34;http://www.2ality.com/2015/04/webpack-es6.html&#34; target=&#34;_blank&#34;&gt;这篇文章&lt;/a&gt;也介绍了如何使用 Babel 和 webpack。&lt;/p&gt;
-
-&lt;p&gt;ES6 模块系统的主要设计者是 Dave Herman 和 Sam Tobin-Hochstadt，此二人不顾包括笔者在内的数位委员的反对，始终坚持如今你见到的 ES6 模块系统的静态部分，争论长达数年。Jon Coppeard 正在火狐浏览器上实现 ES6 的模块。之后包括 JavaScript Loader 规范在内的工作已经在进行中。HTML 中类似 &lt;code&gt;&amp;lt;script type=module&amp;gt;&lt;/code&gt; 这样的东西之后也会和大家见面。&lt;/p&gt;
-
-&lt;p&gt;这便是 ES6 了。&lt;/p&gt;
-
-&lt;p&gt;欢迎大家对 ES6 进行吐槽，请期待下周 &lt;a href=&#34;https://hacks.mozilla.org/category/es6-in-depth/&#34; target=&#34;_blank&#34;&gt;ES6 in Depth&lt;/a&gt; 系列的总结文章。
-&lt;small style=&#34;float:right&#34;&gt;2015年08月21日发布&lt;/small&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;除此文之外，还推荐其他参考资料，因版权不明，我尽量多导流少转载：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://javascript.ruanyifeng.com/nodejs/module.html&#34; target=&#34;_blank&#34;&gt;CommonJS规范 - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cnodejs.org/topic/5231a630101e574521e45ef8&#34; target=&#34;_blank&#34;&gt;exports 和 module.exports 的区别&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/05/commonjs-in-browser.html&#34; target=&#34;_blank&#34;&gt;浏览器加载 CommonJS 模块的原理与实现 - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/10/javascript_module.html&#34; target=&#34;_blank&#34;&gt;Javascript模块化编程（一）：模块的写法 - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html&#34; target=&#34;_blank&#34;&gt;Javascript模块化编程（二）：AMD规范 - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/11/require_js.html&#34; target=&#34;_blank&#34;&gt;Javascript模块化编程（三）：require.js的用法 - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/amdjs/amdjs-api/wiki/AMD-(%E4%B8%AD%E6%96%87%E7%89%88&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;AMD&amp;rdquo;文档（中文版）存档&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[译]有关个人发展的蟑螂理论——桑德·皮查伊</title>
-      <link>https://parisqian.com/post/2016/03/the-cockroach-theory-for-self-development</link>
-      <pubDate>Tue, 22 Mar 2016 08:57:22 +0000</pubDate>
-      
-      <guid>https://parisqian.com/post/2016/03/the-cockroach-theory-for-self-development</guid>
-      <description>
-
-&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.quora.com/What-should-Indians-learn-from-Sundar-Pichai/answer/Shreyas-Vasant-Joshi?srid=3Eg3&amp;amp;share=9352f832&#34; target=&#34;_blank&#34;&gt;The cockroach theory for self development&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;译文&#34;&gt;译文&lt;/h2&gt;
-
-&lt;p&gt;&lt;del&gt;很久很久以前，距离中土大唐十万八千里的德干高原上，有一间小餐馆。&lt;/del&gt;餐馆里不知哪里飞来的一只蟑螂落在了某位女士身上。&lt;/p&gt;
-
-&lt;p&gt;这货当时就吓尿了！10万分贝，瞬间爆炸！&lt;/p&gt;
-
-&lt;p&gt;惊惶欲绝&lt;sup&gt;1&lt;/sup&gt;的她的脸，颤抖中的声线；双手狂挥，旋转跳跃，她闭着眼；摆脱小强的企图，却无法实现。
-她的反应影响了周边所有的人&lt;sup&gt;2&lt;/sup&gt;，她的同伴都开始惊慌起来。
-这货最后终于摆脱了小强&lt;del&gt;估计是小强海盗船玩儿腻了233&lt;/del&gt;然而……他却飞到了同组另外一枚妹纸身上。
-这下马上就要轮到这另一个美女重复刚才的闹剧的节骨眼，只见得这边厢餐厅服务员冲向前来解救他们了。
-说时迟那时快，转眼之间小强又梯云纵到服务员的身上。这服务员双脚站定，气定神闲地观察起衬衫上小强下一步的出招。
-当他觉得大局已定时，他用手指一把抓过小强，把它丢出了餐厅。&lt;/p&gt;
-
-&lt;p&gt;我在一旁悠闲地嘬&lt;sup&gt;3&lt;/sup&gt;着&lt;del&gt;茶&lt;/del&gt;咖啡看着戏&lt;sup&gt;4&lt;/sup&gt;，此时我的脑洞里&lt;sup&gt;5&lt;/sup&gt;闪过几道流星。我就突然好奇，蟑螂真的他们这精彩戏码的内因么？
-如果是，那么为什么服务生就没受影响？
-他解决得近乎完美，没有任何慌乱之处。
-不是蟑螂，而是女孩们对蟑螂带来的骚乱毫无办法才真正让她们灵台失守&lt;sup&gt;6&lt;/sup&gt;。
-我开始认识到，并不是我老爸、我老板、我老婆对我的大喊大叫让我心烦；而是我对这些烦心事的无能为力，才真正让我心烦。
-并不是路上堵车让我心烦，而是我对这堵车的无能为力，才真正让我心烦。
-不仅仅是问题本身，而是我对这些问题的反应，才真正导致了我生命中的这些手足无措&lt;sup&gt;7&lt;/sup&gt;。&lt;/p&gt;
-
-&lt;p&gt;我从这里面学到的道理就是：
-&lt;pre&gt;
-  I understood, I should not react in life.
-  I should always respond.
-  The women reacted, whereas the waiter responded.
-  Reactions are always instinctive
-  whereas responses are always well thought of.
-&lt;/pre&gt;&lt;/p&gt;
-
-&lt;p&gt;我明白了，我应该始终主动回应，而不是应激反应。&lt;br&gt;
-这个娘们就属于条件反射的应激，而这个服务生才真正是主动回应。&lt;br&gt;
-应激由直觉支配，而回应则总是源自深思熟虑。&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;原文引用者：这是一个多么好的认识&lt;strong&gt;生命历程&lt;/strong&gt;的角度啊！&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;该故事源自桑德·皮查伊（Sundar Pichai）作为一个 IIT-Stanford 校友兼谷歌负责 Chrome 和 Android 两个重磅业务的全球负责人时的精彩演讲。(现如今已经是 Google 帝国的掌舵人了)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;注解&#34;&gt;注解：&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;：Panic=&amp;gt;惊慌，stricken =&amp;gt; 受挫折的；受…侵袭的；连起来（panic-stricken）叫做惊恐万状，此处译为惊惶欲绝，我给满分。&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;2&lt;/sup&gt;: Contagious adj. 感染性的；会蔓延的&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;3&lt;/sup&gt;: Sipping  &amp;lt;动名词&amp;gt;小口抿，啜饮&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;4&lt;/sup&gt;: amusement 娱乐（真的是消遣的意思）&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;5&lt;/sup&gt;：antenna 天线 =&amp;gt; the antenna of my mind 姑且翻译为脑洞吧，各位亲见谅，这儿没法直译吧。&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;6&lt;/sup&gt;：这里 disturb 各种形态的运用写的是真好。我觉得我很难写出这样的句子，当然我的翻译也堪称完美&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;7&lt;/sup&gt;：原文是混乱(chaos)，也讲得通，但是我觉得这样翻译不好。没办法就是自信，就是任性。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;全文翻译结束，感谢大家赏脸。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;读后感&#34;&gt;读后感&lt;/h2&gt;
-
-&lt;p&gt;接下来随便谈点感谢吧。&lt;/p&gt;
-
-&lt;p&gt;怎么说呢？&lt;/p&gt;
-
-&lt;p&gt;在我&lt;a href=&#34;https://parisqian.com/blog/2016/01/17/写于-2016-年初的一段话/&#34;&gt;人生低谷&lt;/a&gt;的时候，我有幸看到了这样一篇文章你应该能想象得到，这对我的人生是多么大的鼓舞。我当时就觉得这样一篇文章不能只静静地躺在 Quora 的故纸堆里。我要把它翻译过来，鼓舞更多在黑夜中不断前行的国人。
-&lt;em&gt;Never Give Up&lt;/em&gt; 不应该只是句无关痛痒的片汤话，而更应该是满怀希望的呐喊和对生活艰辛的宣战檄文！&lt;/p&gt;
-
-&lt;p&gt;Good Luck, And most importanly &lt;strong&gt;Have Fun&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;h3 id=&#34;后记&#34;&gt;后记&lt;/h3&gt;
-
-&lt;p&gt;因为程序设计缺陷所导致的低可维护性，不应该成为导致我们沮丧的理由。我们应该想办法去响应它。选择无非是我个人换工作；我鼓动管理层重构现有系统；我改进现有系统，为重构争取时间。结果显而易见，我只得从事最艰难的那条路。当然如果公司因为坚持不重构系统最终导致反应缓慢，最终关门倒闭等等等等，那就不是我要考虑的问题。既然我已经尽全力去跟所有人去反馈到了这个问题，结果是这样，我只能尽全力去落实老板们的决定。To be fair，如果我是老板我也不会选择一下子投入这么大的一场豪赌般的技术路线调头。所以改变自己才能求活，话是不是这么说的。要帮老板努力把本不是选项的东西变成一个可选项才是我应该做的事情。&lt;/p&gt;
-
-&lt;p&gt;因此我选择在本职工作的时段里努力分析解构现有的系统。现有系统固然问题很多，但是经过长期分析最突出的只有两个问题，基本都与 SQL 语句的低效有关。所以我在代码仓库的多个项目里，果断创建了名称类似于&lt;code&gt;feature/high-availability&lt;/code&gt;的分支。默默地用零敲碎打的时间里进行着多种试验。在此期间，可以说是学习到了大量的性能调优相关的知识。有 DBA 领域的，有日志分析领域的，有 DevOps 领域的，有容器领域的，有缓存领域的。身为团队领导，我的队员则很难帮助到这个层面。那两个月的时间里，我几乎可以说是孤军奋战。这些实验有的有少许效果，有的只是积累了经验。这些经验帮助我选择到了我目前认为是最可行的综合方案。在缓存优化，数据库优化，分布式运算等多种技术手段的综合作用下，但是最终的结果是我还算很满意的。程序的稳定性上了一个巨大的台阶啊。这种感觉就好像是……&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;这种感觉估计很多程序员都体会过，当你设计的算法得出了正确结果的时候，当你自以为解决了一个海森堡 Bug（Heisenbug，表示不可重现）的时候，当你完成了一段精妙代码的时候，你摘下厚重的眼镜，推开铺满灰尘的书桌，打开办公室唯一的窗户，迎着夕阳把一只废弃的圆珠笔扔出窗外，然后冲着天空大喊：还有谁？这是一种拔剑四顾心茫然的情怀。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ituring.com.cn/tupubarticle/2796&#34; target=&#34;_blank&#34;&gt;《码农：Linus 与 Linux》之 Linus，一生只为寻找欢笑 作者:池建强&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
