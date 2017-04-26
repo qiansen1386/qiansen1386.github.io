@@ -1,0 +1,124 @@
++++
+categories = ["开发", "中文"]
+date = "2016-05-13T20:31:05Z"
+tags = ['oh-my-zsh','babum','vim','ssh-agent']
+title = "前端开发笔记番外篇：在瘟到死上玩壳（中文读者福利）"
+
++++
+
+## 内容概要
+
+这篇主要讲什么呢……恩，是讲一讲进来玩前端在 Windows 上各种折腾 shell 的一些心得。
+
+先贴开源仓库地址 https://github.com/qiansen1386/my-zsh-config 
+
+## Windows 下的神器 [babun](http://babun.github.io/)
+
+反正目前，`Cygwin mintty` 就是目前最好的模拟器。主要是完美复制了，组件化插件，管线，做好一件事的 Linux 哲学。
+我对 `Bash on Windows` 的热情一下子就减小了好多。要啥自行车啊，谁知道微软的这破玩意儿好不好用呢……
+
+> 微软就喜欢提供自以为是最优解的一条龙服务。每次看它 presentation 里做得炫酷牛逼的各种 Magic ，我就怕得不行……`.Net` 从 1 到 2 到 4 到 Core，妈的打脸多少次了……每次看它投入大量资源到一个软件，把他包装的各种完善，然后几天之后等到开源社区有更好的解决方案了，之前高大上的完善软件瞬间就变成一堆老旧过时的笨重垃圾。这叫一个酸爽。老老实实做一个功能，把接口做好，让社区彼此协作，每人做好一个小组件，感觉这才是比较符合我审美的哲学。当然`.NET`的粉丝们请不要和我撕逼，我承认微软在新 CEO 上台之后做得很多举措都是让人眼前一亮，且微软同学们的代码质量都是过硬的。就是有些 API 设计得各种叠床架屋脱裤放屁打脸狂魔（逃
+
+当然，`mintty` 的集大成者 `Babun` 不是没有毛病的，刚装上的时候，各种出问题。比如有的时候按 `tab` 键没有反应。此时的修理办法就是，在控制台里输入 `compinit` 重新生成下不知道是缓存还是啥。不过每次打开都这样输入一遍，也不是个事儿。幸好伟大的社区对这种常见错误，都早有解决之法。
+
+```shell
+# 这里只提供一个简单的解法。虽然我自己用过是这样，但是不保证你们用了也是这样。请不要觉得这都是特技，化学的成分，其实原贴里有补充其他的办法。
+compaudit | xargs chmod g-w
+rm -f ~/.zcompdump; compinit
+cp `ls .zcompdump*`
+```
+
+输入这三行代码就重新生成一下 `.zcompdump` 文件，一般来说都可以搞定。
+详情请见：[babun-Issues#159](https://github.com/babun/babun/issues/159)
+
+## Zsh & oh-my-zsh
+
+buban 自带 `Zsh` 和 `Oh-my-zsh`.
+没有装过 zsh 的小伙伴请参考 https://github.com/qiansen1386/vagrant-frontend/blob/master/zsh.install.sh
+
+```shell
+# Install Zsh
+sudo apt-get install -y zsh
+# Install Oh-my-zsh
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+# Change default shell to zsh
+sudo chsh -s /bin/zsh vagrant
+# Use default template for .zshrc settings
+sudo cp /home/vagrant/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+
+> 哼，才不是广告。。。
+
+简单到不行。
+接下来修改 `.zshrc` 配置文件。
+主要改两处，一是**主题**，二是**插件**
+
+
+### 先说主题
+
+[agnoster](https://gist.github.com/agnoster/3712874) 主题是我目前觉得最好看的自带主题，也希望大家也可以分享下各位认为好看的主题。（由于官方精力所限不在收录第三方主题，大量主题都是游离状态，需要自己在 GitHub 淘宝）
+
+修改主题的方法就是，找到 `ZSH_THEME=` 这一行，把原文改成 `ZSH_THEME="agnoster"`。（如果是非官方主题请确保下载主题文件到）
+这个主题有个毛病（一个需要特殊配置的功能），就是参考了 Python 社区做得的一个编辑器插件神器 Powerline 的做法。在 shell 状态栏里放了很多 unicode 的符号。然而等宽字体一般不包含全部 unicode 字符。所以你在 shell 里打 `echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"` 一般显示为乱码。所以需要安装一个定制的字体，把这些字符打包进去。也就是传说中的 [Powerline-patched font](https://github.com/powerline/fonts)。随便选一个装就好，这样就可以看到这些字符了。
+
+> 注意： Babun 在瘟到死系统下，只识别 `.otf` 扩展的字体。
+
+我喜欢非衬线字体，所以没有试过`Hack`这些。
+
+非衬线里面，主要推荐 [Fira Mono for Powerline](https://github.com/powerline/fonts/tree/master/FiraMono) / [Source Code Pro for Powerline](https://github.com/powerline/fonts/tree/master/SourceCodePro)
+比较不推荐 Droid Sans，因为在本地上用边缘特别粗糙，字重也特别重。其他诸如 UbuntuMono 也挺漂亮的，但是感觉略花俏。有试过其他字体的小伙伴可以分享下他们的感触。
+需要注意的是，`regular` 一般字重轻于 `Medium`，一般使用还是推荐 `regular`。没有试过 `Light` 和 `UltraLight`，应该更炫酷，不过不常见，没试过。
+
+额，这个主题，还有一个毛病……(这么多毛病你还要选这个主题，你是不是脑残外貌党……其实我就是啊\\(*v*)/)
+
+如果你不在启动脚本里加入 `export DEFAULT_USER=<username>` 的话，他会在路径前加上一段 `<username> @ <hostname>`， 太不简洁优雅了。所以一定要在 `.profile` 啊，这类启动脚本里加上那一句设置 `DEFAULT_USER` 的话！
+
+最终极简效果图：
+
+![最终效果图](data:image/png;base64,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)
+
+> 顺便一说，上面这个图我机智地用 base64 编码了之后直接嵌到了网页里。不然单独维护一个 img 文件夹也是很头疼的事情啊。哈哈哈哈哈。看源代码的时候不太美观倒是。
+
+### 再说插件
+
+插件这个东西不能乱用。有的时候，甚至有些软件会建议用户关闭 zsh 自带的的插件。（貌似是Node还是npm来着）我除了默认的 `git` 插件以外，别的插件用的真的不多。不过有一个插件我印象深刻……就是 `ssh-agent` 插件。具体原理我不是特别懂。不想信口开河。不过总而言之就是当你加了 `ssh` 地址的 git 远端，推送的时候，就需要通过 ssh 的通道。此时，让 git 知道去哪里找到 SSH 的私钥公钥。一般情况下，我们比较熟悉的是把本机的私钥加入到网络服务中，而有的时候，我们需要反过来，把已经注册到某个网络服务中的私钥绑定到其他机器。在 Windows 里，我习惯用 `putty` 套件的 `pageant` 组件管理 key，用 SourceTree 管理 git。可是在 Linux 里就需要用 Shell 来做这个事，我不是特别熟悉。
+
+
+以上内容都可以在 [Oh my Zsh Wiki: Customization](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization) 官方文档中找到更详细的说明。
+
+## 重启才能启用配置？
+
+看 `source` 的妙用。
+用 `source .zshrc` 就能启用 `.zshrc` 的配置。
+
+## 神 tm `Vim`
+我是来吐槽的，不是夸的。之前我没系统学过 vim，请轻喷。
+`set mouse=r` 不知道手打了多少遍，忍无可忍查了查如何配置vim，然后发现只要创建一个 `.vimrc` 文件就好。那时候心头一万匹草泥马。23333
+
+
+## 之前太偷懒，该来的总要来→_→SSH
+ssh-agent 重剑无锋，全靠武功。
+
+。。。To be Continue。。。
+
+## 从来没重视过 `git alias` 直到我用了 `babun`
+
+babun 自己定制了一批 git 的别名，用之前不理解，用之后才发觉，这才是 tm 终端的正确玩法啊。
+我把 babun 的配置贴在下面好了。喜欢的同学自己可以在终端里按 `git config --global --` 玩一下。
+
+
+```INI
+[alias]
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	cl = clone
+	ci = commit
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+```
+
+> 题外话，建议给 `core.autocrlf` 设为 `input`，让 git 不修改源文件的换行符。`autocrlf` 表面上很易用。实际上，我感觉他只适用于项目目标为Win，git 服务器为Linux的情况。而如果你的项目目标就是*nix，autocrlf 会把 `diff` 功能基本废掉。每行都改动一片红一片绿的世界最好只停留在股市里……
