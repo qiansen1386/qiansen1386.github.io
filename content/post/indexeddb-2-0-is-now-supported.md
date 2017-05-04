@@ -9,6 +9,7 @@ title = "IndexedDB 2.0 更新了！"
 
 IndexedDB 2.0 is now supported
 ------------------------------
+
 > IndexedDB 是一个浏览器内置的 NoSQL 底层实现，它允许你存储简单值以及结构化数据。不过即便是在 Mozilla 的手册上 （[IndexedDB - Web API 接口 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API)）也是推荐使用第三方封装的库而非直接调用这个 API。Hacker News 上更是招来一片有关 API复杂，没有 SQL 功能的抱怨。这也就是为什么截止到 2017 四月 26 日。整个互联网上有关 IndexedDB 2.0 的中文内容是 0（A big flat zero）
 
 IndexedDB 就是一个简单的 NoSQL 实现，你可以在其上自行封装 API，甚至于封装一个 SQL 语法接口也未尝不可。
@@ -56,13 +57,17 @@ request.onsuccess = (event) => {
 > 。。。 更多内容请[参考原文（En）][1]
 
 #### 浏览器支持
+
 Firefox 51，Chrome 58，Opera release 45
 
 #### 结语
-有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:**是什么**和**为了什么**。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 [github 上搜索 indexedDB Wrapper]。我因为还没有重度使用过它就不献丑了。
+
+有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:**是什么**和**为了什么**。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 [github 上搜索 indexedDB Wrapper](https://github.com/search?utf8=%E2%9C%93&q=indexedDB+Wrapper)。我因为还没有重度使用过它就不献丑了。
 
 #### Ref: 
-[\[0\]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）](https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/)
-[\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）][1]
-[\[2\]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017](https://w3c.github.io/IndexedDB/)
+
+- [\[0\]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）](https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/)
+- [\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）][1]
+- [\[2\]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017](https://w3c.github.io/IndexedDB/)
+
 [1]: https://news.ycombinator.com/item?id=12793996 "\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）"(https://news.ycombinator.com/item?id=12793996)
