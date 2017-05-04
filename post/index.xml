@@ -85,13 +85,15 @@ request.onsuccess = (event) =&amp;gt; {
 
 &lt;h4 id=&#34;结语&#34;&gt;结语&lt;/h4&gt;
 
-&lt;p&gt;有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:&lt;strong&gt;是什么&lt;/strong&gt;和&lt;strong&gt;为了什么&lt;/strong&gt;。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 [github 上搜索 indexedDB Wrapper]。我因为还没有重度使用过它就不献丑了。&lt;/p&gt;
+&lt;p&gt;有鉴于 Chrome 58 的开发公告中，着重提到了 IndexedDB 2.0 这里就简单解释下:&lt;strong&gt;是什么&lt;/strong&gt;和&lt;strong&gt;为了什么&lt;/strong&gt;。目的是为了帮助你了解这个规范背后的逻辑，或者你就当个新闻看也成。至于怎么用，请自行参考 MDN 的手册，或者去 &lt;a href=&#34;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=indexedDB+Wrapper&#34; target=&#34;_blank&#34;&gt;github 上搜索 indexedDB Wrapper&lt;/a&gt;。我因为还没有重度使用过它就不献丑了。&lt;/p&gt;
 
 &lt;h4 id=&#34;ref&#34;&gt;Ref:&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/&#34; target=&#34;_blank&#34;&gt;[0]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）&lt;/a&gt;
-&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;[1] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&lt;/a&gt;
-&lt;a href=&#34;https://w3c.github.io/IndexedDB/&#34; target=&#34;_blank&#34;&gt;[2]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/&#34; target=&#34;_blank&#34;&gt;[0]  What’s new in IndexedDB 2.0? ★ Mozilla Hacks（原文）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=12793996&#34; title=&#34;\[1\] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&amp;quot;(https://news.ycombinator.com/item?id=12793996&#34; target=&#34;_blank&#34;&gt;[1] What’s new in IndexedDB 2.0? | Hacker News（上文的吐槽）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://w3c.github.io/IndexedDB/&#34; target=&#34;_blank&#34;&gt;[2]  Indexed Database API 2.0 - Editor’s Draft, 21 April 2017&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
