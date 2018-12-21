@@ -148,6 +148,7 @@ a.label:focus {
 .theme-base-08 .pagination > .active > span:focus {
   background-color: #ac4142;
   border-color: #ac4142;
+  color: #fff;
 }
 
 .theme-base-08 .pagination > .disabled > span,
